@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import styled from "styled-components";
 import IntroSection from "../shared/intro-section";
 import {
@@ -12,8 +11,6 @@ import {
   faTwitterSquare,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import whyHelpImage from "../../../public/assets/group.jpg";
-import aboutUsImage from "../../../public/assets/student.jpg";
 import { SectionDescription, SectionTitle } from "../shared/typography";
 import { ButtonPrimary } from "../shared/buttons";
 import { useRouter } from "next/router";
@@ -77,7 +74,10 @@ const WhoWeAre = () => {
         <AboutSectionContainer>
           <FlexContainerRowSpaceBetween gap="100px">
             <ImageContainer>
-              <Image priority src={whyHelpImage} alt={`An image depicting`} />
+              <img
+                src="https://res.cloudinary.com/josephine19001/image/upload/v1698594308/YCEM/plb2nxg2div6er4qsqrt.jpg"
+                alt={`A a group picture of volunteer`}
+              />
             </ImageContainer>
             <ContentWrapper>
               <SectionTitle>Who We Are</SectionTitle>
@@ -110,7 +110,7 @@ const WhoWeAre = () => {
             <ContentWrapper>
               <SectionTitle>Our Story & Mission</SectionTitle>
               <SectionDescription>
-                mpowering the Future of STEM
+                Empowering the Future of STEM
               </SectionDescription>
               <p>
                 At YCEM, our mission is to empower the future of STEM by
@@ -138,7 +138,10 @@ const WhoWeAre = () => {
               </p>
             </ContentWrapper>
             <ImageContainer>
-              <Image priority src={aboutUsImage} alt={`An image depicting`} />
+              <img
+                src="https://res.cloudinary.com/josephine19001/image/upload/v1698594309/YCEM/swri1kyt5nrash4zirr6.jpg"
+                alt={`A a group picture of volunteer`}
+              />
             </ImageContainer>
           </FlexContainerRowSpaceBetween>
         </AboutSectionContainer>

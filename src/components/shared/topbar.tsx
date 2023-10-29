@@ -6,14 +6,21 @@ import { useOnClickOutside } from "usehooks-ts";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import LogoSVG from "public/ycem-logo.svg";
+import LogoSVG from "public/ycem-logo-no-bg.svg";
+import LogoSVGBg from "public/ycem-logo.svg";
 import NavLink from "./nav-link";
 import { FlexContainerRowSpaceBetween } from "./containers";
 import { navItems } from "./constants";
 
-export const LogoComponent = () => {
+export const LogoComponent = ({ footer }: { footer?: boolean }) => {
   return (
-    <Image priority src={LogoSVG} alt="YCEM logo" width={68} height={68} />
+    <Image
+      priority
+      src={footer ? LogoSVGBg : LogoSVG}
+      alt="YCEM logo"
+      width={68}
+      height={68}
+    />
   );
 };
 
@@ -56,7 +63,7 @@ const TopBar = () => {
           <FontAwesomeIcon
             icon={isOpen ? faXmark : faBars}
             size="2x"
-            style={{ color: "var(--color-light)",zIndex: '5' }}
+            style={{ color: "var(--color-light)", zIndex: "5" }}
             onClick={() => setIsOpen(!isOpen)}
           />
           <Nav.Overlay open={isOpen}>
@@ -75,7 +82,7 @@ export default TopBar;
 //Styled components
 const Nav = {
   Header: styled.header`
-    background-color: var(--color-primary);
+    background-color: var(--color-light);
     width: 100%;
     padding: 10px 195px;
     position: fixed;
@@ -88,7 +95,7 @@ const Nav = {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: var(--color-light);
+    color: var(--color-primary);
   `,
   Items: styled.ul`
     list-style: none;
@@ -100,10 +107,17 @@ const Nav = {
     @media (max-width: 768px) {
       display: none;
     }
+    li {
+      color: var(--color-primary);
+    }
+    a {
+      color: var(--color-primary);
+    }
   `,
   Logo: styled.a`
     text-decoration: none;
     cursor: pointer;
+    color: var(--color-primary);
     @media (max-width: 768px) {
       margin-left: 0;
     }
@@ -143,7 +157,7 @@ const Nav = {
     height: ${({ open }) => (open ? "100%" : 0)};
     width: 100%;
     transition: height 0.2s ease-in-out;
-    background: var(--color-primary);
+    background: var(--color-light);
     position: fixed;
     top: 0;
     left: 0;
@@ -167,10 +181,10 @@ const Nav = {
       transition: opacity 0.4s ease-in-out;
       font-size: 18px;
       margin: 50px 0px;
-      color: var(--color-light);
+      color: var(--color-primary);
     }
     a {
-      color: var(--color-light);
+      color: var(--color-primary);
       transition: color 200ms ease;
       font-size: 18px;
       line-height: 1.067em;

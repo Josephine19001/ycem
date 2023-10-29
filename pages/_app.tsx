@@ -6,6 +6,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
 
 import Layout from "../src/components/shared/layout";
+import ycemLogo from '../public/ycem-.png'
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
@@ -19,6 +20,14 @@ const App = ({ Component, pageProps }: AppProps) => {
             siteName: "YCEM",
             title: "Your Choice in Engineering Matters",
             description: "Empowering HER Future in ENGINEERING",
+            images: [
+              {
+                url: "https://ycem.org/path/to/your-image.jpg",
+                width: 1200,
+                height: 630,
+                alt: "YCEM Image",
+              },
+            ],
           }}
           twitter={{
             handle: "@ycem_project",

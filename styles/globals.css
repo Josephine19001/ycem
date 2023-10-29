@@ -7,13 +7,16 @@
 
 
 :root {
-  --color-primary: #2A7C6F;
-  --color-primary-darker: #1b4f46;
+  --color-primary: #02ADB5;
+  --color-primary-darker: #10747a;
   --color-primary-transparent: #e3f3f2;
   --color-primary-lighter: rgba(27, 79, 70, 0.505);
   --color-secondary: #219EBC;
   --color-secondary-lighter:rgba(33, 157, 188, 0.52);
+  --color-dark: #393E46;
   --color-light: #FFFEFC;
+
+  --color-light-active: #465b5a;
 
   --font-size-xs: 8px;
   --font-size-sm: 12px;
@@ -63,7 +66,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: var(--background-color);
-  color: var(--color-primary);
+  color: var(--color-dark);
   box-sizing: border-box;
   font-size: var(--font-size-md);
   padding: 0;
@@ -79,7 +82,7 @@ h1 {
   font-weight: 800;
   line-height: 80px;
   letter-spacing: 0.2px;
-  color: var(--text-color)
+  color: var(--color-dark)
 }
 h2 {
   font-size: var(--font-size-header-two);
@@ -91,10 +94,10 @@ h4 {
   font-weight: 500;
   line-height: 30px; 
   letter-spacing: 0.2px;
-  color: var(--color-primary);
+  color: var(--color-dark);
 }
 h5 {
-  color: var(--color-primary);
+  color: var(--color-dark);
   font-size: var(--font-size-header-five);
   font-style: normal;
   font-weight: 600;
@@ -102,7 +105,7 @@ h5 {
   letter-spacing: 0.1px;
 }
 h6 {
-  color: var(--color-primary);
+  color: var(--color-dark);
   font-size: var(--font-size-md);
   font-style: normal;
   font-weight: 500;
@@ -115,7 +118,7 @@ p {
   font-weight: 500;
   line-height: 26px;
   letter-spacing: 0.2px;
-  color: var(--color-primary);
+  color: var(--color-dark);
 }
 li {
   line-height: 1.6;
@@ -142,7 +145,7 @@ input {
   border-radius: 5px;
   padding: 4px 8px;
   transition: color 0.2s ease;
-  color: var(--color-primary);
+  color: var(--color-dark);
 }
 
 input:focus {
@@ -154,7 +157,7 @@ input:focus {
 label {
   display: block;
   margin-bottom: 26px;
-  color: var(--color-primary);
+  color: var(--color-dark);
   line-height: 1.143em;
 }
 ul {
@@ -178,7 +181,7 @@ button {
 }
 
 b {
-  color: var(--text-color);
+  color: var(--color-dark);
 }
 
 footer {

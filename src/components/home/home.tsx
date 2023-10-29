@@ -1,7 +1,5 @@
 import React from "react";
-import Image from "next/image";
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   FlexContainerColumnSpaceBetween,
   FlexContainerRowSpaceBetween,
@@ -12,10 +10,7 @@ import {
   SectionDescription,
   SectionTitle,
 } from "../shared/typography";
-import {
-  homeServiceSectionContent,
-  homeWhyChooseUsContent,
-} from "../shared/constants";
+import { homeServiceSectionContent } from "../shared/constants";
 import JoiningUs from "../shared/joining-us";
 import { Divider } from "../shared/footer";
 import {
@@ -23,8 +18,6 @@ import {
   ContentWrapper,
   ImageContainer,
 } from "../who-we-are/who-we-are";
-import whyHelpImage from "../../../public/assets/group.jpg";
-import hilarySpeaking from "../../../public/assets/hilary-speaking.jpg";
 
 // Solutions Section Components
 const ServicesSectionContainer = styled(FlexContainerRowSpaceBetween)`
@@ -67,40 +60,9 @@ const ServiceWrapper = styled(FlexContainerColumnSpaceBetween)`
   }
 `;
 
-// WhyChooseUs Section Components
-const WhyChooseUsSection = styled(Section)`
-  @media only screen and (max-width: 768px) {
-    img {
-      display: none;
-      width: 100%;
-    }
-  }
-`;
-const WhyChooseUsContainer = styled(ServicesSectionContainer)`
-  border: none;
-`;
-
-const WhyChooseUsLeft = styled(FlexContainerColumnSpaceBetween)`
-  gap: 30px;
-  align-items: flex-start;
-  padding-right: 100px;
-  h6 {
-    font-weight: 700;
-  }
-  @media only screen and (max-width: 768px) {
-    padding-right: 0;
-  }
-`;
-const WhyChooseUsRight = styled(ServicesSectionRight)`
-  width: 100%;
-`;
-const WhyChooseUsWrapper = styled(FlexContainerRowSpaceBetween)`
-  gap: 15px;
-`;
-
 const HeroSection = styled(Section)`
   background: center / cover no-repeat
-    url("https://cdn.pixabay.com/photo/2015/01/09/11/11/startup-594126_960_720.jpg");
+    url("https://res.cloudinary.com/josephine19001/image/upload/v1698594422/YCEM/oozpqvsy6xy4swcky78q.jpg");
   position: relative;
 
   width: calc(100% + 390px);
@@ -121,6 +83,10 @@ const HeroSection = styled(Section)`
     background-color: var(--color-light);
     width: 50%;
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 
   @media only screen and (max-width: 768px) {
@@ -175,12 +141,11 @@ const Home = () => {
           <ServicesSectionRight>
             {homeServiceSectionContent.map(({ icon, title, description }) => (
               <ServiceWrapper key={title}>
-                <Image
-                  priority
+                <img
                   src={icon}
                   alt={`An image depicting ${title}`}
-                  width={100}
-                  height={100}
+                  width="100px"
+                  height="100px"
                 />
                 <CardTitle>{title}</CardTitle>
                 <p>{description}</p>
@@ -196,7 +161,10 @@ const Home = () => {
         <AboutSectionContainer>
           <FlexContainerRowSpaceBetween gap="100px">
             <ImageContainer>
-              <Image priority src={whyHelpImage} alt={`An image depicting`} />
+              <img
+                src="https://res.cloudinary.com/josephine19001/image/upload/v1698594308/YCEM/plb2nxg2div6er4qsqrt.jpg"
+                alt={`A a group picture of volunteer`}
+              />
             </ImageContainer>
             <ContentWrapper>
               <SectionTitle>Who We Are</SectionTitle>
@@ -226,37 +194,6 @@ const Home = () => {
       </Section>
 
       <Divider margin="50px 0" />
-
-      {/* <WhyChooseUsSection>
-        <WhyChooseUsContainer>
-          <WhyChooseUsLeft>
-            <SectionTitle>Why choose us</SectionTitle>
-            <SectionDescription>
-              Here&apos;s why we&apos;re the best in the industry
-            </SectionDescription>
-            {homeWhyChooseUsContent.map(({ icon, title, description }) => (
-              <WhyChooseUsWrapper key={title}>
-                <FontAwesomeIcon
-                  icon={icon}
-                  size="2x"
-                  style={{ color: "var(--color-primary)" }}
-                />
-                <FlexContainerColumnSpaceBetween alignitems="flex-start">
-                  <CardTitle>{title}</CardTitle>
-                  <p>{description}</p>
-                </FlexContainerColumnSpaceBetween>
-              </WhyChooseUsWrapper>
-            ))}
-          </WhyChooseUsLeft>
-          <WhyChooseUsRight>
-            <Image
-              priority
-              src={whyUsImage}
-              alt={`An image of software engineers working`}
-            />
-          </WhyChooseUsRight>
-        </WhyChooseUsContainer>
-      </WhyChooseUsSection> */}
 
       <JoiningUs />
     </div>

@@ -50,7 +50,7 @@ const ProcessWrapper = styled(FlexContainerColumnSpaceBetween)<{
     color: var(--color-primary);
   }
   p {
-    color: var(--color-primary);
+    color: var(--color-dark);
   }
   @media only screen and (max-width: 768px) {
     width: 100%;

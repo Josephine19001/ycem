@@ -56,7 +56,7 @@ const OpenPositionContainer = styled(FlexContainerColumnSpaceBetween)`
   justify-content: center;
   width: 100%;
   padding: 100px 50px;
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary-darker);
   color: var(--color-light);
   text-align: center;
   border-radius: 5px;

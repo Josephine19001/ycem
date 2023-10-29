@@ -18,29 +18,28 @@ interface Props {
 }
 
 export const Link = styled.a<{ active?: boolean }>`
-  color: var(
-    ${({ active }) => (active ? `--white` : "--color-light")}
-  );
-
+  color: var(${(props) => (props.active ? "--color-primary-darker" : "--color-primary")});
   position: relative;
   display: inline-block;
-  &:after {
+  &::after {
     content: "";
     display: block;
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 0;
-    height: 2px;
-    background: var(--color-primary);
+    width: ${(props) => (props.active ? "100%" : "0")};    height: 2px;
+    background: var(--color-primary-darker);
     transition: width 0.3s ease 0s, left 0.3s ease;
+    margin-top: 3px;
   }
-  &:active {
-    :after {
-      width: 30px;
-    }
+  &:active::after {
+    width: 100%;
+  }
+  &:hover::after {
+    width: 100%;
   }
 `;
+
 
 const DropDownButton = styled.div`
   @media (max-width: 768px) {
@@ -92,7 +91,7 @@ const DropDownMenuHeader = styled.p<{
   font-size: 15px;
   color: var(
     ${({ isOpen, active }) =>
-      isOpen || active ? `--color-primary` : "--second-text-color"}
+      isOpen || active ? `--color-primary` : "--color-secondary"}
   );
   text-transform: capitalize;
   cursor: pointer;

@@ -15,10 +15,10 @@ const ItemContainer = styled.div`
   background: #f4f5f6;
   padding: 24px 32px;
   border-radius: 8px 8px;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: background 0.25s ease-in-out;
+  -moz-transition: background 0.25s ease-in-out;
+  -o-transition: background 0.25s ease-in-out;
+  transition: background 0.25s ease-in-out;
 
   h3 {
     color: var(--color-primary-darker);
@@ -36,12 +36,10 @@ const ItemContainer = styled.div`
   &:hover {
     background: var(--color-primary);
     color: var(--color-light);
-    font-size: 16px;
-    text-transform: uppercase;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
+    -webkit-transition: background 0.25s ease-in-out;
+    -moz-transition: background 0.25s ease-in-out;
+    -o-transition: background 0.25s ease-in-out;
+    transition: background 0.25s ease-in-out;
 
     h3 {
       color: var(--color-light);
@@ -84,7 +82,7 @@ const CustomizedIcon = styled(FontAwesomeIcon)`
   color: var(--color-primary);
   &:hover {
     color: var(--color-light);
-    transition: all 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
     transform: scale(1.1);
   }
 `;

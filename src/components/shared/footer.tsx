@@ -119,7 +119,7 @@ const Footer = () => {
     <footer>
       <Container>
         <LogoAndSocialContainer>
-          <LogoComponent />
+          <LogoComponent footer={true} />
           <SocialItemsWrapper>
             <CustomizedIcon icon={faInstagramSquare} size="2x" />
             <CustomizedIcon icon={faLinkedin} size="2x" />

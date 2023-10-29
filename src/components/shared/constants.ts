@@ -10,10 +10,6 @@ import {
   faRocket,
   faPenRuler,
 } from "@fortawesome/free-solid-svg-icons";
-import blackCode from "../../../public/assets/black-code.jpeg";
-import community from "../../../public/assets/community.jpg";
-import girlTech from "../../../public/assets/girl-tech.jpg";
-import mentor from "../../../public/assets/mentor.jpg";
 
 export const navItems = [
   {
@@ -53,26 +49,26 @@ export const footerContent = [
 
 export const homeServiceSectionContent = [
   {
-    icon: mentor,
+    icon: "https://res.cloudinary.com/josephine19001/image/upload/v1698594309/YCEM/kq1l0dafd0cuuakdjhd8.jpg",
     title: "Mentoring",
     description:
       "Essentially formulate for how a business is going to completes",
   },
 
   {
-    icon: blackCode,
+    icon: "https://res.cloudinary.com/josephine19001/image/upload/v1698594308/YCEM/jg6dkrakxlwln85xjywv.jpg",
     title: "Tech Talks",
     description:
       "Essentially formulate for how a business is going to completes",
   },
   {
-    icon: community,
+    icon: "https://res.cloudinary.com/josephine19001/image/upload/v1698594308/YCEM/ugoeqknzwjmxvc9ungb8.jpg",
     title: "Community",
     description:
       "Essentially formulate for how a business is going to completes",
   },
   {
-    icon: girlTech,
+    icon: "https://res.cloudinary.com/josephine19001/image/upload/v1698594308/YCEM/nrihfe7n5t6twlnw65th.jpg",
     title: "Volunteering",
     description:
       "Essentially formulate for how a business is going to completes",
