@@ -3,8 +3,8 @@
 # base image
 FROM node:16-alpine
 
-RUN mkdir -p /usr/src/techfoundry
-WORKDIR /usr/src/techfoundry
+RUN mkdir -p /usr/src/ycem
+WORKDIR /usr/src/ycem
 
 #copy from to
 COPY ./ ./

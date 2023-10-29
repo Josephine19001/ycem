@@ -8,19 +8,19 @@ const WhoWeAre: NextPage = () => {
     <>
       <NextSeo
         title="Who We Are"
-        description="We are a Software Solutions provider, empowering your digital solutions"
+        description="Empowering HER Future in Engineering"
         canonical="https://www.canonical.ie/"
         openGraph={{
-          url: "https://techfoundry.fi/about",
-          title: "Tech foundry",
+          url: "https://ycem.org/who-we-are",
+          title: "YCEM, Your Choice in Engineering",
           description:
-            "We are a Software Solutions provider, empowering your digital solutions",
+            "Empowering young women to shape a brighter future in STEM.",
           images: [{ url: "https://www.example.ie/og-image-03.jpg" }],
-          siteName: "TechFoundry",
+          siteName: "YCEM",
         }}
         twitter={{
-          handle: "@techfoundry",
-          site: "@https://techfoundry.fi/about",
+          handle: "@ycem_project",
+          site: "@https://ycem.org/who-we-are",
           cardType: "summary_large_image",
         }}
       />

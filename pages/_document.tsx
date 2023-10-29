@@ -13,7 +13,7 @@ const Document = () => {
   return (
     <Html lang="en">
       <Head>
-        <link rel="techfoundry-icon" href="/favicon.ico" />
+        <link rel="ycem-icon" href="/favicon.ico" />
       </Head>
       <body>
         <Main />
