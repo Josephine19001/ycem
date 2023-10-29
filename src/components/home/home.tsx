@@ -23,8 +23,8 @@ import {
   ContentWrapper,
   ImageContainer,
 } from "../who-we-are/who-we-are";
-import whyHelpImage from "../../../public/assets/accra-girls-event-pictures/group.jpg";
-import hilarySpeaking from "../../../public/assets/accra-girls-event-pictures/hilary-speaking.jpg";
+import whyHelpImage from "../../../public/assets/group.jpg";
+import hilarySpeaking from "../../../public/assets/hilary-speaking.jpg";
 
 // Solutions Section Components
 const ServicesSectionContainer = styled(FlexContainerRowSpaceBetween)`

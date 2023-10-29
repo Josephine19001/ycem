@@ -12,8 +12,8 @@ import {
   faTwitterSquare,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import whyHelpImage from "../../../public/assets/accra-girls-event-pictures/group.jpg";
-import aboutUsImage from "../../../public/assets/accra-girls-event-pictures/student.jpg";
+import whyHelpImage from "../../../public/assets/group.jpg";
+import aboutUsImage from "../../../public/assets/student.jpg";
 import { SectionDescription, SectionTitle } from "../shared/typography";
 import { ButtonPrimary } from "../shared/buttons";
 import { useRouter } from "next/router";
