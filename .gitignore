@@ -24,3 +24,5 @@ logs
 
 # Ignore OS-generated files
 Thumbs.db
+
+build
