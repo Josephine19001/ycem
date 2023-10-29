@@ -62,7 +62,7 @@ const ServiceWrapper = styled(FlexContainerColumnSpaceBetween)`
 
 const HeroSection = styled(Section)`
   background: center / cover no-repeat
-    url("https://res.cloudinary.com/josephine19001/image/upload/v1698594422/YCEM/oozpqvsy6xy4swcky78q.jpg");
+    url("https://res.cloudinary.com/josephine19001/image/upload/v1698599943/YCEM/mtckwjjqapvbqh8xvpwq.jpg");
   position: relative;
 
   width: calc(100% + 390px);

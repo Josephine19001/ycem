@@ -136,10 +136,6 @@ const NavLink = ({ label, href, dropDownMenu }: Props) => {
 
   useOnClickOutside(subMenuRef, closeDropdownMenu);
 
-  console.log("--test", router.asPath === href || false);
-  console.log("--asPath", router.asPath);
-  console.log("--href", href);
-
   const hasDropdown = dropDownMenu && dropDownMenu.length;
 
   const renderChevronIcon = () => {

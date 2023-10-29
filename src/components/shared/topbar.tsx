@@ -18,8 +18,8 @@ export const LogoComponent = ({ footer }: { footer?: boolean }) => {
       priority
       src={footer ? LogoSVGBg : LogoSVG}
       alt="YCEM logo"
-      width={68}
-      height={68}
+      width={72}
+      height={72}
     />
   );
 };
@@ -50,7 +50,10 @@ const TopBar = () => {
     <Nav.Header>
       <Nav.Wrapper>
         <Nav.Logo href="/">
-          <LogoComponent />
+          <FlexContainerRowSpaceBetween style={{paddingBottom: '10px'}}>
+            <LogoComponent />
+            <h6>Your Choice in Engineering Matters</h6>
+          </FlexContainerRowSpaceBetween>
         </Nav.Logo>
         <FlexContainerRowSpaceBetween style={{ gap: "30px" }}>
           <Nav.Items>
@@ -95,6 +98,16 @@ const Nav = {
     justify-content: space-between;
     align-items: center;
     color: var(--color-primary);
+
+    h6 {
+      padding-top: 28px;
+    }
+
+    h6 {
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
   `,
   Items: styled.ul`
     list-style: none;
@@ -103,6 +116,9 @@ const Nav = {
     align-items: center;
     justify-content: space-between;
     gap: 28px;
+    padding-top: 28px;
+    padding-top: 10px;
+
     @media (max-width: 768px) {
       display: none;
     }
