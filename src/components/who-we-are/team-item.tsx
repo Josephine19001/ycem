@@ -105,7 +105,7 @@ const TeamItem = ({
   imgSrc,
 }: Props) => {
   return (
-    <ItemContainer>
+    <ItemContainer key={name}>
       <div>
         <img src={imgSrc} alt={imgAlt} />
       </div>

@@ -41,7 +41,6 @@ export const Navigation = ({ closeNav }: NavigationProps) => (
 const TopBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef(null);
-  const router = useRouter();
 
   const closeNav = () => setIsOpen(false);
 
@@ -63,7 +62,7 @@ const TopBar = () => {
           <FontAwesomeIcon
             icon={isOpen ? faXmark : faBars}
             size="2x"
-            style={{ color: "var(--color-light)", zIndex: "5" }}
+            style={{ color: "var(--color-dark)", zIndex: "5" }}
             onClick={() => setIsOpen(!isOpen)}
           />
           <Nav.Overlay open={isOpen}>
@@ -159,7 +158,7 @@ const Nav = {
     transition: height 0.2s ease-in-out;
     background: var(--color-light);
     position: fixed;
-    top: 0;
+    top: 70px;
     left: 0;
     right: 0;
   `,

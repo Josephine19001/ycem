@@ -156,7 +156,7 @@ const WhoWeAre = () => {
         </SectionDescription>
         <FlexContainerRowSpaceBetween gap="20px">
           <TeamItem
-            name="JOSEPHINE GYAMERA"
+            name="JOSEPHINE G"
             jobTitle="Software Engineer"
             bioSummary="Josephine is our co-founder and has developed search strategies for a
           variety of clients from international brands to medium sized
@@ -170,7 +170,7 @@ const WhoWeAre = () => {
             imgSrc="https://img.freepik.com/free-photo/front-view-business-woman-suit_23-2148603018.jpg?w=1380&t=st=1698540066~exp=1698540666~hmac=ee71b495a1f76b1d0f1897fba0cbc5668076630b700d925abc7d5556c94eb6ad"
           />
           <TeamItem
-            name="JOSEPHINE GYAMERA"
+            name="JOSEPHINE G Y"
             jobTitle="Software Engineer"
             bioSummary="Josephine is our co-founder and has developed search strategies for a
           variety of clients from international brands to medium sized
@@ -184,7 +184,7 @@ const WhoWeAre = () => {
             imgSrc="https://img.freepik.com/free-photo/front-view-business-woman-suit_23-2148603018.jpg?w=1380&t=st=1698540066~exp=1698540666~hmac=ee71b495a1f76b1d0f1897fba0cbc5668076630b700d925abc7d5556c94eb6ad"
           />
           <TeamItem
-            name="JOSEPHINE GYAMERA"
+            name="JOSEPHINE YA"
             jobTitle="Software Engineer"
             bioSummary="Josephine is our co-founder and has developed search strategies for a
           variety of clients from international brands to medium sized

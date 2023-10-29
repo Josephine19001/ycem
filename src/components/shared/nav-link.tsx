@@ -18,7 +18,9 @@ interface Props {
 }
 
 export const Link = styled.a<{ active?: boolean }>`
-  color: var(${(props) => (props.active ? "--color-primary-darker" : "--color-primary")});
+  color: var(
+    ${(props) => (props.active ? "--color-primary-darker" : "--color-primary")}
+  );
   position: relative;
   display: inline-block;
   &::after {
@@ -26,11 +28,15 @@ export const Link = styled.a<{ active?: boolean }>`
     display: block;
     position: absolute;
     left: 0;
+    top: 30px;
     bottom: 0;
-    width: ${(props) => (props.active ? "100%" : "0")};    height: 2px;
+    width: ${(props) => (props.active ? "100%" : "0")};
+    height: 2px;
     background: var(--color-primary-darker);
     transition: width 0.3s ease 0s, left 0.3s ease;
-    margin-top: 3px;
+  }
+  &:active {
+    color: var(--color-primary-darker);
   }
   &:active::after {
     width: 100%;
@@ -39,7 +45,6 @@ export const Link = styled.a<{ active?: boolean }>`
     width: 100%;
   }
 `;
-
 
 const DropDownButton = styled.div`
   @media (max-width: 768px) {
@@ -130,6 +135,10 @@ const NavLink = ({ label, href, dropDownMenu }: Props) => {
   };
 
   useOnClickOutside(subMenuRef, closeDropdownMenu);
+
+  console.log("--test", router.asPath === href || false);
+  console.log("--asPath", router.asPath);
+  console.log("--href", href);
 
   const hasDropdown = dropDownMenu && dropDownMenu.length;
 

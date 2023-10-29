@@ -13,7 +13,10 @@ const Document = () => {
   return (
     <Html lang="en">
       <Head>
-        <link rel="ycem-icon" href="/favicon.ico" />
+        <link
+          rel="ycem-icon"
+          href="https://res.cloudinary.com/josephine19001/image/upload/v1698596639/YCEM/dngi9za535p5lmoku7gr.png"
+        />
       </Head>
       <body>
         <Main />

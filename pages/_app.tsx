@@ -6,7 +6,6 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
 
 import Layout from "../src/components/shared/layout";
-import ycemLogo from '../public/ycem-.png'
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
@@ -22,10 +21,10 @@ const App = ({ Component, pageProps }: AppProps) => {
             description: "Empowering HER Future in ENGINEERING",
             images: [
               {
-                url: "https://ycem.org/path/to/your-image.jpg",
+                url: "https://res.cloudinary.com/josephine19001/image/upload/v1698596509/YCEM/mmtsy0x1bf5aq1jpjbwc.png",
                 width: 1200,
                 height: 630,
-                alt: "YCEM Image",
+                alt: "YCEM Logo Image",
               },
             ],
           }}

@@ -14,8 +14,12 @@ const WhoWeAre: NextPage = () => {
           url: "https://ycem.org/who-we-are",
           title: "YCEM, Your Choice in Engineering",
           description:
-            "Empowering young women to shape a brighter future in STEM.",
-          images: [{ url: "https://www.example.ie/og-image-03.jpg" }],
+            "Empowering young women to shape a brighter future in Engineering.",
+          images: [
+            {
+              url: "https://res.cloudinary.com/josephine19001/image/upload/v1698596509/YCEM/mmtsy0x1bf5aq1jpjbwc.png",
+            },
+          ],
           siteName: "YCEM",
         }}
         twitter={{
