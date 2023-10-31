@@ -17,7 +17,7 @@ import { FooterButton } from "./buttons";
 import ContactFormModal from "./contact-form-modal";
 
 const Container = styled(FlexContainerColumnSpaceBetween)`
-  padding: 0 195px;
+  padding: 0 120px;
   background-color: var(--color-primary);
   align-items: flex-start;
   gap: 0;
