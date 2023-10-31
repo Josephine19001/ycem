@@ -10,7 +10,7 @@ import {
   SectionDescription,
   SectionTitle,
 } from "../shared/typography";
-import { homeServiceSectionContent } from "../shared/constants";
+import { homeServiceSectionContent, aboutUsContent } from "../shared/constants";
 import JoiningUs from "../shared/joining-us";
 import { Divider } from "../shared/footer";
 import {
@@ -41,7 +41,7 @@ const ServicesSectionRight = styled(FlexContainerRowSpaceBetween)`
   gap: 20px;
 `;
 const ServiceWrapper = styled(FlexContainerColumnSpaceBetween)`
-  gap: 12px;
+  gap: 16px;
   width: 250px;
   align-items: flex-start;
   background-color: var(--bg-color-light);
@@ -51,10 +51,7 @@ const ServiceWrapper = styled(FlexContainerColumnSpaceBetween)`
     font-size: 15px;
     font-weight: 600;
   }
-  img {
-    width: 100px;
-    height: 100px;
-  }
+
   @media only screen and (max-width: 768px) {
     width: 100%;
   }
@@ -74,19 +71,23 @@ const HeroSection = styled(Section)`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
     height: 100vh;
   }
 
   .hero-inner-content {
-    padding: 32px;
-    background-color: var(--color-light);
+    padding: 48px 32px;
+    background-color: var(--color-primary);
     width: 50%;
     text-align: center;
 
     display: flex;
     flex-direction: column;
     gap: 30px;
+
+    h1,
+    p {
+      color: var(--color-light);
+    }
   }
 
   @media only screen and (max-width: 768px) {
@@ -111,24 +112,59 @@ const HeroSection = styled(Section)`
   }
 `;
 
+const ActivityImageContainer = styled.div`
+  width: 200px;
+  img {
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+  }
+`;
+
 const Home = () => {
   return (
     <div>
       <HeroSection>
         <div id="hero-text">
           <div className="hero-inner-content">
-            <h1>Empowering Girls, Changing Lives</h1>
+            <h1>Empowering HER Future in Engineering</h1>
             <p>
-              At YCEM, we believe that every woman has the power to engineer her
-              own future. Our mission is to provide the tools, resources, and
-              support needed to empower women of all ages and backgrounds.
-              Together, we can create a world where every woman's choices matter
-              and where she can thrive and succeed in all aspects of life.
+              At YCEM, we believe that every young girl has the power to
+              engineer her own future. Our mission is to provide the tools,
+              resources, and support needed to empower young girls of all ages
+              and backgrounds to succeed and overcome barriers. Together, we can
+              create a world where every girl's choice matters, where she can
+              make meaningful decisions in the engineering fields that will
+              accentuate their strengths, and where she can thrive and succeed
+              in all aspects of life.
             </p>
           </div>
         </div>
         <div id="overlay"></div>
       </HeroSection>
+
+      <Section style={{ marginTop: "50px" }}>
+        <AboutSectionContainer>
+          <FlexContainerRowSpaceBetween gap="100px">
+            <ImageContainer>
+              <img
+                src="https://res.cloudinary.com/josephine19001/image/upload/v1698594308/YCEM/plb2nxg2div6er4qsqrt.jpg"
+                alt={`A a group picture of volunteer`}
+                style={{ width: "100%" }}
+              />
+            </ImageContainer>
+            <ContentWrapper>
+              <SectionTitle>Who We Are</SectionTitle>
+              <SectionDescription>
+                Empowering Young Females in STEM Careers
+              </SectionDescription>
+              <p>{aboutUsContent.text1}</p>
+              <p>{aboutUsContent.text2}</p>
+            </ContentWrapper>
+          </FlexContainerRowSpaceBetween>
+        </AboutSectionContainer>
+      </Section>
+      <Divider margin="50px 0" />
 
       <Section>
         <ServicesSectionContainer>
@@ -141,58 +177,18 @@ const Home = () => {
           <ServicesSectionRight>
             {homeServiceSectionContent.map(({ icon, title, description }) => (
               <ServiceWrapper key={title}>
-                <img
-                  src={icon}
-                  alt={`An image depicting ${title}`}
-                  width="100px"
-                  height="100px"
-                />
-                <CardTitle>{title}</CardTitle>
-                <p>{description}</p>
+                <ActivityImageContainer>
+                  <img src={icon} alt={`An image depicting ${title}`} />
+                </ActivityImageContainer>
+                <div>
+                  <CardTitle style={{ marginBottom: "5px" }}>{title}</CardTitle>
+                  <p>{description}</p>
+                </div>
               </ServiceWrapper>
             ))}
           </ServicesSectionRight>
         </ServicesSectionContainer>
       </Section>
-
-      <Divider margin="50px 0" />
-
-      <Section>
-        <AboutSectionContainer>
-          <FlexContainerRowSpaceBetween gap="100px">
-            <ImageContainer>
-              <img
-                src="https://res.cloudinary.com/josephine19001/image/upload/v1698594308/YCEM/plb2nxg2div6er4qsqrt.jpg"
-                alt={`A a group picture of volunteer`}
-              />
-            </ImageContainer>
-            <ContentWrapper>
-              <SectionTitle>Who We Are</SectionTitle>
-              <SectionDescription>
-                Empowering Young Females in STEM Careers
-              </SectionDescription>
-              <p>
-                YCEM, founded in 2022, is dedicated to empowering young females
-                in their STEM careers. Our mission is to bridge the gender gap
-                in STEM by providing opportunities, guidance, and hands-on
-                experiences. We achieve this through a combination of events,
-                mentoring, and tech hubs, fostering a supportive ecosystem for
-                the future of women in technology.
-              </p>
-              <p>
-                Since our start, we've achieved a significant milestone with an
-                event at Accra Girls Secondary School in Ghana. This event was a
-                testament to our commitment to inspiring and encouraging young
-                women to pursue STEM fields. At YCEM, we believe that diversity
-                in technology leads to innovation, and we're here to make that a
-                reality. Join us on this empowering journey, and together, we'll
-                shape the future of STEM careers for young females.
-              </p>
-            </ContentWrapper>
-          </FlexContainerRowSpaceBetween>
-        </AboutSectionContainer>
-      </Section>
-
       <Divider margin="50px 0" />
 
       <JoiningUs />

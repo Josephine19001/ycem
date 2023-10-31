@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
-import HomeComponent from "../src/components/home";
+import GetInvolveComponent from "../src/components/get-involved";
 
-const Home: NextPage = () => {
+const GetInvolve: NextPage = () => {
   return (
     <>
       <NextSeo
@@ -24,9 +24,9 @@ const Home: NextPage = () => {
           ],
         }}
       />
-      <HomeComponent />
+      <GetInvolveComponent />
     </>
   );
 };
 
-export default Home;
+export default GetInvolve;

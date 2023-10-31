@@ -1,8 +1,9 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
-import HomeComponent from "../src/components/home";
 
-const Home: NextPage = () => {
+import TeamsComponent from "../../src/components/who-we-are/team";
+
+const Team: NextPage = () => {
   return (
     <>
       <NextSeo
@@ -24,9 +25,9 @@ const Home: NextPage = () => {
           ],
         }}
       />
-      <HomeComponent />
+      <TeamsComponent />
     </>
   );
 };
 
-export default Home;
+export default Team;

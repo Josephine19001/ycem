@@ -14,12 +14,13 @@ import useSmallerScreens from "../../hooks/use-smaller-screens";
 interface Props {
   label: string;
   href: string;
+  closeMenu?: () => void;
   dropDownMenu?: { [key: string]: string }[];
 }
 
 export const Link = styled.a<{ active?: boolean }>`
   color: var(
-    ${(props) => (props.active ? "--color-primary-darker" : "--color-primary")}
+    ${(props) => (props.active ? "--color-dark" : "--color-primary")}
   );
   position: relative;
   display: inline-block;
@@ -32,11 +33,11 @@ export const Link = styled.a<{ active?: boolean }>`
     bottom: 0;
     width: ${(props) => (props.active ? "100%" : "0")};
     height: 2px;
-    background: var(--color-primary-darker);
+    background: var(--color-dark);
     transition: width 0.3s ease 0s, left 0.3s ease;
   }
   &:active {
-    color: var(--color-primary-darker);
+    color: var(--color-dark);
   }
   &:active::after {
     width: 100%;
@@ -58,21 +59,25 @@ const DropdownMenuContainer = styled.div`
   position: absolute;
 
   a {
-    background: var(--bg-color-light);
+    background: var(--color-primary);
     height: 60px;
     width: 150px;
-    padding: 10px 15px;
+    padding: 8px 15px;
     display: flex;
+    border-bottom: 1px solid var(--color-light);
     align-items: center;
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--color-light) !important;
     font-size: 15px;
     &:hover {
-      background: var(--color-primary);
       cursor: pointer;
       width: 100%;
       height: 60px;
     }
+  }
+
+  a:last-child {
+    border-bottom: none;
   }
 
   @media (max-width: 768px) {
@@ -96,21 +101,20 @@ const DropDownMenuHeader = styled.p<{
   font-size: 15px;
   color: var(
     ${({ isOpen, active }) =>
-      isOpen || active ? `--color-primary` : "--color-secondary"}
+      isOpen || active ? `--color-dark` : "--color-primary"}
   );
   text-transform: capitalize;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   @media (max-width: 768px) {
-    color: var(--text-color);
     transition: color 200ms ease;
     font-size: 18px;
     line-height: 1.067em;
   }
 `;
 
-const NavLink = ({ label, href, dropDownMenu }: Props) => {
+const NavLink = ({ label, href, closeMenu, dropDownMenu }: Props) => {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const subMenuRef = useRef(null);
@@ -128,6 +132,9 @@ const NavLink = ({ label, href, dropDownMenu }: Props) => {
     event.preventDefault();
     router.push(subMenuLink);
     closeDropdownMenu();
+    if (typeof closeMenu === "function") {
+      closeMenu();
+    }
   };
   const handleLinkClick = (event: React.MouseEvent) => {
     event.preventDefault();
@@ -159,7 +166,10 @@ const NavLink = ({ label, href, dropDownMenu }: Props) => {
         {label}
         {hasDropdown && (
           <span>
-            <FontAwesomeIcon icon={renderChevronIcon()} />
+            <FontAwesomeIcon
+              style={{ marginLeft: "3px" }}
+              icon={renderChevronIcon()}
+            />
           </span>
         )}
       </DropDownMenuHeader>

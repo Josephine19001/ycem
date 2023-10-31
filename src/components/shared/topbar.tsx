@@ -11,6 +11,7 @@ import LogoSVGBg from "public/ycem-logo.svg";
 import NavLink from "./nav-link";
 import { FlexContainerRowSpaceBetween } from "./containers";
 import { navItems } from "./constants";
+import { ButtonPrimary } from "./buttons";
 
 export const LogoComponent = ({ footer }: { footer?: boolean }) => {
   return (
@@ -30,17 +31,30 @@ interface NavigationProps {
 
 export const Navigation = ({ closeNav }: NavigationProps) => (
   <>
-    {navItems.map(({ href, label }) => (
-      <Nav.Item key={label} onClick={closeNav}>
-        <NavLink key={label} href={href} label={label} />
-      </Nav.Item>
-    ))}
+    {navItems.map(({ href, label, subMenu }) =>
+      subMenu ? (
+        <Nav.Item key={label}>
+          <NavLink
+            key={label}
+            href={href}
+            label={label}
+            dropDownMenu={subMenu}
+            closeMenu={closeNav}
+          />
+        </Nav.Item>
+      ) : (
+        <Nav.Item key={label} onClick={closeNav}>
+          <NavLink key={label} href={href} label={label} />
+        </Nav.Item>
+      )
+    )}
   </>
 );
 
 const TopBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef(null);
+  const router = useRouter();
 
   const closeNav = () => setIsOpen(false);
 
@@ -50,7 +64,7 @@ const TopBar = () => {
     <Nav.Header>
       <Nav.Wrapper>
         <Nav.Logo href="/">
-          <FlexContainerRowSpaceBetween style={{paddingBottom: '10px'}}>
+          <FlexContainerRowSpaceBetween style={{ paddingBottom: "10px" }}>
             <LogoComponent />
             <h6>Your Choice in Engineering Matters</h6>
           </FlexContainerRowSpaceBetween>
@@ -59,6 +73,11 @@ const TopBar = () => {
           <Nav.Items>
             <Navigation />
           </Nav.Items>
+          <Nav.ContactBtnContainer>
+            <ButtonPrimary onClick={() => router.push("/contact")}>
+              Contact us
+            </ButtonPrimary>
+          </Nav.ContactBtnContainer>
         </FlexContainerRowSpaceBetween>
 
         <Nav.MobileNav ref={ref}>
@@ -86,7 +105,7 @@ const Nav = {
   Header: styled.header`
     background-color: var(--color-light);
     width: 100%;
-    padding: 10px 195px;
+    padding: 8px 120px;
     position: fixed;
     @media (max-width: 768px) {
       padding: 4px 24px;
@@ -138,6 +157,8 @@ const Nav = {
     }
   `,
   ContactBtnContainer: styled.div`
+    padding-top: 10px;
+
     @media (max-width: 768px) {
       display: none;
     }
@@ -152,7 +173,7 @@ const Nav = {
   `,
   Item: styled.li`
     font-weight: 600;
-    font-size: 15px;
+    font-size: 14px;
   `,
   MobileNav: styled.div`
     display: none;

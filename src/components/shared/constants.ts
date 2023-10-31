@@ -9,7 +9,13 @@ import {
   faPeopleCarryBox,
   faRocket,
   faPenRuler,
+  faBlog,
 } from "@fortawesome/free-solid-svg-icons";
+import {
+  faLinkedin,
+  faTwitterSquare,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
 
 export const navItems = [
   {
@@ -17,16 +23,21 @@ export const navItems = [
     label: "home",
   },
   {
+    href: "/events",
+    label: "Events",
+  },
+  {
     href: "/who-we-are",
     label: "Who We Are",
+    hasDropdown: true,
+    subMenu: [
+      { href: "/who-we-are", label: "About us" },
+      { href: "/who-we-are/team", label: "Team" },
+    ],
   },
   {
-    href: "/get-involve",
-    label: "Get Involve",
-  },
-  {
-    href: "/contact",
-    label: "Contact us",
+    href: "/get-involved",
+    label: "Get Involved",
   },
 ];
 
@@ -36,13 +47,14 @@ export const footerContent = [
     links: [
       { label: "Home", href: "/" },
       { label: "Contact us", href: "/contact" },
+      { label: "Events", href: "/events" },
     ],
   },
   {
     title: "Who we are",
     links: [
-      { href: "/get-involve", label: "Who We Are" },
-      { href: "/who-we-are", label: "Get Involve" },
+      { href: "/get-involved", label: "Who We Are" },
+      { href: "/who-we-are", label: "Get Involved" },
     ],
   },
 ];
@@ -52,26 +64,23 @@ export const homeServiceSectionContent = [
     icon: "https://res.cloudinary.com/josephine19001/image/upload/v1698594309/YCEM/kq1l0dafd0cuuakdjhd8.jpg",
     title: "Mentoring",
     description:
-      "Essentially formulate for how a business is going to completes",
-  },
-
-  {
-    icon: "https://res.cloudinary.com/josephine19001/image/upload/v1698594308/YCEM/jg6dkrakxlwln85xjywv.jpg",
-    title: "Tech Talks",
-    description:
-      "Essentially formulate for how a business is going to completes",
+      "Empower the next-gen in engineering through personalized guidance.",
   },
   {
     icon: "https://res.cloudinary.com/josephine19001/image/upload/v1698594308/YCEM/ugoeqknzwjmxvc9ungb8.jpg",
     title: "Community",
-    description:
-      "Essentially formulate for how a business is going to completes",
+    description: "Join our engineering community for support and growth.",
   },
   {
-    icon: "https://res.cloudinary.com/josephine19001/image/upload/v1698594308/YCEM/nrihfe7n5t6twlnw65th.jpg",
-    title: "Volunteering",
+    icon: "https://res.cloudinary.com/josephine19001/image/upload/v1698789541/YCEM/u0ndwfkolagdw9bb20y9.jpg",
+    title: "Tech Talks",
     description:
-      "Essentially formulate for how a business is going to completes",
+      "Explore cutting-edge topics with industry experts in engineering.",
+  },
+  {
+    icon: "https://res.cloudinary.com/josephine19001/image/upload/v1698789856/YCEM/nqy5ox3jb9naqy4otwdi.jpg",
+    title: "Volunteering",
+    description: "Give back to engineering – inspire future leaders.",
   },
 ];
 
@@ -79,22 +88,22 @@ export const joiningUsContent = [
   {
     title: "Share Your Vision:",
     description:
-      "Start by connecting with us and sharing your project ideas. We're here to listen and understand your vision.",
+      "Are you lost and confused about your career choice? Connect with us and share your ideas, passion, and we'll figure it out together.",
   },
   {
     title: "Collaborate with Us:",
     description:
-      "Work with us to create a tailored program that aligns with our mission to empower the next generation of female.",
+      "Join us in creating a customized program aligned with our mission to empower young women in engineering.",
   },
   {
-    title: "Empowerment in Action",
+    title: "Engineering Empowerment:",
     description:
-      "we provide empowering STEM experiences for young women in science, technology, engineering, and math.",
+      "Let's establish programs and pathways for young women, nurturing their abilities and enthusiasm for the industry.",
   },
   {
-    title: "Shaping the Future",
+    title: "Shaping the Future:",
     description:
-      "With your support, we prepare to shape a future where every young woman thrives in STEM.",
+      "With your support, we're preparing to shape a future where every young woman thrives in the world of engineering.",
   },
 ];
 
@@ -121,6 +130,13 @@ export const homeWhyChooseUsContent = [
     description: "Streamlined productivity",
   },
 ];
+
+export const aboutUsContent = {
+  text1:
+    "YCEM, founded in 2022, is dedicated to empowering young females in their engineering careers. Our mission is to bridge the gender gap in Engineering by providing opportunities, guidance, and hands-on experiences. We achieve this through a combination of events, mentoring, and tech hubs, fostering a supportive ecosystem for the future of young females in technology.",
+  text2:
+    "Since our start, we've achieved a significant milestone with an event at Accra Girls Secondary School in Ghana. This event was a testament to our commitment to inspiring and encouraging young women to pursue engineering fields. At YCEM, we believe that diversity in technology leads to innovation, and we're here to make that a reality. Join us on this empowering journey, and together, we'll shape the future of engineering careers for young females.",
+};
 
 export const serviceStacks = [
   {
@@ -173,5 +189,93 @@ export const activities = [
     description:
       "Translate theory into practice by working on real-world projects, ensuring young females are well-prepared for challenges in the tech world, empowering them to make a meaningful impact.",
     icon: faListCheck,
+  },
+];
+
+export const teamInfo = [
+  {
+    name: "HILARY THELMA LARYEA",
+    jobTitle: "Software Engineer, Unity Technologies",
+    bioSummary:
+      "Josephine is an experienced software engineer, specializing in full-stack development with a primary focus on Typescript. In addition to her technical expertise, she is an enthusiastic tech-related blogger.",
+    socialLinks: [
+      {
+        link: "https://fi.linkedin.com/in/gyamerajosephine ",
+        icon: faLinkedin,
+      },
+      { link: "https://gyamera-josephine.vercel.app/blog", icon: faBlog },
+      { link: "https://github.com/Josephine19001 ", icon: faGithub },
+    ],
+    imgAlt: "Josephine Gyamera's profile picture",
+    imgSrc:
+      "https://img.freepik.com/free-photo/front-view-business-woman-suit_23-2148603018.jpg?w=1380&t=st=1698540066~exp=1698540666~hmac=ee71b495a1f76b1d0f1897fba0cbc5668076630b700d925abc7d5556c94eb6ad",
+  },
+  {
+    name: "JOSEPHINE GYAMERA",
+    jobTitle: "Software Engineer, Unity Technologies",
+    bioSummary:
+      "Josephine is an experienced software engineer, specializing in full-stack development with a primary focus on Typescript. In addition to her technical expertise, she is an enthusiastic tech-related blogger.",
+    socialLinks: [
+      {
+        link: "https://fi.linkedin.com/in/gyamerajosephine ",
+        icon: faLinkedin,
+      },
+      { link: "https://gyamera-josephine.vercel.app/blog", icon: faBlog },
+      { link: "https://github.com/Josephine19001 ", icon: faGithub },
+    ],
+    imgAlt: "Josephine Gyamera's profile picture",
+    imgSrc:
+      "https://res.cloudinary.com/josephine19001/image/upload/v1698787295/YCEM/mag6psgmd4japg04y0aa.jpg",
+  },
+  {
+    name: "JOSEPHINE GYAMERA",
+    jobTitle: "Software Engineer, Unity Technologies",
+    bioSummary:
+      "Josephine is an experienced software engineer, specializing in full-stack development with a primary focus on Typescript. In addition to her technical expertise, she is an enthusiastic tech-related blogger.",
+    socialLinks: [
+      {
+        link: "https://fi.linkedin.com/in/gyamerajosephine ",
+        icon: faLinkedin,
+      },
+      { link: "https://gyamera-josephine.vercel.app/blog", icon: faBlog },
+      { link: "https://github.com/Josephine19001 ", icon: faGithub },
+    ],
+    imgAlt: "Josephine Gyamera's profile picture",
+    imgSrc:
+      "https://img.freepik.com/free-photo/front-view-business-woman-suit_23-2148603018.jpg?w=1380&t=st=1698540066~exp=1698540666~hmac=ee71b495a1f76b1d0f1897fba0cbc5668076630b700d925abc7d5556c94eb6ad",
+  },
+  {
+    name: "JOSEPHINE GYAMERA",
+    jobTitle: "Software Engineer, Unity Technologies",
+    bioSummary:
+      "Josephine is an experienced software engineer, specializing in full-stack development with a primary focus on Typescript. In addition to her technical expertise, she is an enthusiastic tech-related blogger.",
+    socialLinks: [
+      {
+        link: "https://fi.linkedin.com/in/gyamerajosephine ",
+        icon: faLinkedin,
+      },
+      { link: "https://gyamera-josephine.vercel.app/blog", icon: faBlog },
+      { link: "https://github.com/Josephine19001 ", icon: faGithub },
+    ],
+    imgAlt: "Josephine's picture",
+    imgSrc:
+      "https://img.freepik.com/free-photo/front-view-business-woman-suit_23-2148603018.jpg?w=1380&t=st=1698540066~exp=1698540666~hmac=ee71b495a1f76b1d0f1897fba0cbc5668076630b700d925abc7d5556c94eb6ad",
+  },
+  {
+    name: "JOSEPHINE GYAMERA",
+    jobTitle: "Software Engineer, Unity Technologies",
+    bioSummary:
+      "Josephine is an experienced software engineer, specializing in full-stack development with a primary focus on Typescript. In addition to her technical expertise, she is an enthusiastic tech-related blogger.",
+    socialLinks: [
+      {
+        link: "https://fi.linkedin.com/in/gyamerajosephine ",
+        icon: faLinkedin,
+      },
+      { link: "https://gyamera-josephine.vercel.app/blog", icon: faBlog },
+      { link: "https://github.com/Josephine19001 ", icon: faGithub },
+    ],
+    imgAlt: "Josephine's picture",
+    imgSrc:
+      "https://img.freepik.com/free-photo/front-view-business-woman-suit_23-2148603018.jpg?w=1380&t=st=1698540066~exp=1698540666~hmac=ee71b495a1f76b1d0f1897fba0cbc5668076630b700d925abc7d5556c94eb6ad",
   },
 ];

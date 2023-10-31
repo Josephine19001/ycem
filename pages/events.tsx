@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
-import HomeComponent from "../src/components/home";
+import EventsComponent from "../src/components/events";
 
-const Home: NextPage = () => {
+const Events: NextPage = () => {
   return (
     <>
       <NextSeo
@@ -24,9 +24,9 @@ const Home: NextPage = () => {
           ],
         }}
       />
-      <HomeComponent />
+      <EventsComponent />
     </>
   );
 };
 
-export default Home;
+export default Events;

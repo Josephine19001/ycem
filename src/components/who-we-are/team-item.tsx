@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ItemContainer = styled.div`
-  width: 400px;
+  width: 380px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,7 +58,8 @@ const ItemContainer = styled.div`
   }
 
   img {
-    max-width: 200px;
+    width: 200px;
+    height: 200px;
     padding: 8px;
     background-color: #dedede;
     border-radius: 50%;
@@ -75,8 +76,8 @@ const TeamIconsContainer = styled.ul`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  margin-top: 8px;
+  gap: 12px;
+  margin-top: 16px;
 `; //team-icoin
 const CustomizedIcon = styled(FontAwesomeIcon)`
   color: var(--color-primary);
@@ -116,7 +117,7 @@ const TeamItem = ({
 
         <TeamIconsContainer>
           {socialLinks.map((s: any) => (
-            <a href={s.link}>
+            <a href={s.link} target="_blank">
               <CustomizedIcon className="icon" icon={s.icon} size="2x" />
             </a>
           ))}{" "}

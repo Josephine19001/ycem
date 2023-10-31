@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import { DefaultSeo } from "next-seo";
+import { NextSeo } from "next-seo";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
@@ -11,14 +11,15 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <Layout>
       <>
-        <DefaultSeo
+        <NextSeo
           openGraph={{
             type: "ycem.org",
             locale: "en_IE",
             url: "https://ycem.org",
             siteName: "YCEM",
             title: "Your Choice in Engineering Matters",
-            description: "Empowering HER Future in ENGINEERING",
+            description:
+              "Empowering HER Future in ENGINEERING. Explore the world of engineering with YCEM. Get involved in our events and career guidance and mentorship opportunities.",
             images: [
               {
                 url: "https://res.cloudinary.com/josephine19001/image/upload/v1698596509/YCEM/mmtsy0x1bf5aq1jpjbwc.png",
@@ -27,10 +28,6 @@ const App = ({ Component, pageProps }: AppProps) => {
                 alt: "YCEM Logo Image",
               },
             ],
-          }}
-          twitter={{
-            handle: "@ycem_project",
-            site: "@https://ycem.org",
           }}
         />
         <Component {...pageProps} />

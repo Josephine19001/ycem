@@ -121,9 +121,15 @@ const Footer = () => {
         <LogoAndSocialContainer>
           <LogoComponent footer={true} />
           <SocialItemsWrapper>
-            <CustomizedIcon icon={faInstagramSquare} size="2x" />
-            <CustomizedIcon icon={faLinkedin} size="2x" />
-            <CustomizedIcon icon={faTwitterSquare} size="2x" />
+            <a
+              href="https://www.instagram.com/ycem_project/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="
+              target="_blank"
+            >
+              <CustomizedIcon icon={faInstagramSquare} size="2x" />
+            </a>
+            <a href="https://gh.linkedin.com/in/ycem" target="_blank">
+              <CustomizedIcon icon={faLinkedin} size="2x" />
+            </a>
           </SocialItemsWrapper>
         </LogoAndSocialContainer>
         <Divider style={{ backgroundColor: "var(--color-light)" }} />
