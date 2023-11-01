@@ -86,7 +86,9 @@ const HeroSection = styled(Section)`
     flex-direction: column;
     gap: 30px;
 
-    h1,
+    h1 {
+      color: var(--color-primary);
+    }
     p {
       color: var(--color-dark);
     }
