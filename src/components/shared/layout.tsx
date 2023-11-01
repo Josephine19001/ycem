@@ -11,9 +11,9 @@ export const Container = styled.div`
 `;
 
 const HeaderBodyContainer = styled.div`
-  padding: 18px 120px;
+  padding: 80px 120px;
   @media (max-width: 768px) {
-    padding: 4px 24px;
+    padding: 90px 24px;
   }
 `;
 

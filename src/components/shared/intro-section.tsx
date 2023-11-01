@@ -63,7 +63,7 @@ const IntroSection = ({
         <IntroContentContainer>
           <>
             <h1>{title}</h1>
-            <h4>{subTitle}</h4>
+            <h4 style={{ fontWeight: "400" }}>{subTitle}</h4>
             {shouldShowCTA ? (
               <FlexContainerRowCenter style={{ flexWrap: "wrap" }}>
                 <Input

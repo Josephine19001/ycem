@@ -82,7 +82,10 @@ const GetInvolve = () => {
         title="Join Our Team"
         subTitle="Looking to Make a Difference? Join YCEM today and embark on a rewarding journey to empower young females in STEM!"
         otherCTA={
-          <ButtonPrimary onClick={() => router.push("/who-we-are/team")}>
+          <ButtonPrimary
+            onClick={() => router.push("/who-we-are/team")}
+            style={{ marginTop: "12px" }}
+          >
             Get to know the Team
           </ButtonPrimary>
         }

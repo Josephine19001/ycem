@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styled from "styled-components";
 import {
   FlexContainerColumnSpaceBetween,
@@ -18,6 +19,8 @@ import {
   ContentWrapper,
   ImageContainer,
 } from "../who-we-are/who-we-are";
+import heroBgImage from "../../../public/assets/hero-bg.jpeg";
+import accraGirlGroupPic from "../../../public/assets/accra-girls-group.jpg";
 
 // Solutions Section Components
 const ServicesSectionContainer = styled(FlexContainerRowSpaceBetween)`
@@ -58,8 +61,7 @@ const ServiceWrapper = styled(FlexContainerColumnSpaceBetween)`
 `;
 
 const HeroSection = styled(Section)`
-  background: center / cover no-repeat
-    url("https://res.cloudinary.com/josephine19001/image/upload/v1698599943/YCEM/mtckwjjqapvbqh8xvpwq.jpg");
+  background: none;
   position: relative;
 
   width: calc(100% + 390px);
@@ -112,6 +114,11 @@ const HeroSection = styled(Section)`
   }
 `;
 
+const HeroImage = styled(Image)`
+  width: 100%;
+  height: auto;
+`;
+
 const ActivityImageContainer = styled.div`
   width: 200px;
   img {
@@ -125,6 +132,13 @@ const Home = () => {
   return (
     <div>
       <HeroSection>
+        <HeroImage
+          priority
+          src={heroBgImage}
+          alt="Hero Image Alt Text"
+          layout="fill"
+          objectFit="cover"
+        />
         <div id="hero-text">
           <div className="hero-inner-content">
             <h1>Empowering HER Future in Engineering</h1>
@@ -147,8 +161,9 @@ const Home = () => {
         <AboutSectionContainer>
           <FlexContainerRowSpaceBetween gap="100px">
             <ImageContainer>
-              <img
-                src="https://res.cloudinary.com/josephine19001/image/upload/v1698594308/YCEM/plb2nxg2div6er4qsqrt.jpg"
+              <Image
+                priority
+                src={accraGirlGroupPic}
                 alt={`A a group picture of volunteer`}
                 style={{ width: "100%" }}
               />
@@ -178,7 +193,11 @@ const Home = () => {
             {homeServiceSectionContent.map(({ icon, title, description }) => (
               <ServiceWrapper key={title}>
                 <ActivityImageContainer>
-                  <img src={icon} alt={`An image depicting ${title}`} />
+                  <Image
+                    priority
+                    src={icon}
+                    alt={`An image depicting ${title}`}
+                  />
                 </ActivityImageContainer>
                 <div>
                   <CardTitle style={{ marginBottom: "5px" }}>{title}</CardTitle>

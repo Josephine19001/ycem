@@ -11,11 +11,12 @@ import {
   faPenRuler,
   faBlog,
 } from "@fortawesome/free-solid-svg-icons";
-import {
-  faLinkedin,
-  faTwitterSquare,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import elizabethPic from "../../../public/assets/team-pictures/elizabeth.png";
+import mentoringPic from "../../../public/assets/mentor.jpg";
+import volunteeringPic from "../../../public/assets/volunteering.jpg";
+import techTalkPic from "../../../public/assets/tech-talks.jpg";
+import communityPic from "../../../public/assets/community.jpg";
 
 export const navItems = [
   {
@@ -61,24 +62,24 @@ export const footerContent = [
 
 export const homeServiceSectionContent = [
   {
-    icon: "https://res.cloudinary.com/josephine19001/image/upload/v1698594309/YCEM/kq1l0dafd0cuuakdjhd8.jpg",
+    icon: mentoringPic,
     title: "Mentoring",
     description:
       "Empower the next-gen in engineering through personalized guidance.",
   },
   {
-    icon: "https://res.cloudinary.com/josephine19001/image/upload/v1698594308/YCEM/ugoeqknzwjmxvc9ungb8.jpg",
+    icon: communityPic,
     title: "Community",
     description: "Join our engineering community for support and growth.",
   },
   {
-    icon: "https://res.cloudinary.com/josephine19001/image/upload/v1698789541/YCEM/u0ndwfkolagdw9bb20y9.jpg",
+    icon: techTalkPic,
     title: "Tech Talks",
     description:
       "Explore cutting-edge topics with industry experts in engineering.",
   },
   {
-    icon: "https://res.cloudinary.com/josephine19001/image/upload/v1698789856/YCEM/nqy5ox3jb9naqy4otwdi.jpg",
+    icon: volunteeringPic,
     title: "Volunteering",
     description: "Give back to engineering – inspire future leaders.",
   },
@@ -212,7 +213,8 @@ export const teamInfo = [
   },
   {
     name: "JOSEPHINE GYAMERA",
-    jobTitle: "Software Engineer, Unity Technologies",
+    jobTitle:
+      "Software Engineer, Unity Technologies & MSc Software Engineering University of Turku",
     bioSummary:
       "Josephine is an experienced software engineer, specializing in full-stack development with a primary focus on Typescript. In addition to her technical expertise, she is an enthusiastic tech-related blogger.",
     socialLinks: [
@@ -228,21 +230,23 @@ export const teamInfo = [
       "https://res.cloudinary.com/josephine19001/image/upload/v1698787295/YCEM/mag6psgmd4japg04y0aa.jpg",
   },
   {
-    name: "JOSEPHINE GYAMERA",
-    jobTitle: "Software Engineer, Unity Technologies",
+    name: "Elizabeth Boamah",
+    jobTitle:
+      "Materials Science & Engineering student (MPhil), University of Ghana & Energy engineer stagaire, IMT-Mines, Albi.",
     bioSummary:
-      "Josephine is an experienced software engineer, specializing in full-stack development with a primary focus on Typescript. In addition to her technical expertise, she is an enthusiastic tech-related blogger.",
+      "Elizabeth is an energy engineer, with speciality in Pyrolysis conversion of plastics to fuel (Liquid, solid & gas) energy.",
     socialLinks: [
       {
-        link: "https://fi.linkedin.com/in/gyamerajosephine ",
+        link: "www.linkedin.com/in/elizabeth-boamah-a08997182",
         icon: faLinkedin,
       },
-      { link: "https://gyamera-josephine.vercel.app/blog", icon: faBlog },
-      { link: "https://github.com/Josephine19001 ", icon: faGithub },
+      {
+        link: "https://www.researchgate.net/profile/Elizabeth-Boamah-3",
+        icon: faBlog,
+      },
     ],
-    imgAlt: "Josephine Gyamera's profile picture",
-    imgSrc:
-      "https://img.freepik.com/free-photo/front-view-business-woman-suit_23-2148603018.jpg?w=1380&t=st=1698540066~exp=1698540666~hmac=ee71b495a1f76b1d0f1897fba0cbc5668076630b700d925abc7d5556c94eb6ad",
+    imgAlt: "Elizabeth Boamah's profile picture",
+    imgSrc: elizabethPic,
   },
   {
     name: "JOSEPHINE GYAMERA",

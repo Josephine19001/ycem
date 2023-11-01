@@ -64,7 +64,7 @@ const TopBar = () => {
     <Nav.Header>
       <Nav.Wrapper>
         <Nav.Logo href="/">
-          <FlexContainerRowSpaceBetween style={{ paddingBottom: "10px" }}>
+          <FlexContainerRowSpaceBetween>
             <LogoComponent />
             <h6>Your Choice in Engineering Matters</h6>
           </FlexContainerRowSpaceBetween>
@@ -105,7 +105,7 @@ const Nav = {
   Header: styled.header`
     background-color: var(--color-light);
     width: 100%;
-    padding: 8px 120px;
+    padding: 10px 120px;
     position: fixed;
     @media (max-width: 768px) {
       padding: 4px 24px;
@@ -136,7 +136,6 @@ const Nav = {
     justify-content: space-between;
     gap: 28px;
     padding-top: 28px;
-    padding-top: 10px;
 
     @media (max-width: 768px) {
       display: none;

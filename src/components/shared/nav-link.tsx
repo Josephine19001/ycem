@@ -21,7 +21,7 @@ interface Props {
 export const Link = styled.a<{ active?: boolean }>`
   color: var(
     ${(props) => (props.active ? "--color-dark" : "--color-primary")}
-  );
+  ) !important;
   position: relative;
   display: inline-block;
   &::after {
@@ -29,19 +29,13 @@ export const Link = styled.a<{ active?: boolean }>`
     display: block;
     position: absolute;
     left: 0;
-    top: 30px;
     bottom: 0;
-    width: ${(props) => (props.active ? "100%" : "0")};
+    width: 0;
     height: 2px;
     background: var(--color-dark);
     transition: width 0.3s ease 0s, left 0.3s ease;
   }
-  &:active {
-    color: var(--color-dark);
-  }
-  &:active::after {
-    width: 100%;
-  }
+
   &:hover::after {
     width: 100%;
   }

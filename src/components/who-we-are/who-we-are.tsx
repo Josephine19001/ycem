@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styled from "styled-components";
 import IntroSection from "../shared/intro-section";
 import {
@@ -11,8 +12,9 @@ import { ButtonPrimary } from "../shared/buttons";
 import { useRouter } from "next/router";
 import { Divider } from "../shared/footer";
 import useSmallerScreens from "../../hooks/use-smaller-screens";
-import TeamItem from "./team-item";
-import { aboutUsContent, teamInfo } from "../shared/constants";
+import { aboutUsContent } from "../shared/constants";
+import accraGirlGroupPic from "../../../public/assets/accra-girls-group.jpg";
+import studentPic from "../../../public/assets/student.jpg";
 
 export const AboutSectionContainer = styled(FlexContainerColumnSpaceBetween)`
   gap: 20px;
@@ -70,9 +72,10 @@ const WhoWeAre = () => {
         <AboutSectionContainer>
           <FlexContainerRowSpaceBetween gap="100px">
             <ImageContainer>
-              <img
-                src="https://res.cloudinary.com/josephine19001/image/upload/v1698594308/YCEM/plb2nxg2div6er4qsqrt.jpg"
-                alt={`A a group picture of volunteer`}
+              <Image
+                priority
+                src={accraGirlGroupPic}
+                alt={"A team picture from our visit to Accra girls"}
               />
             </ImageContainer>
             <ContentWrapper>
@@ -123,9 +126,12 @@ const WhoWeAre = () => {
               </p>
             </ContentWrapper>
             <ImageContainer>
-              <img
-                src="https://res.cloudinary.com/josephine19001/image/upload/v1698594309/YCEM/swri1kyt5nrash4zirr6.jpg"
-                alt={`A a group picture of volunteer`}
+              <Image
+                priority
+                src={studentPic}
+                alt={
+                  "A picture of an Accra girls secondary school student speaking"
+                }
               />
             </ImageContainer>
           </FlexContainerRowSpaceBetween>
