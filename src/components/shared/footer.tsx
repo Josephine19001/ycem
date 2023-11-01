@@ -12,7 +12,7 @@ import {
   FlexContainerColumn,
 } from "./containers";
 import { LogoComponent } from "./topbar";
-import { footerContent, navItems } from "./constants";
+import { footerContent } from "./constants";
 import { FooterButton } from "./buttons";
 import ContactFormModal from "./contact-form-modal";
 

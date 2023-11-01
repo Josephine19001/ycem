@@ -103,7 +103,7 @@ const WhoWeAre = () => {
                 skills to our mission?
               </p>
             </JoinUsWrapper>
-            <ButtonPrimary onClick={() => router.push("/get-involve")}>
+            <ButtonPrimary onClick={() => router.push("/get-involved")}>
               Get involved
             </ButtonPrimary>
           </FlexContainerRowSpaceBetween>

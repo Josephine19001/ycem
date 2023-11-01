@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 import styled from "styled-components";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -94,7 +94,7 @@ interface Props {
   jobTitle: string;
   bioSummary: string;
   socialLinks: any;
-  imgSrc: string;
+  imgSrc: StaticImageData;
   imgAlt: string;
 }
 

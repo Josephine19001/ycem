@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import styled from "styled-components";
 import IntroSection from "../shared/intro-section";
@@ -15,6 +15,7 @@ import useSmallerScreens from "../../hooks/use-smaller-screens";
 import { aboutUsContent } from "../shared/constants";
 import accraGirlGroupPic from "../../../public/assets/accra-girls-group.jpg";
 import studentPic from "../../../public/assets/student.jpg";
+import ContactFormModal from "../shared/contact-form-modal";
 
 export const AboutSectionContainer = styled(FlexContainerColumnSpaceBetween)`
   gap: 20px;
@@ -60,6 +61,8 @@ const JoinUsWrapper = styled(FlexContainerColumnSpaceBetween)`
 const WhoWeAre = () => {
   const router = useRouter();
   const isSmallScreen = useSmallerScreens();
+  const [openContactModal, setOpenContactModal] = useState(false);
+  const [email, setEmail] = useState("");
 
   return (
     <div>
@@ -142,20 +145,24 @@ const WhoWeAre = () => {
         <JoinUsContainer>
           <FlexContainerRowSpaceBetween>
             <JoinUsWrapper>
-              <h4 style={{ color: "var(--color-primary)" }}>
-                Join Our Volunteer Team
-              </h4>
+              <h4 style={{ color: "var(--color-primary)" }}>Work with us</h4>
               <p>
-                Would you like to join our volunteer team at YCEM, explore our
-                various volunteer opportunities, or contribute your time and
-                skills to our mission?
+                Do you want to help push this initiative? Do you have a project
+                in mind you'd like to collaborate with us?
               </p>
             </JoinUsWrapper>
-            <ButtonPrimary onClick={() => router.push("/get-involve")}>
-              Get involved
+            <ButtonPrimary onClick={() => setOpenContactModal(true)}>
+              Contact our team
             </ButtonPrimary>
           </FlexContainerRowSpaceBetween>
         </JoinUsContainer>
+        {openContactModal && (
+          <ContactFormModal
+            open={openContactModal}
+            email={email}
+            handleCloseModal={() => setOpenContactModal(false)}
+          />
+        )}
       </Section>
     </div>
   );
