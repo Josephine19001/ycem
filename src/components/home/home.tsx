@@ -78,7 +78,7 @@ const HeroSection = styled(Section)`
 
   .hero-inner-content {
     padding: 48px 32px;
-    background-color: var(--color-primary);
+    background-color: var(--color-light);
     width: 50%;
     text-align: center;
 
@@ -88,7 +88,7 @@ const HeroSection = styled(Section)`
 
     h1,
     p {
-      color: var(--color-light);
+      color: var(--color-dark);
     }
   }
 
