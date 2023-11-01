@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styled from "styled-components";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -108,7 +109,7 @@ const TeamItem = ({
   return (
     <ItemContainer key={name}>
       <div>
-        <img src={imgSrc} alt={imgAlt} />
+        <Image priority src={imgSrc} alt={imgAlt} />
       </div>
       <h3>{name}</h3>
       <TeamInfoContainer>
