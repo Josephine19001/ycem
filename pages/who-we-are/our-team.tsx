@@ -2,10 +2,14 @@ import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
 
 import TeamsComponent from "../../src/components/who-we-are/our-team";
+import Head from "next/head";
 
 const Team: NextPage = () => {
   return (
     <>
+      <Head>
+        <title>Our Team - ycem.org</title>
+      </Head>
       <NextSeo
         openGraph={{
           type: "ycem.org",

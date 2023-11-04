@@ -1,10 +1,14 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
+import Head from "next/head";
 import GetInvolveComponent from "../src/components/get-involved";
 
 const GetInvolve: NextPage = () => {
   return (
     <>
+      <Head>
+        <title>Get Involved - ycem.org</title>
+      </Head>
       <NextSeo
         openGraph={{
           type: "ycem.org",

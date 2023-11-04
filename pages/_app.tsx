@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { NextSeo } from "next-seo";
+import Head from "next/head";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
@@ -12,6 +13,9 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <Layout>
       <>
+        <Head>
+          <title>Welcome to YCEM HOME page</title>
+        </Head>
         <NextSeo
           openGraph={{
             type: "ycem.org",

@@ -1,11 +1,15 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
+import Head from "next/head";
 
 import AboutUsComponent from "../../src/components/who-we-are";
 
 const WhoWeAre: NextPage = () => {
   return (
     <>
+      <Head>
+        <title>About Us - ycem.org</title>
+      </Head>
       <NextSeo
         openGraph={{
           type: "ycem.org",

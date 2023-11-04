@@ -1,10 +1,14 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
+import Head from "next/head";
 import HomeComponent from "../src/components/home";
 
 const Home: NextPage = () => {
   return (
     <>
+      <Head>
+        <title>Welcome to YCEM HOME page</title>
+      </Head>
       <NextSeo
         openGraph={{
           type: "ycem.org",

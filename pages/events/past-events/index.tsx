@@ -1,10 +1,14 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
+import Head from "next/head";
 import EventsComponent from "../../../src/components/events/past-events";
 
 const PastEvents: NextPage = () => {
   return (
     <>
+      <Head>
+        <title>Past Events - ycem.org</title>
+      </Head>
       <NextSeo
         openGraph={{
           type: "ycem.org",
