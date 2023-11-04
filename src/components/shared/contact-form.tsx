@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 import { FlexContainerRowSpaceBetween } from "../shared/containers";
@@ -52,6 +52,8 @@ const ContactForm = ({
     companyName: "",
   });
   const [emailJsStatus, setEmailJsStatus] = useState(0);
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [showErrorMessage, setShowErrorMessage] = useState(false);
 
   const handleInputChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -90,6 +92,28 @@ const ContactForm = ({
       console.error("Error sending email:", error);
     }
   };
+
+  const showSuccess = () => {
+    setShowSuccessMessage(true);
+    setTimeout(() => {
+      setShowSuccessMessage(false);
+    }, 30000); // 30 seconds
+  };
+
+  const showError = () => {
+    setShowErrorMessage(true);
+    setTimeout(() => {
+      setShowErrorMessage(false);
+    }, 30000); // 30 seconds
+  };
+
+  useEffect(() => {
+    if (emailJsStatus === 200) {
+      showSuccess();
+    } else if (emailJsStatus === 400) {
+      showError();
+    }
+  }, [emailJsStatus]);
 
   return (
     <FormContainer ref={form} onSubmit={sendEmail}>
@@ -136,17 +160,18 @@ const ContactForm = ({
       <div>
         <ButtonPrimary type="submit">Send</ButtonPrimary>
       </div>
-      {emailJsStatus === 200 ? (
+      {showSuccessMessage && (
         <p style={{ color: "var(--color-success)" }}>
-          Email was successfully sent! We will get back to your soon 😇
+          Hi {formData.firstName}, your email was successfully sent! We will get
+          back to you soon 😇
         </p>
-      ) : null}
-      {emailJsStatus === 400 ? (
+      )}
+      {showErrorMessage && (
         <p style={{ color: "var(--color-error)" }}>
           Something went wrong while sending the email. Try sending it manually
           as we look into it.
         </p>
-      ) : null}
+      )}
     </FormContainer>
   );
 };

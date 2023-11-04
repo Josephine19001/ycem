@@ -49,7 +49,7 @@ const Contact = () => {
             gap="20px"
           >
             <FontAwesomeIcon icon={faEnvelope} />
-            <p>ycemghana233@gmail.com</p>
+            <p style={{ fontWeight: 600 }}>ycemghana233@gmail.com</p>
           </FlexContainerRowSpaceBetween>
         </LeftContainer>
         <ContactForm />
