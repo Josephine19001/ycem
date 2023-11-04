@@ -205,7 +205,7 @@ export const teamInfo = [
       "Elizabeth, an energy engineer with speciality in Pyrolysis conversion of plastics to fuel (Liquid, solid & gas) energy, is dedicated to teaching and empowering people, she loves what she does. Beyond her professional life, Elizabeth finds interests in reading, exploring different cuisines, traveling and spending time with the family.",
     socialLinks: [
       {
-        link: "www.linkedin.com/in/elizabeth-boamah-a08997182",
+        link: "www.linkedin.com/in/elizabethboamah",
         icon: faLinkedin,
       },
       {
