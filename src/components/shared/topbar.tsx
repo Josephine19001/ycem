@@ -92,7 +92,12 @@ const TopBar = () => {
           <Nav.Overlay open={isOpen}>
             <Nav.OverlayedItems open={isOpen}>
               <Navigation closeNav={closeNav} />
-              <ButtonPrimary onClick={() => router.push("/contact")}>
+              <ButtonPrimary
+                onClick={() => {
+                  router.push("/contact");
+                  closeNav();
+                }}
+              >
                 Contact us
               </ButtonPrimary>
             </Nav.OverlayedItems>
