@@ -17,6 +17,7 @@ import nadeshPic from "../../../public/assets/team-pictures/nadesh.jpeg";
 import ursulaPic from "../../../public/assets/team-pictures/ursula.jpeg";
 import oforiwaaPic from "../../../public/assets/team-pictures/oforiwaa.jpeg";
 import perpetualPic from "../../../public/assets/team-pictures/perpetual.jpeg";
+import jecholiahPic from "../../../public/assets/team-pictures/jecholiah.jpeg";
 
 import IntroSection from "../shared/intro-section";
 import {
@@ -190,7 +191,7 @@ export const teamInfo = [
     jobTitle:
       "Materials Science & Engineering student (MPhil), University of Ghana & Energy engineer stagaire, IMT-Mines, Albi.",
     bioSummary:
-      "Elizabeth is an energy engineer, with speciality in Pyrolysis conversion of plastics to fuel (Liquid, solid & gas) energy.",
+      "Elizabeth, an energy engineer with speciality in Pyrolysis conversion of plastics to fuel (Liquid, solid & gas) energy, is dedicated to teaching and empowering people, she loves what she does. Beyond her professional life, Elizabeth finds interests in reading, exploring different cuisines, traveling and spending time with the family.",
     socialLinks: [
       {
         link: "www.linkedin.com/in/elizabeth-boamah-a08997182",
@@ -251,7 +252,7 @@ export const teamInfo = [
     name: "Gertrude Asumpaame Alayine",
     jobTitle: " Postgraduate Associate, School of Medicine, Yale University",
     bioSummary:
-      "Gertrude is a computational neuroscience researcher whose research focuses on using machine learning and other computational methods to improve upon the mental health of individuals. She is passionate about community giveback and engages in extracurricular activities that will enable do so, including mentoring young women.",
+      "Gertrude is a computational neuroscience researcher whose research focuses on using machine learning and other computational methods to improve upon the mental health of individuals. She is passionate about community giveback and engages in extracurricular activities that will enable her do so, including mentoring young women.",
     socialLinks: [
       {
         link: "linkedin.com/in/gertrude-asumpaame-alayine",
@@ -319,5 +320,24 @@ export const teamInfo = [
     ],
     imgAlt: "Ursula's profile picture",
     imgSrc: ursulaPic,
+  },
+  {
+    name: "Jecholiah Afua Antwiwaa Opare",
+    jobTitle:
+      "Biomedical Engineer Intern at UGMC / Front-End Developer Trainee at Azubi Africa",
+    bioSummary:
+      "Jecholiah Afua Antwiwaa Opare is a versatile professional actively pursuing a dual-track career. As  a Biomedical Engineer Intern, Jecholiah is dedicated to advancing healthcare through research and innovative medical solutions. Simultaneously, she is honing her skills as a Front-End Developer Trainee by creating user-friendly web applications, combining technology and design to deliver exceptional user experiences.",
+    socialLinks: [
+      {
+        link: "https://www.linkedin.com/in/jecholiahopare",
+        icon: faLinkedin,
+      },
+      {
+        link: "https://github.com/Jecholiah001",
+        icon: faGithub,
+      },
+    ],
+    imgAlt: "Jecholiah's profile picture",
+    imgSrc: jecholiahPic,
   },
 ];
