@@ -69,7 +69,7 @@ const TopBar = () => {
             {/* <h6>Your Choice in Engineering Matters</h6> */}
           </FlexContainerRowSpaceBetween>
         </Nav.Logo>
-        
+
         <FlexContainerRowSpaceBetween style={{ gap: "30px" }}>
           <Nav.Items>
             <Navigation />
@@ -92,6 +92,9 @@ const TopBar = () => {
           <Nav.Overlay open={isOpen}>
             <Nav.OverlayedItems open={isOpen}>
               <Navigation closeNav={closeNav} />
+              <ButtonPrimary onClick={() => router.push("/contact")}>
+                Contact us
+              </ButtonPrimary>
             </Nav.OverlayedItems>
           </Nav.Overlay>
         </Nav.MobileNav>

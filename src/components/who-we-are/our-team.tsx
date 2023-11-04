@@ -75,7 +75,10 @@ const SectionContainer = styled(Section)`
   margin-top: 100px;
   padding: 0 100px;
   @media only screen and (max-width: 768px) {
+    width: calc(100% + 48px);
+    margin: 0 -24px;
     margin-top: 10px;
+    padding: 0 10px;
   }
 `;
 
@@ -90,7 +93,7 @@ const WhoWeAre = () => {
         subTitle="The Empowering & Guiding Team for Young Females in their Engineering Journey"
       />
       <SectionContainer>
-        <FlexContainerRowSpaceBetween gap="40px" style={{ flexWrap: "wrap" }}>
+        <FlexContainerRowSpaceBetween gap={"40px"} style={{ flexWrap: "wrap" }}>
           {teamInfo.map(
             ({ name, jobTitle, bioSummary, socialLinks, imgAlt, imgSrc }) => (
               <TeamItem

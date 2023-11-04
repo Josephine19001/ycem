@@ -91,18 +91,23 @@ const HeroSection = styled(Section)`
     }
     p {
       color: var(--color-dark);
+      line-height: 30px;
+    }
+
+    h1 {
+      font-size: 1rem;
     }
   }
 
   @media only screen and (max-width: 768px) {
-    #hero-text {
-      height: 50vh;
-    }
-    .hero-inner-content {
-      display: none;
-    }
+    padding: 18px 12px;
+
     h1 {
-      font-size: 1.2rem;
+      line-height: 40px !important;
+    }
+    p {
+      color: var(--color-dark);
+      line-height: 30px;
     }
   }
 
