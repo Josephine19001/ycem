@@ -26,6 +26,7 @@ const Container = styled.div`
   &:hover {
     .title {
       color: var(--color-primary) !important;
+      cursor: pointer;
     }
   }
 
@@ -99,7 +100,9 @@ const EventItem = ({
         </FlexContainerColumnGapped>
 
         <div>
-          <h5 className="title">{title}</h5>
+          <a href={eventHref}>
+            <h5 className="title">{title}</h5>
+          </a>
           <p>
             <FontAwesomeIcon
               icon={faCalendarAlt}
