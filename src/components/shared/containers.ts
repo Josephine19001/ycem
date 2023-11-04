@@ -1,53 +1,53 @@
 import styled from "styled-components";
 
-export const FlexContainerColumnCenter = styled.div<{ gap?: string }>`
+export const FlexContainerColumnCenter = styled.div<{ $gap?: string }>`
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  gap: ${({ gap }) => (gap ? gap : `10px`)};
+  gap: ${({ $gap }) => ($gap ? $gap : `10px`)};
 `;
-export const FlexContainerColumn = styled.div<{ gap?: string }>`
+export const FlexContainerColumn = styled.div<{ $gap?: string }>`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: ${({ gap }) => (gap ? gap : `10px`)};
+  gap: ${({ $gap }) => ($gap ? $gap : `10px`)};
 `;
 
 export const FlexContainerColumnGapped = styled.div<{
-  alignitems?: string;
+  $alignitems?: string;
 }>`
   display: flex;
-  align-items: ${({ alignitems }) => (alignitems ? alignitems : "center")};
+  align-items: ${({ $alignitems }) => ($alignitems ? $alignitems : "center")};
   flex-direction: column;
   gap: 10px;
 `;
 export const FlexContainerColumnSpaceBetween = styled.div<{
-  gap?: string;
-  alignitems?: string;
+  $gap?: string;
+  $alignitems?: string;
 }>`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: ${({ alignitems }) => (alignitems ? alignitems : `center`)};
-  gap: ${({ gap }) => (gap ? gap : `10px`)};
+  align-items: ${({ $alignitems }) => ($alignitems ? $alignitems : `center`)};
+  gap: ${({ $gap }) => ($gap ? $gap : `10px`)};
 `;
 
-export const FlexContainerRowCenter = styled.div<{ gap?: string }>`
+export const FlexContainerRowCenter = styled.div<{ $gap?: string }>`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: ${({ gap }) => (gap ? gap : `10px`)};
+  gap: ${({ $gap }) => ($gap ? $gap : `10px`)};
 `;
 export const FlexContainerRowSpaceBetween = styled.div<{
-  gap?: string;
-  alignitems?: string;
+  $gap?: string;
+  $alignitems?: string;
 }>`
   display: flex;
-  align-items: ${({ alignitems }) => (alignitems ? alignitems : `center`)};
+  align-items: ${({ $alignitems }) => ($alignitems ? $alignitems : `center`)};
   justify-content: space-between;
 
-  gap: ${({ gap }) => (gap ? gap : `10px`)};
+  gap: ${({ $gap }) => ($gap ? $gap : `10px`)};
   @media (max-width: 768px) {
     flex-wrap: wrap;
   }

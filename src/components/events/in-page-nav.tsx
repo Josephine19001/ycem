@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import { useRouter } from "next/router";
 import styled from "styled-components";
 import IntroSection from "../shared/intro-section";

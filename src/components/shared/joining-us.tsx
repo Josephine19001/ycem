@@ -86,7 +86,7 @@ interface Props {
 const JoiningUs = ({ border }: Props) => {
   return (
     <ProcessSection>
-      <FlexContainerColumnSpaceBetween gap="30px" alignitems="flex-start">
+      <FlexContainerColumnSpaceBetween $gap="30px" $alignitems="flex-start">
         <ProcessSectionTop>
           <SectionTitle style={{ marginTop: "20px" }}>
             Empowering Young Females in Engineering

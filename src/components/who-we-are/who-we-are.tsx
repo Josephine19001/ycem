@@ -73,7 +73,7 @@ const WhoWeAre = () => {
 
       <Section style={{ marginTop: "50px" }}>
         <AboutSectionContainer>
-          <FlexContainerRowSpaceBetween gap="100px">
+          <FlexContainerRowSpaceBetween $gap="100px">
             <ImageContainer>
               <Image
                 priority
@@ -111,7 +111,7 @@ const WhoWeAre = () => {
         </AboutSectionContainer>
         <Divider margin="50px 0" />
         <AboutSectionContainer>
-          <FlexContainerRowSpaceBetween gap="100px">
+          <FlexContainerRowSpaceBetween $gap="100px">
             <ContentWrapper>
               <SectionTitle>Our Story & Mission</SectionTitle>
               <SectionDescription>

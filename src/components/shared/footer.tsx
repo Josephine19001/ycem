@@ -141,7 +141,7 @@ const Footer = () => {
                 >
                   {title}
                 </h5>
-                <FlexContainerColumn gap="5px">
+                <FlexContainerColumn $gap="5px">
                   {links.map(({ label, href }) => (
                     <Link key={label} href={href}>
                       {label}

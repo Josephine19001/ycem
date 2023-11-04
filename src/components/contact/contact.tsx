@@ -46,7 +46,7 @@ const Contact = () => {
           </p>
           <FlexContainerRowSpaceBetween
             style={{ justifyContent: "flex-start" }}
-            gap="20px"
+            $gap="20px"
           >
             <FontAwesomeIcon icon={faEnvelope} />
             <p style={{ fontWeight: 600 }}>ycemghana233@gmail.com</p>

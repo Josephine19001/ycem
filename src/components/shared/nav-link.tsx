@@ -18,9 +18,9 @@ interface Props {
   dropDownMenu?: { [key: string]: string }[];
 }
 
-export const Link = styled.a<{ active?: boolean }>`
+export const Link = styled.a<{ $active?: boolean }>`
   color: var(
-    ${(props) => (props.active ? "--color-dark" : "--color-primary")}
+    ${({ $active }) => ($active ? "--color-dark" : "--color-primary")}
   ) !important;
   position: relative;
   display: inline-block;
@@ -90,15 +90,15 @@ const DropdownMenuContainer = styled.div`
 `;
 
 const DropDownMenuHeader = styled.p<{
-  isOpen?: boolean;
-  active?: boolean;
+  $isOpen?: boolean;
+  $active?: boolean;
 }>`
   font-weight: 600;
   // font-size: var(--font-size-lg) !important;
   // text-transform: uppercase !important;
   color: var(
-    ${({ isOpen, active }) =>
-      isOpen || active ? `--color-dark` : "--color-primary"}
+    ${({ $isOpen, $active }) =>
+      $isOpen || $active ? `--color-dark` : "--color-primary"}
   );
   text-transform: capitalize;
   cursor: pointer;
@@ -157,8 +157,8 @@ const NavLink = ({ label, href, closeMenu, dropDownMenu }: Props) => {
     <DropDownButton ref={subMenuRef}>
       <DropDownMenuHeader
         onClick={toggleDropdownMenu}
-        isOpen={isOpen}
-        active={isDropdownLinkActive}
+        $isOpen={isOpen}
+        $active={isDropdownLinkActive}
       >
         {label}
         {hasDropdown && (
@@ -188,7 +188,7 @@ const NavLink = ({ label, href, closeMenu, dropDownMenu }: Props) => {
     <Link
       href={href}
       onClick={handleLinkClick}
-      active={router.asPath === href || false}
+      $active={router.asPath === href || false}
     >
       {label}
     </Link>

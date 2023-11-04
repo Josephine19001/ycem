@@ -17,7 +17,7 @@ import nadeshPic from "../../../public/assets/team-pictures/nadesh.jpeg";
 import ursulaPic from "../../../public/assets/team-pictures/ursula.jpeg";
 import oforiwaaPic from "../../../public/assets/team-pictures/oforiwaa.jpeg";
 import perpetualPic from "../../../public/assets/team-pictures/perpetual.jpeg";
-import jecholiahPic from "../../../public/assets/team-pictures/jecholiah.jpeg";
+import jecholiahPic from "../../../public/assets/team-pictures/jecholiah.jpg";
 
 import IntroSection from "../shared/intro-section";
 import {
@@ -94,7 +94,10 @@ const WhoWeAre = () => {
         subTitle="The Empowering & Guiding Team for Young Females in their Engineering Journey"
       />
       <SectionContainer>
-        <FlexContainerRowSpaceBetween gap={"40px"} style={{ flexWrap: "wrap" }}>
+        <FlexContainerRowSpaceBetween
+          $gap={"40px"}
+          style={{ flexWrap: "wrap" }}
+        >
           {teamInfo.map(
             ({ name, jobTitle, bioSummary, socialLinks, imgAlt, imgSrc }) => (
               <TeamItem

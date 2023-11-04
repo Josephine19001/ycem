@@ -166,7 +166,7 @@ const Home = () => {
 
       <Section style={{ marginTop: "50px" }}>
         <AboutSectionContainer>
-          <FlexContainerRowSpaceBetween gap="100px">
+          <FlexContainerRowSpaceBetween $gap="100px">
             <ImageContainer>
               <Image
                 priority

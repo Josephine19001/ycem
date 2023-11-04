@@ -16,7 +16,7 @@ import { ButtonPrimary } from "./buttons";
 export const LogoComponent = ({ footer }: { footer?: boolean }) => {
   return (
     <Image
-      priority
+      // priority
       src={footer ? LogoSVGBg : LogoSVG}
       alt="YCEM logo"
       width={72}
