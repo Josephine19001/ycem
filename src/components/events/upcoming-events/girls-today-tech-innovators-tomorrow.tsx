@@ -12,7 +12,7 @@ const GirlsTodayInnovatorsTomorrow = () => {
       timeDay={"Saturday, 3:30PM - 5:00PM GMT"}
       date="November 11th, 2023"
       location="Online, Google Meets"
-      eventLink="some-link"
+      eventLink="https://forms.gle/h5Sxp6G1NeCTiJsr6"
       eventBanner={banner}
       description={
         <FlexContainerColumnGapped>
