@@ -17,7 +17,7 @@ import nadeshPic from "../../../public/assets/team-pictures/nadesh.jpeg";
 import ursulaPic from "../../../public/assets/team-pictures/ursula.jpeg";
 import oforiwaaPic from "../../../public/assets/team-pictures/oforiwaa.jpeg";
 import perpetualPic from "../../../public/assets/team-pictures/perpetual.jpeg";
-import jecholiahPic from "../../../public/assets/team-pictures/jecholiah.jpg";
+import jecholiahPic from "../../../public/assets/team-pictures/jecholiah-pic.jpg";
 
 import IntroSection from "../shared/intro-section";
 import {
