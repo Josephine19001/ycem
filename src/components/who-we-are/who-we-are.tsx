@@ -86,8 +86,26 @@ const WhoWeAre = () => {
               <SectionDescription>
                 Empowering Young Females in their Engineering Careers
               </SectionDescription>
-              <p>{aboutUsContent.text1}</p>
-              <p>{aboutUsContent.text2}</p>
+              <p>
+                YCEM, established in 2022, is dedicated to empowering young
+                females into their engineering careers. Our mission is to bridge
+                the gender gap in Engineering by providing opportunities,
+                guidance, and hands-on experiences. We achieve this through a
+                combination of events, mentorship, and hubs, fostering a
+                supportive ecosystem for the future of young females in
+                technology.
+              </p>
+
+              <p>
+                At YCEM, we recognize that diversity in engineering, spanning a
+                wide array of domains including software, AI/ML, food
+                engineering, materials, cloud engineering, and research, leads
+                to innovation. We are proud of our diverse team, representing
+                various engineering domains, and we're here to make diversity in
+                engineering a reality. Join us on this empowering journey, and
+                together, we'll shape the future of engineering careers for
+                young females.
+              </p>
             </ContentWrapper>
           </FlexContainerRowSpaceBetween>
         </AboutSectionContainer>
@@ -97,7 +115,7 @@ const WhoWeAre = () => {
             <ContentWrapper>
               <SectionTitle>Our Story & Mission</SectionTitle>
               <SectionDescription>
-                Empowering the Future of Engineering
+                Empowering Her Future In Engineering
               </SectionDescription>
               <p>
                 At YCEM, we are on a mission to empower the future of

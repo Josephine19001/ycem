@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ItemContainer = styled.div`
   width: 380px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,27 +60,27 @@ const ItemContainer = styled.div`
   }
 
   img {
-    width: 200px;
-    height: 200px;
-    padding: 8px;
-    background-color: #dedede;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -o-border-radius: 50%;
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
   }
-`; //team-item
+`;
+
 const TeamInfoContainer = styled.div`
   display: block;
   margin-bottom: 0;
-`; //team-info
+  flex-grow: 1;
+  overflow: scroll;
+`;
+
 const TeamIconsContainer = styled.ul`
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
   margin-top: 16px;
-`; //team-icoin
+`;
+
 const CustomizedIcon = styled(FontAwesomeIcon)`
   color: var(--color-primary);
   &:hover {

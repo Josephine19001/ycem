@@ -173,7 +173,7 @@ const Home = () => {
             <ContentWrapper>
               <SectionTitle>Who We Are</SectionTitle>
               <SectionDescription>
-                Empowering Young Females in STEM Careers
+                Empowering Young Females in Engineering Careers
               </SectionDescription>
               <p>{aboutUsContent.text1}</p>
               <p>{aboutUsContent.text2}</p>

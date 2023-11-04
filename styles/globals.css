@@ -9,11 +9,14 @@
 :root {
   --color-primary: #02ADB5;
   --color-primary-darker: #10747a;
-  --color-primary-transparent: #e3f3f2;
+  --color-primary-transparent: #f0f1f1;
   --color-primary-lighter: rgba(27, 79, 70, 0.505);
   --color-secondary: #219EBC;
   --color-secondary-lighter:rgba(33, 157, 188, 0.52);
   --color-dark: #393E46;
+  --color-gray: #6e6f71;
+  --color-gray-light: #6e6f7191;
+  --color-primary-transparent: #e3f3f2;
   --color-light: #FFFEFC;
 
   --color-light-active: #465b5a;
@@ -26,7 +29,7 @@
   --font-size-xxl: 24px;
   --font-size-header-one: 58px;
   --font-size-header-two: 24px;
-  --font-size-header-five: 16px;
+  --font-size-header-five: 15px;
   --font-size-header-four: 20px;
 
   --section-padding: 100px 195px 0px;

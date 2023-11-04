@@ -11,7 +11,7 @@ export const Container = styled.div`
 `;
 
 const HeaderBodyContainer = styled.div`
-  padding: 80px 120px;
+  padding: 80px 190px;
   @media (max-width: 768px) {
     padding: 90px 24px;
   }

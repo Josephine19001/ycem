@@ -1,9 +1,8 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
+import EventsComponent from "../../../src/components/events/past-events";
 
-import TeamsComponent from "../../src/components/who-we-are/team";
-
-const Team: NextPage = () => {
+const PastEvents: NextPage = () => {
   return (
     <>
       <NextSeo
@@ -25,9 +24,9 @@ const Team: NextPage = () => {
           ],
         }}
       />
-      <TeamsComponent />
+      <EventsComponent />
     </>
   );
 };
 
-export default Team;
+export default PastEvents;

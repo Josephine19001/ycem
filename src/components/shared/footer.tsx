@@ -3,7 +3,6 @@ import styled from "styled-components";
 import {
   faLinkedin,
   faInstagramSquare,
-  faTwitterSquare,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -17,7 +16,7 @@ import { FooterButton } from "./buttons";
 import ContactFormModal from "./contact-form-modal";
 
 const Container = styled(FlexContainerColumnSpaceBetween)`
-  padding: 0 120px;
+  padding: 0 190px;
   background-color: var(--color-primary);
   align-items: flex-start;
   gap: 0;

@@ -89,10 +89,10 @@ const JoiningUs = ({ border }: Props) => {
       <FlexContainerColumnSpaceBetween gap="30px" alignitems="flex-start">
         <ProcessSectionTop>
           <SectionTitle style={{ marginTop: "20px" }}>
-            Empowering Young Females in STEM
+            Empowering Young Females in Engineering
           </SectionTitle>
           <SectionDescription>
-            We Empower Young Women in STEM With Us
+            We Empower Young Women in Engineering With Us
           </SectionDescription>
         </ProcessSectionTop>
         <ProcessSectionBottom>

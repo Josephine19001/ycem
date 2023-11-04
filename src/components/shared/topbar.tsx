@@ -66,19 +66,21 @@ const TopBar = () => {
         <Nav.Logo href="/">
           <FlexContainerRowSpaceBetween>
             <LogoComponent />
-            <h6>Your Choice in Engineering Matters</h6>
+            {/* <h6>Your Choice in Engineering Matters</h6> */}
           </FlexContainerRowSpaceBetween>
         </Nav.Logo>
+        
         <FlexContainerRowSpaceBetween style={{ gap: "30px" }}>
           <Nav.Items>
             <Navigation />
           </Nav.Items>
-          <Nav.ContactBtnContainer>
-            <ButtonPrimary onClick={() => router.push("/contact")}>
-              Contact us
-            </ButtonPrimary>
-          </Nav.ContactBtnContainer>
         </FlexContainerRowSpaceBetween>
+
+        <Nav.ContactBtnContainer>
+          <ButtonPrimary onClick={() => router.push("/contact")}>
+            Contact us
+          </ButtonPrimary>
+        </Nav.ContactBtnContainer>
 
         <Nav.MobileNav ref={ref}>
           <FontAwesomeIcon
@@ -105,7 +107,7 @@ const Nav = {
   Header: styled.header`
     background-color: var(--color-light);
     width: 100%;
-    padding: 10px 120px;
+    padding: 0px 190px;
     position: fixed;
     @media (max-width: 768px) {
       padding: 4px 24px;
@@ -135,7 +137,7 @@ const Nav = {
     align-items: center;
     justify-content: space-between;
     gap: 28px;
-    padding-top: 28px;
+    // padding-top: 16px;
 
     @media (max-width: 768px) {
       display: none;
@@ -156,7 +158,7 @@ const Nav = {
     }
   `,
   ContactBtnContainer: styled.div`
-    padding-top: 10px;
+    // padding-top: 16px;
 
     @media (max-width: 768px) {
       display: none;

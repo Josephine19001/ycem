@@ -67,6 +67,8 @@ const DropdownMenuContainer = styled.div`
       cursor: pointer;
       width: 100%;
       height: 60px;
+      background: var(--color-light);
+      color: var(--color-primary) !important;
     }
   }
 
@@ -92,7 +94,8 @@ const DropDownMenuHeader = styled.p<{
   active?: boolean;
 }>`
   font-weight: 600;
-  font-size: 15px;
+  // font-size: var(--font-size-lg) !important;
+  // text-transform: uppercase !important;
   color: var(
     ${({ isOpen, active }) =>
       isOpen || active ? `--color-dark` : "--color-primary"}

@@ -27,7 +27,7 @@ export const navItems = [
     label: "home",
   },
   {
-    href: "/events",
+    href: "/events/upcoming-events",
     label: "Events",
   },
   {
@@ -36,7 +36,7 @@ export const navItems = [
     hasDropdown: true,
     subMenu: [
       { href: "/who-we-are", label: "About us" },
-      { href: "/who-we-are/team", label: "Team" },
+      { href: "/who-we-are/our-team", label: "Our Team" },
     ],
   },
   {
@@ -51,7 +51,7 @@ export const footerContent = [
     links: [
       { label: "Home", href: "/" },
       { label: "Contact us", href: "/contact" },
-      { label: "Events", href: "/events" },
+      { label: "Events", href: "/events/upcoming-events" },
     ],
   },
   {
@@ -77,7 +77,7 @@ export const homeServiceSectionContent = [
   },
   {
     icon: techTalkPic,
-    title: "Tech Talks",
+    title: "Webinars",
     description:
       "Explore cutting-edge topics with industry experts in engineering.",
   },
@@ -137,9 +137,9 @@ export const homeWhyChooseUsContent = [
 
 export const aboutUsContent = {
   text1:
-    "YCEM, founded in 2022, is dedicated to empowering young females in their engineering careers. Our mission is to bridge the gender gap in Engineering by providing opportunities, guidance, and hands-on experiences. We achieve this through a combination of events, mentoring, and tech hubs, fostering a supportive ecosystem for the future of young females in technology.",
+    "YCEM, founded in 2022, is dedicated to empowering young females into their engineering careers. Our mission is to bridge the gender gap in Engineering by providing opportunities, guidance, and hands-on experiences. We achieve this through a combination of events, mentorship, and hubs, fostering a supportive ecosystem for the future of young females in technology.",
   text2:
-    "Since our start, we've achieved a significant milestone with an event at Accra Girls Secondary School in Ghana. This event was a testament to our commitment to inspiring and encouraging young women to pursue engineering fields. At YCEM, we believe that diversity in technology leads to innovation, and we're here to make that a reality. Join us on this empowering journey, and together, we'll shape the future of engineering careers for young females.",
+    "Since our start, we've achieved a significant milestone with an event at Accra Girls Secondary School in Ghana. This event was a testament to our commitment to inspiring and encouraging young women to pursue engineering fields. At YCEM, we believe that diversity in engineering leads to innovation, and we're here to make that a reality. Join us on this empowering journey, and together, we'll shape the future of engineering careers for young females.",
 };
 
 export const serviceStacks = [
@@ -167,25 +167,25 @@ export const activities = [
   {
     label: "Career Advancement",
     description:
-      "Access job placement assistance and career resources that open doors to exciting opportunities in the tech industry, empowering the next generation of female technologists.",
+      "Access job placement assistance and career resources that open doors to exciting opportunities in the engineering industry, empowering the next generation of female engineers.",
     icon: faRocket,
   },
   {
     label: "Vibrant Community",
     description:
-      "Immerse young females in a diverse and collaborative environment, where they can network, share ideas, and grow together with like-minded peers, empowering them to thrive in STEM.",
+      "Immerse young females in a diverse and collaborative environment, where they can network, share ideas, and grow together with like-minded peers, empowering them to thrive in Engineering.",
     icon: faPeopleCarryBox,
   },
   {
     label: "Innovation Hub",
     description:
-      "Fuel creativity in an atmosphere that encourages innovative thinking, pushing young females to explore new horizons in technology, and empowering them to drive technological innovation.",
+      "Fuel creativity in an atmosphere that encourages innovative thinking, pushing young females to explore new horizons in engineering, and empowering them to drive technological innovation.",
     icon: faPenRuler,
   },
   {
     label: "Cutting-edge Skills",
     description:
-      "Stay at the forefront of technology with our curriculum designed to equip young females with the latest and most sought-after skills, empowering them to excel in STEM.",
+      "Stay at the forefront of technology with our curriculum designed to equip young females with the latest and most sought-after skills, empowering them to excel in engineering.",
     icon: faToolbox,
   },
   {
@@ -196,40 +196,4 @@ export const activities = [
   },
 ];
 
-export const teamInfo = [
-  {
-    name: "JOSEPHINE GYAMERA",
-    jobTitle: "Software Engineer, Unity Technologies",
-    bioSummary:
-      "Josephine is an experienced software engineer, specializing in full-stack development with a primary focus on Typescript. In addition to her technical expertise, she is an enthusiastic tech-related blogger.",
-    socialLinks: [
-      {
-        link: "https://fi.linkedin.com/in/gyamerajosephine ",
-        icon: faLinkedin,
-      },
-      { link: "https://gyamera-josephine.vercel.app/blog", icon: faBlog },
-      { link: "https://github.com/Josephine19001 ", icon: faGithub },
-    ],
-    imgAlt: "Josephine Gyamera's profile picture",
-    imgSrc: josephinePic,
-  },
-  {
-    name: "Elizabeth Boamah",
-    jobTitle:
-      "Materials Science & Engineering student (MPhil), University of Ghana & Energy engineer stagaire, IMT-Mines, Albi.",
-    bioSummary:
-      "Elizabeth is an energy engineer, with speciality in Pyrolysis conversion of plastics to fuel (Liquid, solid & gas) energy.",
-    socialLinks: [
-      {
-        link: "www.linkedin.com/in/elizabeth-boamah-a08997182",
-        icon: faLinkedin,
-      },
-      {
-        link: "https://www.researchgate.net/profile/Elizabeth-Boamah-3",
-        icon: faBlog,
-      },
-    ],
-    imgAlt: "Elizabeth Boamah's profile picture",
-    imgSrc: elizabethPic,
-  },
-];
+
