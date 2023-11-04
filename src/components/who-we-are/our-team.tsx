@@ -17,7 +17,6 @@ import nadeshPic from "../../../public/assets/team-pictures/nadesh.jpeg";
 import ursulaPic from "../../../public/assets/team-pictures/ursula.jpeg";
 import oforiwaaPic from "../../../public/assets/team-pictures/oforiwaa.jpeg";
 import perpetualPic from "../../../public/assets/team-pictures/perpetual.jpeg";
-import jecholiahPic from "../../../public/assets/team-pictures/jecholiah-pic.jpg";
 
 import IntroSection from "../shared/intro-section";
 import {
@@ -99,7 +98,15 @@ const WhoWeAre = () => {
           style={{ flexWrap: "wrap" }}
         >
           {teamInfo.map(
-            ({ name, jobTitle, bioSummary, socialLinks, imgAlt, imgSrc }) => (
+            ({
+              name,
+              jobTitle,
+              bioSummary,
+              socialLinks,
+              imgAlt,
+              imgSrc,
+              isNotStatic,
+            }) => (
               <TeamItem
                 key={name}
                 name={name}
@@ -108,6 +115,7 @@ const WhoWeAre = () => {
                 socialLinks={socialLinks}
                 imgAlt={imgAlt}
                 imgSrc={imgSrc}
+                isNotStatic={isNotStatic}
               />
             )
           )}
@@ -341,6 +349,8 @@ export const teamInfo = [
       },
     ],
     imgAlt: "Jecholiah's profile picture",
-    imgSrc: jecholiahPic,
+    imgSrc:
+      "https://res.cloudinary.com/josephine19001/image/upload/v1699133558/YCEM/imskxlqofx76m2kpsvch.jpg",
+    isNotStatic: true,
   },
 ];

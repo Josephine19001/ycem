@@ -95,8 +95,9 @@ interface Props {
   jobTitle: string;
   bioSummary: string;
   socialLinks: any;
-  imgSrc: StaticImageData;
+  imgSrc: StaticImageData | string;
   imgAlt: string;
+  isNotStatic?: boolean;
 }
 
 const TeamItem = ({
@@ -106,11 +107,16 @@ const TeamItem = ({
   socialLinks,
   imgAlt,
   imgSrc,
+  isNotStatic,
 }: Props) => {
   return (
     <ItemContainer key={name}>
       <div>
-        <Image priority src={imgSrc} alt={imgAlt} />
+        {isNotStatic ? (
+          <img src={imgSrc as string} alt={imgAlt} />
+        ) : (
+          <Image priority src={imgSrc as StaticImageData} alt={imgAlt} />
+        )}
       </div>
       <h3>{name}</h3>
       <TeamInfoContainer>
