@@ -20,6 +20,8 @@
   --color-light: #FFFEFC;
 
   --color-light-active: #465b5a;
+  --color-success: rgb(15, 98, 15);
+  --color-error: rgb(209, 47, 47);
 
   --font-size-xs: 8px;
   --font-size-sm: 12px;

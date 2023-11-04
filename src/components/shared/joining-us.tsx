@@ -92,7 +92,7 @@ const JoiningUs = ({ border }: Props) => {
             Empowering Young Females in Engineering
           </SectionTitle>
           <SectionDescription>
-            We Empower Young Women in Engineering With Us
+            Empower Young Women in Engineering With Us
           </SectionDescription>
         </ProcessSectionTop>
         <ProcessSectionBottom>

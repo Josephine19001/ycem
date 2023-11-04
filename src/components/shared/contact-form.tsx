@@ -51,6 +51,7 @@ const ContactForm = ({
     phoneNumber: "",
     companyName: "",
   });
+  const [emailJsStatus, setEmailJsStatus] = useState(0);
 
   const handleInputChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -66,14 +67,13 @@ const ContactForm = ({
     event.preventDefault();
 
     try {
-      await emailjs.sendForm(
-        process.env.REACT_APP_EMAIL_JS_SERVICE_I || "",
-        process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID || "",
+      const response = await emailjs.sendForm(
+        process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID || "",
+        process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE_ID || "",
         form.current || "",
-        process.env.REACT_APP_EMAIL_JS_PUBLIC_ID
+        process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_ID || ""
       );
 
-      // Clear the form after submission
       setFormData({
         firstName: "",
         secondName: "",
@@ -82,6 +82,10 @@ const ContactForm = ({
         phoneNumber: "",
         companyName: "",
       });
+
+      setEmailJsStatus(response.status);
+
+      console.log("--response", response);
     } catch (error) {
       console.error("Error sending email:", error);
     }
@@ -101,7 +105,6 @@ const ContactForm = ({
         <input
           placeholder="Second name"
           type="text"
-          required
           value={formData.secondName}
           onChange={handleInputChange}
           name="secondName"
@@ -118,7 +121,6 @@ const ContactForm = ({
       <input
         placeholder="Phone number"
         type="number"
-        required
         value={formData.phoneNumber}
         onChange={handleInputChange}
         name="phoneNumber"
@@ -134,6 +136,17 @@ const ContactForm = ({
       <div>
         <ButtonPrimary type="submit">Send</ButtonPrimary>
       </div>
+      {emailJsStatus === 200 ? (
+        <p style={{ color: "var(--color-success)" }}>
+          Email was successfully sent! We will get back to your soon 😇
+        </p>
+      ) : null}
+      {emailJsStatus === 400 ? (
+        <p style={{ color: "var(--color-error)" }}>
+          Something went wrong while sending the email. Try sending it manually
+          as we look into it.
+        </p>
+      ) : null}
     </FormContainer>
   );
 };
