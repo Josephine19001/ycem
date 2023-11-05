@@ -95,7 +95,7 @@ const WhoWeAre = () => {
       <SectionContainer>
         <FlexContainerRowSpaceBetween
           $gap={"40px"}
-          style={{ flexWrap: "wrap" }}
+          style={{ flexWrap: "wrap", justifyContent: "flex-start" }}
         >
           {teamInfo.map(
             ({
@@ -217,6 +217,24 @@ export const teamInfo = [
     imgSrc: elizabethPic,
   },
   {
+    name: "El-Karece Asiedu",
+    jobTitle: "Software engineer",
+    bioSummary:
+      "El-Karece is a software engineer proficient in both backend and frontend development for web-based applications. She currently serves as the co-lead of the Python Accra User Group. With a strong background in developing fintech and e-commerce applications, she possesses a computer engineering degree from the University of Ghana and strives to make a meaningful impact through technology. Her enthusiasm for volunteering in Women in STEM initiatives further underscores her dedication to fostering diversity and inclusion in the tech industry.",
+    socialLinks: [
+      {
+        link: "https://www.linkedin.com/in/el-karece-asiedu",
+        icon: faLinkedin,
+      },
+      {
+        link: "https://github.com/KareceA",
+        icon: faGithub,
+      },
+    ],
+    imgAlt: "El-Karece's profile picture",
+    imgSrc: karecePic,
+  },
+  {
     name: "Abena Agyeiwaa Obom ",
     jobTitle: "Food Process Engineer",
     bioSummary:
@@ -259,6 +277,7 @@ export const teamInfo = [
     imgAlt: "Perpetual's profile picture",
     imgSrc: perpetualPic,
   },
+
   {
     name: "Gertrude Asumpaame Alayine",
     jobTitle: " Postgraduate Associate, School of Medicine, Yale University",
