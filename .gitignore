@@ -9,7 +9,6 @@ out
 logs
 
 # Environment variables (these should be set in .env.local)
-.env
 .env.local
 
 # Editor/IDE-specific files
