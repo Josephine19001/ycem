@@ -13,7 +13,7 @@ import abenaPic from "../../../public/assets/team-pictures/abena.jpeg";
 import daniellePic from "../../../public/assets/team-pictures/danielle.png";
 import florentynaPic from "../../../public/assets/team-pictures/florentyna.jpeg";
 import gertrudePic from "../../../public/assets/team-pictures/gertrude.png";
-import nadeshPic from "../../../public/assets/team-pictures/nadesh.jpeg";
+import nadeshPic from "../../../public/assets/team-pictures/nadesh-2.jpg";
 import ursulaPic from "../../../public/assets/team-pictures/ursula.jpeg";
 import oforiwaaPic from "../../../public/assets/team-pictures/oforiwaa.jpeg";
 import perpetualPic from "../../../public/assets/team-pictures/perpetual.jpeg";
@@ -205,7 +205,7 @@ export const teamInfo = [
       "Elizabeth, an energy engineer with speciality in Pyrolysis conversion of plastics to fuel (Liquid, solid & gas) energy, is dedicated to teaching and empowering people, she loves what she does. Beyond her professional life, Elizabeth finds interests in reading, exploring different cuisines, traveling and spending time with the family.",
     socialLinks: [
       {
-        link: "www.linkedin.com/in/elizabethboamah",
+        link: "https://www.linkedin.com/in/elizabethboamah/",
         icon: faLinkedin,
       },
       {

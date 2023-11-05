@@ -1,10 +1,7 @@
 import React from "react";
-import styled from "styled-components";
 import EventPage from "../event-page";
 import banner from "../../../../public/assets/events/girl-today-innovation-banner.png";
 import { FlexContainerColumnGapped } from "../../shared/containers";
-
-const PageContainer = styled.div``;
 
 const GirlsTodayInnovatorsTomorrow = () => {
   return (

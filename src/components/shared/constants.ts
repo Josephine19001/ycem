@@ -66,7 +66,7 @@ export const footerContent = [
 export const homeServiceSectionContent = [
   {
     icon: mentoringPic,
-    title: "Mentoring",
+    title: "Mentorship",
     description:
       "Empower the next-gen in engineering through personalized guidance.",
   },
@@ -195,5 +195,3 @@ export const activities = [
     icon: faListCheck,
   },
 ];
-
-

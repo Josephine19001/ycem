@@ -156,7 +156,7 @@ const Home = () => {
               and backgrounds to succeed and overcome barriers. Together, we can
               create a world where every girl's choice matters, where she can
               make meaningful decisions in the engineering fields that will
-              accentuate their strengths, and where she can thrive and succeed
+              accentuate her strengths, and where she can thrive and succeed
               in all aspects of life.
             </p>
           </div>
