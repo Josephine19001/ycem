@@ -6,7 +6,7 @@ import { ButtonPrimary } from "../shared/buttons";
 
 interface FormData {
   firstName: string;
-  secondName: string;
+  lastName: string;
   email: string;
   message: string;
   phoneNumber: string;
@@ -45,7 +45,7 @@ const ContactForm = ({
   const form = useRef(null);
   const [formData, setFormData] = useState<FormData>({
     firstName: "",
-    secondName: "",
+    lastName: "",
     email: email || "",
     message: "",
     phoneNumber: "",
@@ -78,7 +78,7 @@ const ContactForm = ({
 
       setFormData({
         firstName: "",
-        secondName: "",
+        lastName: "",
         email: "",
         message: "",
         phoneNumber: "",
@@ -127,11 +127,11 @@ const ContactForm = ({
           name="firstName"
         />
         <input
-          placeholder="Second name"
+          placeholder="Last name"
           type="text"
-          value={formData.secondName}
+          value={formData.lastName}
           onChange={handleInputChange}
-          name="secondName"
+          name="lastName"
         />
       </FlexContainerRowSpaceBetween>
       <input

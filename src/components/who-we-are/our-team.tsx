@@ -148,7 +148,7 @@ export default WhoWeAre;
 
 export const teamInfo = [
   {
-    name: "Thelma Hilary N.A Laryea",
+    name: "Hilary N.A Laryea Thelma",
     jobTitle: "Production Performance Engineer(Hubtel), AWS Community Builder",
     bioSummary:
       "Thelma is a cloud enthusiast who is passionate about cloud engineering and architecture. She is passionate about teaching and empowering young girls and loves reading, swimming, yoga and creative writing ",
