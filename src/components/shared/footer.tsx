@@ -121,7 +121,7 @@ const Footer = () => {
           <LogoComponent footer={true} />
           <SocialItemsWrapper>
             <a
-              href="https://www.instagram.com/ycem_project/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="
+              href="https://instagram.com/ycem_org?igshid=Y2JoMjh6d3Y1Y3Jz"
               target="_blank"
             >
               <CustomizedIcon icon={faInstagramSquare} size="2x" />
