@@ -17,6 +17,7 @@ import nadeshPic from "../../../public/assets/team-pictures/nadesh-2.jpg";
 import ursulaPic from "../../../public/assets/team-pictures/ursula.jpeg";
 import oforiwaaPic from "../../../public/assets/team-pictures/oforiwaa.jpeg";
 import perpetualPic from "../../../public/assets/team-pictures/perpetual.jpeg";
+import emmanuellaPic from "../../../public/assets/team-pictures/emmanuella.jpg";
 
 import IntroSection from "../shared/intro-section";
 import {
@@ -198,6 +199,36 @@ export const teamInfo = [
     imgSrc: vanessaPic,
   },
   {
+    name: "Gertrude Asumpaame Alayine",
+    jobTitle: " Postgraduate Associate, School of Medicine, Yale University",
+    bioSummary:
+      "Gertrude is a computational neuroscience researcher whose research focuses on using machine learning and other computational methods to improve upon the mental health of individuals. She is passionate about community giveback and engages in extracurricular activities that will enable her do so, including mentoring young women.",
+    socialLinks: [
+      {
+        link: "linkedin.com/in/gertrude-asumpaame-alayine",
+        icon: faLinkedin,
+      },
+    ],
+    imgAlt: "Gertrude's profile picture",
+    imgSrc: gertrudePic,
+  },
+  {
+    name: "Dominica Abena Oforiwaa Amanfo",
+    jobTitle:
+      "AI/ML engineer at 4th-ir, headquartered in Lucerne, Switzerland. Graduate student at the Hochschule Lucerne, studying Applied information and data science.",
+    bioSummary:
+      "She is currently an Arm Ambassador, a volunteer for Arm's (E3)NGAGE program, Embedded Learning Challenge (ELC), and is an active member of the IEEE community. She has earned a reputation as an exemplary leader who is driven by challenges, unafraid of obstacles, and dedicated to advancing standards of excellence in STEM education, especially in females. She enjoys her career, teaching, traveling, playing the piano, classical music, swimming, and reading.",
+    socialLinks: [
+      {
+        link: "https://www.linkedin.com/in/dominicaamanfo/",
+        icon: faLinkedin,
+      },
+      { link: "https://github.com/dominica-ofoj", icon: faGithub },
+    ],
+    imgAlt: "Dominica's profile picture",
+    imgSrc: oforiwaaPic,
+  },
+  {
     name: "Elizabeth Boamah",
     jobTitle:
       "Materials Science & Engineering student (MPhil), University of Ghana & Energy engineer stagaire, IMT-Mines, Albi.",
@@ -277,37 +308,6 @@ export const teamInfo = [
     imgAlt: "Perpetual's profile picture",
     imgSrc: perpetualPic,
   },
-
-  {
-    name: "Gertrude Asumpaame Alayine",
-    jobTitle: " Postgraduate Associate, School of Medicine, Yale University",
-    bioSummary:
-      "Gertrude is a computational neuroscience researcher whose research focuses on using machine learning and other computational methods to improve upon the mental health of individuals. She is passionate about community giveback and engages in extracurricular activities that will enable her do so, including mentoring young women.",
-    socialLinks: [
-      {
-        link: "linkedin.com/in/gertrude-asumpaame-alayine",
-        icon: faLinkedin,
-      },
-    ],
-    imgAlt: "Gertrude's profile picture",
-    imgSrc: gertrudePic,
-  },
-  {
-    name: "Dominica Abena Oforiwaa Amanfo",
-    jobTitle:
-      "AI/ML engineer at 4th-ir, headquartered in Lucerne, Switzerland. Graduate student at the Hochschule Lucerne, studying Applied information and data science.",
-    bioSummary:
-      "She is currently an Arm Ambassador, a volunteer for Arm's (E3)NGAGE program, Embedded Learning Challenge (ELC), and is an active member of the IEEE community. She has earned a reputation as an exemplary leader who is driven by challenges, unafraid of obstacles, and dedicated to advancing standards of excellence in STEM education, especially in females. She enjoys her career, teaching, traveling, playing the piano, classical music, swimming, and reading.",
-    socialLinks: [
-      {
-        link: "https://www.linkedin.com/in/dominicaamanfo/",
-        icon: faLinkedin,
-      },
-      { link: "https://github.com/dominica-ofoj", icon: faGithub },
-    ],
-    imgAlt: "Dominica's profile picture",
-    imgSrc: oforiwaaPic,
-  },
   {
     name: "Florentyna Anima Boakye Yiadom",
     jobTitle:
@@ -371,5 +371,19 @@ export const teamInfo = [
     imgSrc:
       "https://res.cloudinary.com/josephine19001/image/upload/v1699133558/YCEM/imskxlqofx76m2kpsvch.jpg",
     isNotStatic: true,
+  },
+  {
+    name: "Emmanuella Buerki Nelson",
+    jobTitle: "Sustainable Energy Systems Engineer",
+    bioSummary:
+      "Emmanuella is a  Sustainable energy systems engineer with a background in mechanical engineering(thermofluids and energy systems) and data science for energy systems.  She seeks to improve green energy access and transition to all (ie women and children) through sustainable research, development and implementation. She is motivated by her strong dedication to promoting gender diversity in STEM, reflecting her commitment to empowering women in these fields.",
+    socialLinks: [
+      {
+        link: "https://www.linkedin.com/in/emmanuella-nelson-178343297",
+        icon: faLinkedin,
+      },
+    ],
+    imgAlt: "Emmanuella's profile picture",
+    imgSrc: emmanuellaPic,
   },
 ];
