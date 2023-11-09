@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { faBlog } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
-import elizabethPic from "../../../public/assets/team-pictures/elizabeth.png";
+import elizabethPic from "../../../public/assets/team-pictures/elisabeth-boamah.jpg";
 import josephinePic from "../../../public/assets/team-pictures/josephine.jpg";
 import vanessaPic from "../../../public/assets/team-pictures/vanessa.jpg";
 import karecePic from "../../../public/assets/team-pictures/karece.jpg";
