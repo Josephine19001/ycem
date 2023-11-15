@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
 import Head from "next/head";
-import EventsComponent from "../../../src/components/events/upcoming-events/girls-today-tech-innovators-tomorrow";
+import EventsComponent from "../../../src/components/events/past-events/girls-today-tech-innovators-tomorrow";
 
 const GirlsTodayInnovatorsTomorrow: NextPage = () => {
   return (

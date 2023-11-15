@@ -56,14 +56,14 @@ const InpageNav = ({ children }: { children: JSX.Element }) => {
               Upcoming events
             </InpageNavItem>
           </li>
-          {/* <li>
+          <li>
             <InpageNavItem
               href="/events/past-events"
               active={router.asPath === "/events/past-events" || false}
             >
               Past events
             </InpageNavItem>
-          </li> */}
+          </li>
         </InPageNav>
       </NavContainer>
       <Section style={{ marginTop: "50px" }}>{children}</Section>

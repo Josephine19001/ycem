@@ -3,29 +3,14 @@ import styled from "styled-components";
 import { FlexContainerRowSpaceBetween } from "../../shared/containers";
 import InpageNav from "../in-page-nav";
 import girlTodayEvent from "../../../../public/assets/events/girls-today-event.jpg";
-import EventItem from "../event-list-item";
+// import EventItem from "../event-list-item";
 
 const Container = styled(FlexContainerRowSpaceBetween)``;
 
 const UpcomingEvents = () => {
   return (
     <InpageNav>
-      <Container>
-        {events.map(
-          ({ eventHref, eventImg, month, date, title, timeDay, location }) => (
-            <EventItem
-              key={title}
-              eventHref={eventHref}
-              eventImg={eventImg}
-              month={month}
-              date={date}
-              timeDay={timeDay}
-              location={location}
-              title={title}
-            />
-          )
-        )}
-      </Container>
+      <Container>We are cooking something for you 🤩</Container>
     </InpageNav>
   );
 };
