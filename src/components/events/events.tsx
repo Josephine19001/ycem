@@ -16,6 +16,7 @@ import {
 } from "../shared/typography";
 import { activities } from "../shared/constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 
 const Container = styled(FlexContainerColumnSpaceBetween)`
   padding: var(--section-container-padding);
@@ -116,16 +117,16 @@ const GetInvolve = () => {
           <Divider margin="50px 0 50px 0" />
           <OpenPositionContainer>
             <h2>Do you want to support our initiative?</h2>
-            <a href="/contact">
+            <Link href="/contact">
               <ButtonPrimary
                 style={{
                   color: "var(--color-primary)",
                   backgroundColor: "var(--color-light)",
                 }}
               >
-                Get in touch with us
+                Get in toucsh with us
               </ButtonPrimary>
-            </a>
+            </Link>
           </OpenPositionContainer>
         </Container>
       </Section>

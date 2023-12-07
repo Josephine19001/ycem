@@ -154,7 +154,7 @@ const Home = () => {
               engineer her own future. Our mission is to provide the tools,
               resources, and support needed to empower young girls of all ages
               and backgrounds to succeed and overcome barriers. Together, we can
-              create a world where every girl's choice matters, where she can
+              create a world where every girl&apos;s choice matters, where she can
               make meaningful decisions in the engineering fields that will
               accentuate her strengths, and where she can thrive and succeed
               in all aspects of life.

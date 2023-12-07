@@ -3,6 +3,7 @@ import Image, { type StaticImageData } from "next/image";
 import styled from "styled-components";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 
 const ItemContainer = styled.div`
   width: 380px;
@@ -113,6 +114,7 @@ const TeamItem = ({
     <ItemContainer key={name}>
       <div>
         {isNotStatic ? (
+          // eslint-disable-next-line @next/next/no-img-element
           <img src={imgSrc as string} alt={imgAlt} />
         ) : (
           <Image priority src={imgSrc as StaticImageData} alt={imgAlt} />
@@ -125,9 +127,9 @@ const TeamItem = ({
 
         <TeamIconsContainer>
           {socialLinks.map((s: any) => (
-            <a href={s.link} target="_blank">
+            <Link key={s.link} href={s.link} target="_blank">
               <CustomizedIcon className="icon" icon={s.icon} size="2x" />
-            </a>
+            </Link>
           ))}{" "}
         </TeamIconsContainer>
       </TeamInfoContainer>

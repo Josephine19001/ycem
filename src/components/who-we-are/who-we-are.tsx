@@ -101,10 +101,10 @@ const WhoWeAre = () => {
                 wide array of domains including software, AI/ML, food
                 engineering, materials, cloud engineering, and research, leads
                 to innovation. We are proud of our diverse team, representing
-                various engineering domains, and we're here to make diversity in
-                engineering a reality. Join us on this empowering journey, and
-                together, we'll shape the future of engineering careers for
-                young females.
+                various engineering domains, and we&apos;re here to make
+                diversity in engineering a reality. Join us on this empowering
+                journey, and together, we&apos;ll shape the future of
+                engineering careers for young females.
               </p>
             </ContentWrapper>
           </FlexContainerRowSpaceBetween>
@@ -166,7 +166,7 @@ const WhoWeAre = () => {
               <h4 style={{ color: "var(--color-primary)" }}>Work with us</h4>
               <p>
                 Do you want to help push this initiative? Do you have a project
-                in mind you'd like to collaborate with us?
+                in mind you&apos;d like to collaborate with us?
               </p>
             </JoinUsWrapper>
             <ButtonPrimary onClick={() => setOpenContactModal(true)}>

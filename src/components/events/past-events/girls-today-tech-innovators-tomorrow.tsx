@@ -15,11 +15,12 @@ const GirlsTodayInnovatorsTomorrow = () => {
         <FlexContainerColumnGapped>
           <p>
             Embrace the Future with {""}
-            <b>'Girls Today, Tech Innovators Tomorrow'! </b>
+            <b>&apos;Girls Today, Tech Innovators Tomorrow&apos;! </b>
             Dive into the world of technology as we bring together a dynamic
-            group of Software Engineers who've conquered the tech landscape.
-            Discover the latest industry statistics, uncover the pressing need
-            for gender diversity in tech, and learn from these pioneers.
+            group of Software Engineers who&apos;ve conquered the tech
+            landscape. Discover the latest industry statistics, uncover the
+            pressing need for gender diversity in tech, and learn from these
+            pioneers.
           </p>
           <p>
             Engage in thought-provoking panel discussions, explore the secrets
@@ -30,9 +31,9 @@ const GirlsTodayInnovatorsTomorrow = () => {
           </p>
           <p>
             Join us to witness the change-makers, gain insights, and ignite your
-            own journey towards tech excellence. 'Girls Today, Tech Innovators
-            Tomorrow' is more than an event; it's a movement for a brighter,
-            more inclusive tech future.
+            own journey towards tech excellence. &apos;Girls Today, Tech
+            Innovators Tomorrow&apos; is more than an event; it&apos;s a
+            movement for a brighter, more inclusive tech future.
           </p>
         </FlexContainerColumnGapped>
       }
