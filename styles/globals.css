@@ -192,3 +192,12 @@ b {
 footer {
   margin-top: auto;
 } 
+
+.event-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 10px;
+  list-style: square;
+  margin-left: 20px;
+}
