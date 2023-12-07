@@ -27,6 +27,7 @@ const UnveilingTheFutureOfAI = () => {
             professional, or simply curious about AI's possibilities, this event
             is your gateway to understanding the present and shaping the future.
           </p>
+
           <div
             style={{
               marginTop: "16px",
@@ -40,13 +41,19 @@ const UnveilingTheFutureOfAI = () => {
               <li>Career Paths in AI</li>
             </ul>
           </div>
-          <div>
+          <div style={{ marginBottom: "12px" }}>
             <h5>Who Should Attend?</h5>
             <ul className="event-ul">
               <li>Senior High School to University Students</li>
               <li>All levels of AI familiarity welcome!</li>
             </ul>
           </div>
+
+          <p>
+            Don't miss out on this interesting opportunity to satisfy your
+            curiosity about AI🤖 . Save your spot and be part of this exciting
+            exploration into the cutting-edge realms of technology!
+          </p>
         </FlexContainerColumnGapped>
       }
     />
