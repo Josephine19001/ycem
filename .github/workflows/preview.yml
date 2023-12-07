@@ -21,13 +21,13 @@ jobs:
 
       - name: Install Dependencies
         run: npm install
-
-      - name: Linting
-        run: npm run lint  
-
+      
       - name: Build Next.js App
         run: npm run build
 
+      - name: Linting
+        run: npm run lint  
+        
       - name: Deploy to Vercel
         run: npx vercel --prod
         env:
