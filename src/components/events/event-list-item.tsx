@@ -36,10 +36,9 @@ const Container = styled.div`
 `;
 
 const ImageContainer = styled.div`
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-transparent);
   padding: 24px;
   width: 400px;
-  height: 500px;
   @media only screen and (max-width: 768px) {
     width: 100%;
     height: 100%;

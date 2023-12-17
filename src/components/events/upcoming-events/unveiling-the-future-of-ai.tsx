@@ -1,13 +1,13 @@
 import React from "react";
 import EventPage from "../event-page";
-import banner from "../../../../public/assets/events/unveiling-ai-event.jpg";
+import banner from "../../../../public/assets/events/unveiling-the-future-of-ai 2.png";
 import { FlexContainerColumnGapped } from "../../shared/containers";
 
 const UnveilingTheFutureOfAI = () => {
   return (
     <EventPage
       timeDay={"Saturday, 3:30PM - 5:00PM GMT"}
-      date="December 16th, 2023"
+      date="January 6, 2024"
       location="Online, Zoom"
       eventLink="https://forms.gle/1qX8W8je7hH67aq67"
       eventBanner={banner}

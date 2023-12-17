@@ -41,7 +41,7 @@ const EventContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 16px;
-  align-self: flex-start;
+  // align-self: flex-start;
   p {
     color: var(--color-gray);
     align-self: flex-start;
