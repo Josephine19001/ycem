@@ -17,7 +17,7 @@ const InPageNav = styled.ul`
   gap: 20px;
 `;
 
-const InpageNavItem = styled.a<{ active?: boolean }>`
+const InpageNavItem = styled.a<{ $active?: boolean }>`
   cursor: pointer;
   position: relative;
   display: inline-block;
@@ -29,7 +29,7 @@ const InpageNavItem = styled.a<{ active?: boolean }>`
     top: 30px;
     left: 0;
     bottom: 0;
-    width: ${(props) => (props.active ? "100%" : "0")};
+    width: ${({ $active }) => ($active ? "100%" : "0")};
     height: 2px;
     background: var(--color-primary);
     transition: width 0.3s ease 0s, left 0.3s ease;
@@ -51,7 +51,7 @@ const InpageNav = ({ children }: { children: JSX.Element }) => {
           <li>
             <InpageNavItem
               href="/events/upcoming-events"
-              active={router.asPath === "/events/upcoming-events" || false}
+              $active={router.asPath === "/events/upcoming-events" || false}
             >
               Upcoming events
             </InpageNavItem>
@@ -59,7 +59,7 @@ const InpageNav = ({ children }: { children: JSX.Element }) => {
           <li>
             <InpageNavItem
               href="/events/past-events"
-              active={router.asPath === "/events/past-events" || false}
+              $active={router.asPath === "/events/past-events" || false}
             >
               Past events
             </InpageNavItem>

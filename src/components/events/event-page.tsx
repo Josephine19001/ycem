@@ -41,6 +41,7 @@ const EventContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 16px;
+  // align-self: flex-start;
   p {
     color: var(--color-gray);
     align-self: flex-start;
@@ -200,7 +201,9 @@ const EventPage = ({
               />
             </ShareIcon>
           </ShareIcons>
-          <span>{eventLinkCopied ? "Event Link Copied!" : ""}</span>
+          <span style={{ color: "var(--color-success)" }}>
+            {eventLinkCopied ? "Event Link Copied!" : ""}
+          </span>
         </EventContainer>
       </Details>
     </PageContainer>
