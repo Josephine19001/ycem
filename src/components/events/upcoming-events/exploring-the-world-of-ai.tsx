@@ -1,6 +1,6 @@
 import React from "react";
 import EventPage from "../event-page";
-import banner from "../../../../public/assets/events/exploring-the-world-of-ai-landscape.png";
+import banner from "../../../../public/assets/events/exploring-the-world-of-ai-landscape-flyer.png";
 import { FlexContainerColumnGapped } from "../../shared/containers";
 
 const ExploringTheWorldOfAI = () => {

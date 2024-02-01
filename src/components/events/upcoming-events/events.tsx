@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FlexContainerRowSpaceBetween } from "../../shared/containers";
 import InpageNav from "../in-page-nav";
-import exploringTheWorldOfAI from "../../../../public/assets/events/exploring-the-world-of-ai-flyer.png";
+import exploringTheWorldOfAI from "../../../../public/assets/events/exploring-the-world-of-ai-banner.png";
 import EventItem from "../event-list-item";
 
 const Container = styled(FlexContainerRowSpaceBetween)``;
