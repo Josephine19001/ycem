@@ -1,15 +1,15 @@
 import React from "react";
 import EventPage from "../event-page";
-import banner from "../../../../public/assets/events/unveiling-the-future-of-ai 2.png";
+import banner from "../../../../public/assets/events/exploring-the-world-of-ai-landscape-flyer.png";
 import { FlexContainerColumnGapped } from "../../shared/containers";
 
-const UnveilingTheFutureOfAI = () => {
+const ExploringTheWorldOfAI = () => {
   return (
     <EventPage
-      timeDay={"Saturday, 3:30PM - 5:00PM GMT"}
-      date="January 6, 2024"
+      timeDay={"Saturday, 11:00AM GMT"}
+      date="February 24th, 2024"
       location="Online, Zoom"
-      eventLink="https://forms.gle/1qX8W8je7hH67aq67"
+      eventLink="https://forms.gle/V3Xj57XQEfgJKJiV9"
       eventBanner={banner}
       description={
         <FlexContainerColumnGapped $alignitems="flex-start">
@@ -19,7 +19,7 @@ const UnveilingTheFutureOfAI = () => {
           </i>
           <p>
             YCEM is thrilled to present:{" "}
-            <b>&apos;Unveiling the Future of Artificial Intelligence&apos;!</b>{" "}
+            <b>&apos;Exploring the World of Artificial Intelligence&apos;!</b>{" "}
             Brace yourself for an immersive journey into the world of AI at our
             upcoming webinar event. Join us as we explore key topics, unraveling
             the fundamentals and showcasing diverse applications in today&apos;s
@@ -61,4 +61,4 @@ const UnveilingTheFutureOfAI = () => {
   );
 };
 
-export default UnveilingTheFutureOfAI;
+export default ExploringTheWorldOfAI;

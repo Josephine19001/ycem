@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FlexContainerRowSpaceBetween } from "../../shared/containers";
 import InpageNav from "../in-page-nav";
-import unveilingTheFutureOfAI from "../../../../public/assets/events/oforiwaa-event.jpg";
+import exploringTheWorldOfAI from "../../../../public/assets/events/exploring-the-world-of-ai-banner.png";
 import EventItem from "../event-list-item";
 
 const Container = styled(FlexContainerRowSpaceBetween)``;
@@ -34,12 +34,12 @@ export default UpcomingEvents;
 
 const events = [
   {
-    eventHref: "/events/upcoming-events/unveiling-the-future-of-ai",
-    month: "Jan",
-    date: "06",
-    title: "Unveiling the Future of Artificial Intelligence",
-    timeDay: "Saturday, 3:30PM - 5:00PM GMT",
+    eventHref: "/events/upcoming-events/exploring-the-world-of-ai",
+    month: "Feb",
+    date: "24",
+    title: "Exploring the World of Artificial Intelligence",
+    timeDay: "Saturday, 11:00AM GMT",
     location: "Online, Zoom",
-    eventImg: unveilingTheFutureOfAI,
+    eventImg: exploringTheWorldOfAI,
   },
 ];
