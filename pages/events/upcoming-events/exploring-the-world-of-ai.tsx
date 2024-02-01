@@ -1,13 +1,13 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
 import Head from "next/head";
-import EventsComponent from "../../../src/components/events/upcoming-events/unveiling-the-future-of-ai";
+import EventsComponent from "../../../src/components/events/upcoming-events/exploring-the-world-of-ai";
 
-const UnveilingTheFutureOfAI: NextPage = () => {
+const ExploringTheWorldOfAI: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Unveiling the Future of Artificial Intelligence</title>
+        <title>Exploring the World of Artificial Intelligence</title>
       </Head>
       <NextSeo
         openGraph={{
@@ -33,4 +33,4 @@ const UnveilingTheFutureOfAI: NextPage = () => {
   );
 };
 
-export default UnveilingTheFutureOfAI;
+export default ExploringTheWorldOfAI;
