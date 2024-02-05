@@ -18,7 +18,7 @@ const OurUniversityRepresentatives = () => {
     <div>
       <IntroSection
         title="Our University Representatives"
-        subTitle="Advocating & Supporting for YCEM Initiatives in the Engineering Journey of Young Females"
+        subTitle="Advocating & Supporting YCEM Initiatives in the Engineering Journey of Young Females"
       />
       <SectionContainer>
         <FlexContainerRowSpaceBetween
