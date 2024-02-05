@@ -9,12 +9,7 @@ import {
   faPeopleCarryBox,
   faRocket,
   faPenRuler,
-  faBlog,
 } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-
-import elizabethPic from "../../../public/assets/team-pictures/elizabeth.png";
-import josephinePic from "../../../public/assets/team-pictures/josephine.jpg";
 
 import mentoringPic from "../../../public/assets/mentor.jpg";
 import volunteeringPic from "../../../public/assets/volunteering.jpg";
@@ -37,6 +32,7 @@ export const navItems = [
     subMenu: [
       { href: "/who-we-are", label: "About us" },
       { href: "/who-we-are/our-team", label: "Our Team" },
+      { href: "/who-we-are/our-university-reps", label: "Our University Reps" },
     ],
   },
   {
