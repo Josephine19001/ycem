@@ -55,7 +55,7 @@ const DropdownMenuContainer = styled.div`
   a {
     background: var(--color-primary);
     height: 60px;
-    width: 150px;
+    // width: 150px;
     padding: 8px 15px;
     display: flex;
     border-bottom: 1px solid var(--color-light);

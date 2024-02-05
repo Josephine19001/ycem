@@ -18,6 +18,7 @@ import ursulaPic from "../../../public/assets/team-pictures/ursula.jpeg";
 import oforiwaaPic from "../../../public/assets/team-pictures/oforiwaa.jpeg";
 import perpetualPic from "../../../public/assets/team-pictures/perpetual.jpeg";
 import emmanuellaPic from "../../../public/assets/team-pictures/emmanuella.jpg";
+import vivianPic from "../../../public/assets/team-pictures/vivian.jpg";
 
 import IntroSection from "../shared/intro-section";
 import {
@@ -52,7 +53,7 @@ export const ContentWrapper = styled(FlexContainerColumnSpaceBetween)`
   }
 `;
 
-const JoinUsContainer = styled.div`
+export const JoinUsContainer = styled.div`
   padding: 20px;
   background-color: var(--color-primary-transparent);
   border-radius: 5px;
@@ -62,14 +63,14 @@ const JoinUsContainer = styled.div`
   }
 `;
 
-const JoinUsWrapper = styled(FlexContainerColumnSpaceBetween)`
+export const JoinUsWrapper = styled(FlexContainerColumnSpaceBetween)`
   width: 50%;
   align-items: flex-start;
   @media only screen and (max-width: 768px) {
     width: 100%;
   }
 `;
-const SectionContainer = styled(Section)`
+export const SectionContainer = styled(Section)`
   width: calc(100% + 390px);
   margin: 0 -195px;
 
@@ -150,7 +151,7 @@ export default WhoWeAre;
 export const teamInfo = [
   {
     name: "Thelma Hilary N.A Laryea",
-    jobTitle: "Production Performance Engineer(Hubtel), AWS Community Builder",
+    jobTitle: "Cloud Engineer(Hubtel), AWS Community Builder",
     bioSummary:
       "Thelma is a cloud enthusiast who is passionate about cloud engineering and architecture. She is passionate about teaching and empowering young girls and loves reading, swimming, yoga and creative writing ",
     socialLinks: [
@@ -385,5 +386,19 @@ export const teamInfo = [
     ],
     imgAlt: "Emmanuella's profile picture",
     imgSrc: emmanuellaPic,
+  },
+  {
+    name: "Vivian Asamoah Agyapong",
+    jobTitle: "Electrical engineer at Sunon Asogli power plant ",
+    bioSummary:
+      "Vivian is a dedicated electrical engineer specializing in power and renewable energy. She currently works in Sunon Asogli power plant as an electrical field operator. She's passionate about empowering girls in engineering, promoting diversity in STEM, and enjoys working out and reading in her free time.",
+    socialLinks: [
+      {
+        link: "https://gh.linkedin.com/in/vivian-agyapong-23bb2a262",
+        icon: faLinkedin,
+      },
+    ],
+    imgAlt: "Vivian's profile picture",
+    imgSrc: vivianPic,
   },
 ];
