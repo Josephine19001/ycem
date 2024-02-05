@@ -18,7 +18,7 @@ import ursulaPic from "../../../public/assets/team-pictures/ursula.jpeg";
 import oforiwaaPic from "../../../public/assets/team-pictures/oforiwaa.jpeg";
 import perpetualPic from "../../../public/assets/team-pictures/perpetual.jpeg";
 import emmanuellaPic from "../../../public/assets/team-pictures/emmanuella.jpg";
-import vivianPic from "../../../public/assets/team-pictures/vivian.jpg";
+import vivianPic from "../../../public/assets/team-pictures/vivian-agyapong.jpg";
 
 import IntroSection from "../shared/intro-section";
 import {

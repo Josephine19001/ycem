@@ -1,7 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
 
-import sallyPic from "../../../public/assets/team-pictures/uni-reps/sally.jpg";
+import sallyPic from "../../../public/assets/team-pictures/uni-reps/sally-aba.jpg";
 
 import IntroSection from "../shared/intro-section";
 import { FlexContainerRowSpaceBetween, Section } from "../shared/containers";
