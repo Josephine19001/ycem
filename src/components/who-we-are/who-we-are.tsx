@@ -87,7 +87,7 @@ const WhoWeAre = () => {
                 Empowering Young Females in their Engineering Careers
               </SectionDescription>
               <p>
-                YCEM, established in 2022, is dedicated to empowering young
+                YCEM, established in 2021, is dedicated to empowering young
                 females into their engineering careers. Our mission is to bridge
                 the gender gap in Engineering by providing opportunities,
                 guidance, and hands-on experiences. We achieve this through a

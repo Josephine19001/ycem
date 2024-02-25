@@ -2,6 +2,7 @@ import React from "react";
 import { useRouter } from "next/router";
 
 import sallyPic from "../../../public/assets/team-pictures/uni-reps/sally-aba.jpg";
+import janjayPic from "../../../public/assets/team-pictures/uni-reps/janjay.jpg";
 
 import IntroSection from "../shared/intro-section";
 import { FlexContainerRowSpaceBetween, Section } from "../shared/containers";
@@ -85,6 +86,17 @@ export const uniRepsInfo = [
 
     imgAlt: "Sally's profile picture",
     imgSrc: sallyPic,
+    isNotStatic: false,
+    socialLinks: [],
+  },
+  {
+    name: "Melrick Janjay Willie",
+    jobTitle: "Biomedical Engineering student, Valley View University, Ghana",
+    bioSummary:
+      "Janjay, a nature enthusiast, is her happy place, whether it's soaking up the sunshine or exploring hidden trails. Good music always lifts her spirits, and capturing nature's beauty through photography brings her immense joy. Looking ahead, She’s eager to dive into the worlds of informatics and data analysis, expanding her skills and knowledge. Ultimately, Her strive for a life filled with purpose and fulfillment, using her talents to make a positive impact. As her favorite quote says, anything teachable is learnable, and She believes real change starts with each of us taking action. Let's connect and learn from each other!",
+
+    imgAlt: "Janjay's profile picture",
+    imgSrc: janjayPic,
     isNotStatic: false,
     socialLinks: [],
   },

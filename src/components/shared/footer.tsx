@@ -180,7 +180,7 @@ const Footer = () => {
         </NavigationContainer>
         <CopyrightContainer>
           <p>
-            ©2023 YCEM - Your Choice In Engineering Matters. All Rights
+            ©2024 YCEM - Your Choice In Engineering Matters. All Rights
             Reserved.
           </p>
         </CopyrightContainer>
