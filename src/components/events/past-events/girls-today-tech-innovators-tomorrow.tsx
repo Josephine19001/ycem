@@ -19,14 +19,14 @@ const GirlsTodayInnovatorsTomorrow = () => {
             <h2>Event Summary</h2>
             <p>
               Thank you to all who joined us for an insightful webinar as we
-              delved into the world of technology with our event "Embrace the
-              Future with 'Girls Today, Tech Innovators Tomorrow'!" Throughout
-              the session, we brought together a dynamic group of Software
-              Engineers who have conquered the tech landscape, providing
-              attendees with the latest industry statistics and uncovering the
-              pressing need for gender diversity in tech. Our hosts, shared
-              inspiring examples of how technology is transforming our world and
-              empowering women to become leaders in the field.
+              delved into the world of technology with our event{" "}
+              <b>&apos;Girls Today, Tech Innovators Tomorrow&apos;! </b>{" "}
+              Throughout the session, we brought together a dynamic group of
+              Software Engineers who have conquered the tech landscape,
+              providing attendees with the latest industry statistics and
+              uncovering the pressing need for gender diversity in tech. Our
+              hosts, shared inspiring examples of how technology is transforming
+              our world and empowering women to become leaders in the field.
             </p>
             <h3>Key Highlights</h3>
             <ul className="event-ul">
