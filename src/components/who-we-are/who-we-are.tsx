@@ -122,7 +122,7 @@ const WhoWeAre = () => {
                 engineering by providing unwavering support and guidance to
                 young women as they embark on their journey in science,
                 technology, engineering, and mathematics. Our journey began in
-                2022 with a simple yet powerful vision: to bridge the gender gap
+                2021 with a simple yet powerful vision: to bridge the gender gap
                 in engineering and ensure that every young woman has the
                 opportunity to excel in these fields.
               </p>
