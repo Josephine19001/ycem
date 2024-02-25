@@ -5,7 +5,7 @@ import banner from "../../../../public/assets/events/exploring-the-world-of-ai-l
 import { FlexContainerColumnGapped } from "../../shared/containers";
 import { ButtonPrimary } from "../../shared/buttons";
 
-const DescriptionSection = styled.div`
+export const DescriptionSection = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
