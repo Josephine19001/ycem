@@ -1,11 +1,9 @@
 import React from "react";
-import styled from "styled-components";
-import { FlexContainerRowSpaceBetween } from "../../shared/containers";
 import InpageNav from "../in-page-nav";
 import girlTodayEvent from "../../../../public/assets/events/girls-today-event.jpg";
+import exploringTheWorldOfAI from "../../../../public/assets/events/exploring-the-world-of-ai-banner.png";
+import { Container } from "../upcoming-events/events";
 import EventItem from "../event-list-item";
-
-const Container = styled(FlexContainerRowSpaceBetween)``;
 
 const PastEvents = () => {
   return (
@@ -34,12 +32,21 @@ export default PastEvents;
 
 const events = [
   {
-    eventHref: "/events/upcoming-events/girls-today-tech-innovators-tomorrow",
+    eventHref: "/events/past-events/girls-today-tech-innovators-tomorrow",
     month: "Nov",
     date: "11",
     title: "Girls Today, Tech Innovators Tomorrow",
     timeDay: "Saturday, 3:30PM - 5:00PM GMT",
     location: "Online, Google Meet",
     eventImg: girlTodayEvent,
+  },
+  {
+    eventHref: "/events/past-events/exploring-the-world-of-ai",
+    month: "Feb",
+    date: "24",
+    title: "Exploring the World of Artificial Intelligence",
+    timeDay: "Saturday, 11:00AM GMT",
+    location: "Online, Zoom",
+    eventImg: exploringTheWorldOfAI,
   },
 ];

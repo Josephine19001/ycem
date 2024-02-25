@@ -2,28 +2,52 @@ import React from "react";
 import styled from "styled-components";
 import { FlexContainerRowSpaceBetween } from "../../shared/containers";
 import InpageNav from "../in-page-nav";
-import exploringTheWorldOfAI from "../../../../public/assets/events/exploring-the-world-of-ai-banner.png";
 import EventItem from "../event-list-item";
 
-const Container = styled(FlexContainerRowSpaceBetween)``;
+export const Container = styled(FlexContainerRowSpaceBetween)`
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 50px;
+`;
 
 const UpcomingEvents = () => {
+  if (events.length === 0) {
+    return (
+      <InpageNav>
+        <Container>
+          We are currently planning our next event. Be on the watchout😇
+        </Container>
+      </InpageNav>
+    );
+  }
   return (
     <InpageNav>
       <Container>
-        {events.map(
-          ({ eventHref, eventImg, month, date, title, timeDay, location }) => (
-            <EventItem
-              key={title}
-              eventHref={eventHref}
-              eventImg={eventImg}
-              month={month}
-              date={date}
-              timeDay={timeDay}
-              location={location}
-              title={title}
-            />
+        {events ? (
+          events.map(
+            ({
+              eventHref,
+              eventImg,
+              month,
+              date,
+              title,
+              timeDay,
+              location,
+            }) => (
+              <EventItem
+                key={title}
+                eventHref={eventHref}
+                eventImg={eventImg}
+                month={month}
+                date={date}
+                timeDay={timeDay}
+                location={location}
+                title={title}
+              />
+            )
           )
+        ) : (
+          <p>We are currently planning our next event!</p>
         )}
       </Container>
     </InpageNav>
@@ -32,14 +56,14 @@ const UpcomingEvents = () => {
 
 export default UpcomingEvents;
 
-const events = [
-  {
-    eventHref: "/events/upcoming-events/exploring-the-world-of-ai",
-    month: "Feb",
-    date: "24",
-    title: "Exploring the World of Artificial Intelligence",
-    timeDay: "Saturday, 11:00AM GMT",
-    location: "Online, Zoom",
-    eventImg: exploringTheWorldOfAI,
-  },
-];
+interface IEvent {
+  eventHref: string;
+  eventImg: string;
+  month: string;
+  date: string;
+  title: string;
+  timeDay: string;
+  location: string;
+}
+
+const events: any[] = [];

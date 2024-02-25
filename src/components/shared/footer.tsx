@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {
   faLinkedin,
   faInstagramSquare,
+  faYoutubeSquare,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -128,6 +129,9 @@ const Footer = () => {
             </a>
             <a href="https://gh.linkedin.com/in/ycem" target="_blank">
               <CustomizedIcon icon={faLinkedin} size="2x" />
+            </a>
+            <a href="https://www.youtube.com/@YCEMGh" target="_blank">
+              <CustomizedIcon icon={faYoutubeSquare} size="2x" />
             </a>
           </SocialItemsWrapper>
         </LogoAndSocialContainer>
