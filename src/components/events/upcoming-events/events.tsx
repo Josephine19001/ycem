@@ -11,19 +11,10 @@ export const Container = styled(FlexContainerRowSpaceBetween)`
 `;
 
 const UpcomingEvents = () => {
-  if (events.length === 0) {
-    return (
-      <InpageNav>
-        <Container>
-          We are currently planning our next event. Be on the watchout😇
-        </Container>
-      </InpageNav>
-    );
-  }
   return (
     <InpageNav>
       <Container>
-        {events ? (
+        {events.length !== 0 ? (
           events.map(
             ({
               eventHref,
@@ -47,7 +38,7 @@ const UpcomingEvents = () => {
             )
           )
         ) : (
-          <p>We are currently planning our next event!</p>
+          <p> We are currently planning our next event. Be on the lookout😇</p>
         )}
       </Container>
     </InpageNav>
