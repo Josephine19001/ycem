@@ -12,7 +12,7 @@ const IframeContainer = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 
   margin-bottom: 10px;
