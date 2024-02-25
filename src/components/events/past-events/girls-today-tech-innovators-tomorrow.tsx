@@ -1,9 +1,7 @@
 import React from "react";
-import EventPage from "../past-event-page";
+import EventPage, { Description } from "../past-event-page";
 import banner from "../../../../public/assets/events/girl-today-innovation-banner.png";
-import { FlexContainerColumnGapped } from "../../shared/containers";
 import { ButtonPrimary } from "../../shared/buttons";
-import { DescriptionSection } from "./exploring-the-world-of-ai";
 
 const GirlsTodayInnovatorsTomorrow = () => {
   return (
@@ -14,62 +12,59 @@ const GirlsTodayInnovatorsTomorrow = () => {
       feedBackLink="https://forms.gle/cMogfpmBrXYL3Zxg6"
       eventBanner={banner}
       description={
-        <FlexContainerColumnGapped $alignitems="flex-start">
-          <DescriptionSection>
-            <h2>Event Summary</h2>
-            <p>
-              Thank you to all who joined us for an insightful webinar as we
-              delved into the world of technology with our event{" "}
-              <b>&apos;Girls Today, Tech Innovators Tomorrow&apos;! </b>{" "}
-              Throughout the session, we brought together a dynamic group of
-              Software Engineers who have conquered the tech landscape,
-              providing attendees with the latest industry statistics and
-              uncovering the pressing need for gender diversity in tech. Our
-              hosts, shared inspiring examples of how technology is transforming
-              our world and empowering women to become leaders in the field.
-            </p>
-            <h3>Key Highlights</h3>
-            <ul className="event-ul">
-              <li>
-                <b>Career Opportunities in Tech:</b> We explored the diverse
-                range of career paths available in the tech industry, from
-                Software Engineer to UX Designer. Attendees learned about the
-                exciting opportunities awaiting them in this rapidly evolving
-                field.
-              </li>
-              <li>
-                <b>Promoting Diversity:</b> Our discussions emphasized the
-                importance of diversity and inclusion in tech. By showcasing the
-                achievements of women in technology, we aimed to inspire the
-                next generation of tech innovators and foster a more inclusive
-                industry.
-              </li>
-              <li>
-                <b>Empowering Future Leaders:</b> The event concluded with a
-                call to action, encouraging attendees to pursue their passions
-                and strive for excellence in the tech industry. By empowering
-                girls today, we are nurturing the tech innovators of tomorrow.
-              </li>
-            </ul>
+        <Description>
+          <h2>Event Summary</h2>
+          <p>
+            Thank you to all who joined us for an insightful webinar as we
+            delved into the world of technology with our event{" "}
+            <b>&apos;Girls Today, Tech Innovators Tomorrow&apos;! </b>{" "}
+            Throughout the session, we brought together a dynamic group of
+            Software Engineers who have conquered the tech landscape, providing
+            attendees with the latest industry statistics and uncovering the
+            pressing need for gender diversity in tech. Our hosts, shared
+            inspiring examples of how technology is transforming our world and
+            empowering women to become leaders in the field.
+          </p>
+          <h3>Key Highlights</h3>
+          <ul className="event-ul">
+            <li>
+              <b>Career Opportunities in Tech:</b> We explored the diverse range
+              of career paths available in the tech industry, from Software
+              Engineer to UX Designer. Attendees learned about the exciting
+              opportunities awaiting them in this rapidly evolving field.
+            </li>
+            <li>
+              <b>Promoting Diversity:</b> Our discussions emphasized the
+              importance of diversity and inclusion in tech. By showcasing the
+              achievements of women in technology, we aimed to inspire the next
+              generation of tech innovators and foster a more inclusive
+              industry.
+            </li>
+            <li>
+              <b>Empowering Future Leaders:</b> The event concluded with a call
+              to action, encouraging attendees to pursue their passions and
+              strive for excellence in the tech industry. By empowering girls
+              today, we are nurturing the tech innovators of tomorrow.
+            </li>
+          </ul>
 
-            <h3>We Value Your Feedback</h3>
-            <p>
-              Your insights are paramount to us. Please share your thoughts,
-              suggestions, or any feedback you may have regarding the webinar
-              experience by clicking the button below to complete our feedback
-              form. We greatly appreciate your input!
-            </p>
-            <span>
-              <ButtonPrimary
-                onClick={() =>
-                  window.open("https://forms.gle/Vwp2zosiN473S9J5A", "_blank")
-                }
-              >
-                Feedback form
-              </ButtonPrimary>
-            </span>
-          </DescriptionSection>
-        </FlexContainerColumnGapped>
+          <h3>We Value Your Feedback</h3>
+          <p>
+            Your insights are paramount to us. Please share your thoughts,
+            suggestions, or any feedback you may have regarding the webinar
+            experience by clicking the button below to complete our feedback
+            form. We greatly appreciate your input!
+          </p>
+          <span>
+            <ButtonPrimary
+              onClick={() =>
+                window.open("https://forms.gle/Vwp2zosiN473S9J5A", "_blank")
+              }
+            >
+              Feedback form
+            </ButtonPrimary>
+          </span>
+        </Description>
       }
     />
   );

@@ -7,11 +7,29 @@ const PageContainer = styled.div``;
 
 const HeroBanner = styled.div``;
 
-const Description = styled.div``;
-
-const Details = styled(FlexContainerRowSpaceBetween)`
+export const Description = styled.div`
   margin-top: 50px;
   align-items: flex-start;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  h2 {
+    font-weight: 500;
+    color: var(--color-primary);
+  }
+
+  h3 {
+    font-weight: 500;
+    color: var(--color-primary);
+  }
+
+  a {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-transform: lowercase;
+  }
 `;
 
 interface Props {
@@ -29,9 +47,7 @@ const PastEventPage = ({ description, eventBanner }: Props) => {
       <HeroBanner>
         <Image src={eventBanner} alt="Event banner" />
       </HeroBanner>
-      <Details>
-        <Description>{description}</Description>
-      </Details>
+      {description}
     </PageContainer>
   );
 };
