@@ -3,23 +3,23 @@ Welcome to the YCEM (Your Choice in Engineering Matters) website codebase 🤗
 ## Getting Started
 After cloning this to your local environment, run
 ```bash
-npm install
-npm build
+yarn
+yarn build
 ```
 This will install the necessary node packages that the app is dependent on. 
 
 After the package installment and build, run the development server:
 
 ```bash
-npm run dev
+yarn  dev
 ```
 
 or you can simply run (Next has its configuration to optimize pre-rendering when running in start mode. This is almost like running the application in production)
 ```bash
-npm run start
+yarn start
 ```
 
-##Note: before any code is push to git, Husky is configured to ensure code quality conforms with es-lint strict standards. 
+##Note: before any code is pushed to git, Husky is configured to ensure code quality conforms with es-lint strict standards. 
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
