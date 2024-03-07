@@ -1,7 +1,43 @@
 Welcome to the YCEM (Your Choice in Engineering Matters) website codebase 🤗
 
 ## Getting Started
-After cloning this to your local environment, run
+To get started with the YCEM website codebase, follow these steps:
+
+1. Clone this repository to your local environment:
+
+```bash
+git clone <repository-url>
+cd <repository-name>
+```
+
+## NPM & Yarn
+To install Node.js and npm locally, follow these steps:
+
+Download Node.js: Visit the Node.js website, and download the LTS (Long-Term Support) version suitable for your operating system.
+
+Install Node.js: Run the installer and follow the on-screen instructions to install Node.js on your system.
+
+Verify Installation: Open a terminal or command prompt and type the following commands to verify that Node.js and npm are installed correctly:
+
+```bash
+node -v
+npm -v
+```
+
+To install Yarn, you can follow these steps:
+
+Install Yarn: After installing Node.js and npm, you can install Yarn using npm itself. Open a terminal or command prompt and run the following command:
+
+```bash
+npm install -g yarn
+```
+
+Verify Installation: After the installation is complete, you can verify that Yarn is installed correctly by typing:
+```bash
+yarn --version
+```
+
+After cloning this to your local environment and setting up yarn, run
 ```bash
 yarn
 yarn build
@@ -19,10 +55,12 @@ or you can simply run (Next has its configuration to optimize pre-rendering when
 yarn start
 ```
 
-##Note: before any code is pushed to git, Husky is configured to ensure code quality conforms with es-lint strict standards. 
-
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## NOTE
+Before pushing any code changes to Git, ensure that your code conforms to ESLint strict standards. Husky is configured to enforce code quality standards.
+
+*WARNING*: Avoid pushing directly to the main branch. Always create a new branch for your changes and submit a pull request (PR) for review.
 
 ## Learn More
 
