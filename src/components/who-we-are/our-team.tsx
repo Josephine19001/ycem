@@ -16,7 +16,7 @@ import gertrudePic from "../../../public/assets/team-pictures/gertrude.png";
 import nadeshPic from "../../../public/assets/team-pictures/nadesh-2.jpg";
 import ursulaPic from "../../../public/assets/team-pictures/ursula.jpeg";
 import oforiwaaPic from "../../../public/assets/team-pictures/oforiwaa.jpeg";
-import perpetualPic from "../../../public/assets/team-pictures/perpetual.jpeg";
+import perpetualPic from "../../../public/assets/team-pictures/perpetual.jpg";
 import emmanuellaPic from "../../../public/assets/team-pictures/emmanuella.jpg";
 import vivianPic from "../../../public/assets/team-pictures/vivian-agyapong.jpg";
 

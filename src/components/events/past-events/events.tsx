@@ -32,15 +32,6 @@ export default PastEvents;
 
 const events = [
   {
-    eventHref: "/events/past-events/girls-today-tech-innovators-tomorrow",
-    month: "Nov",
-    date: "11",
-    title: "Girls Today, Tech Innovators Tomorrow",
-    timeDay: "Saturday, 3:30PM - 5:00PM GMT",
-    location: "Online, Google Meet",
-    eventImg: girlTodayEvent,
-  },
-  {
     eventHref: "/events/past-events/exploring-the-world-of-ai",
     month: "Feb",
     date: "24",
@@ -48,5 +39,14 @@ const events = [
     timeDay: "Saturday, 11:00AM GMT",
     location: "Online, Zoom",
     eventImg: exploringTheWorldOfAI,
+  },
+  {
+    eventHref: "/events/past-events/girls-today-tech-innovators-tomorrow",
+    month: "Nov",
+    date: "11",
+    title: "Girls Today, Tech Innovators Tomorrow",
+    timeDay: "Saturday, 3:30PM - 5:00PM GMT",
+    location: "Online, Google Meet",
+    eventImg: girlTodayEvent,
   },
 ];

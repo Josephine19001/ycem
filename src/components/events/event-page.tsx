@@ -122,7 +122,7 @@ const EventPage = ({
   return (
     <PageContainer>
       <HeroBanner>
-        <Image src={eventBanner} alt="Event banner" />
+        <Image priority src={eventBanner} alt="Event banner" />
       </HeroBanner>
       <Details>
         <Description>{description}</Description>

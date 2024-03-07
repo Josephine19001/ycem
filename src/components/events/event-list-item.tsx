@@ -88,7 +88,7 @@ const EventItem = ({
     <Container>
       <a href={eventHref}>
         <ImageContainer>
-          <CustomImage src={eventImg} alt="YCEM event banner" />
+          <CustomImage priority src={eventImg} alt="YCEM event banner" />
         </ImageContainer>
       </a>
       <Details>
