@@ -6,8 +6,7 @@ To get started with the YCEM website codebase, follow these steps:
 1. Clone this repository to your local environment:
 
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/Josephine19001/ycem.git
 ```
 
 ## NPM & Yarn
