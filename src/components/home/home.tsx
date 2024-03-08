@@ -148,7 +148,7 @@ const Home = () => {
         />
         <div id="hero-text">
           <div className="hero-inner-content">
-            <h1>Empowering HER Future in Engineering</h1>
+            <h1>Empowering HIS Future in Engineering</h1>
             <p>
               At YCEM, we believe that every young girl has the power to
               engineer her own future. Our mission is to provide the tools,
