@@ -3,7 +3,7 @@ import EventPage, { Description } from "../past-event-page";
 import banner from "../../../../public/assets/events/student.jpg";
 import { ButtonPrimary } from "../../shared/buttons";
 
-const GirlsTodayInnovatorsTomorrow = () => {
+const AccraGirlsSeniorHighSchool = () => {
   return (
     <EventPage
       timeDay={"Friday, 1:00PM GMT"}
@@ -69,7 +69,7 @@ const GirlsTodayInnovatorsTomorrow = () => {
   );
 };
 
-export default GirlsTodayInnovatorsTomorrow;
+export default AccraGirlsSeniorHighSchool;
 
 {
   /* <EventPage

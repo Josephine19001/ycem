@@ -1,13 +1,13 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
 import Head from "next/head";
-import EventsComponent from "../../../src/components/events/past-events/girls-today-tech-innovators-tomorrow";
+import EventsComponent from "../../../src/components/events/past-events/Accra-Girls-Senior-High-School-Outreach";
 
-const GirlsTodayInnovatorsTomorrow: NextPage = () => {
+const AccraGirlsSeniorHighSchool: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Girls Today, Innovators Tomorrow event - ycem.org</title>
+        <title>Accra Girls&apos; Senior High School - ycem.org</title>
       </Head>
       <NextSeo
         openGraph={{
@@ -33,4 +33,4 @@ const GirlsTodayInnovatorsTomorrow: NextPage = () => {
   );
 };
 
-export default GirlsTodayInnovatorsTomorrow;
+export default AccraGirlsSeniorHighSchool;
