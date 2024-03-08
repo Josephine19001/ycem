@@ -31,7 +31,7 @@ const AccraGirlsSeniorHighSchool = () => {
           <ul className="event-ul">
             <li>
               <b>:</b> We encouraged the girls to break barriers and not confine their aspirations 
-              within conventional boundaries. "Don't" limit your potential based on societal norms or percieved limitations.
+              within conventional boundaries. Don&apos;t limit your potential based on societal norms or percieved limitations.
             </li>
             <li>
               <b>Blend Academia with Real-World Experiences:</b> While academic excellence is crucial, 
