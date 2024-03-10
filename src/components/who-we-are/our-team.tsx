@@ -13,7 +13,6 @@ import abenaPic from "../../../public/assets/team-pictures/abena.jpeg";
 import daniellePic from "../../../public/assets/team-pictures/danielle.png";
 import florentynaPic from "../../../public/assets/team-pictures/florentyna.jpeg";
 import gertrudePic from "../../../public/assets/team-pictures/gertrude.png";
-import nadeshPic from "../../../public/assets/team-pictures/nadesh-2.jpg";
 import ursulaPic from "../../../public/assets/team-pictures/ursula.jpeg";
 import oforiwaaPic from "../../../public/assets/team-pictures/oforiwaa.jpeg";
 import perpetualPic from "../../../public/assets/team-pictures/perpetual.jpg";
@@ -280,20 +279,6 @@ export const teamInfo = [
     ],
     imgAlt: "Abena's profile picture",
     imgSrc: abenaPic,
-  },
-  {
-    name: "Nadesh Kwakye",
-    jobTitle: "Materials Engineer",
-    bioSummary:
-      "Nadesh is a materials scientist and engineer who is passionate about developing novel, affordable, and highly efficient catalytic nanomaterials for healthcare delivery. Her research revolves around the development polymer composites as drug delivery vehicles for cancer therapy. In her free time, she loves to film and edit videos, read business books, and watch Korean Drama.",
-    socialLinks: [
-      {
-        link: "https://www.linkedin.com/in/kwakye-nadesh-502044183",
-        icon: faLinkedin,
-      },
-    ],
-    imgAlt: "Nadesh's profile picture",
-    imgSrc: nadeshPic,
   },
   {
     name: "Perpetual Napoga Nin-yenle",
