@@ -103,9 +103,9 @@ export const uniRepsInfo = [
   },
   {
     name: "Ruth Siantey",
-    jobTitle: "Biomedical Engineering student, Valley View University, Ghana",
+    jobTitle: "Biomedical Engineering student, University of Ghana",
     bioSummary:
-      "Ruth is a dedicated student in the Biomedical Engineering field and deeply committed to empowering women in technology. She actively advocate for gender equality and inclusion in the tech industry. Outside of my engineering endeavors, Ruth finds joy in visiting high schools to empower young girls and indulge in my passion for cooking. Through education, mentorship, and embracing diversity, she strive to create a world where every woman's voice is heard and her potential in tech is realized. Join me on this empowering journey as we shape the future of technology together.",
+      "Ruth is a dedicated student in the Biomedical Engineering field and deeply committed to empowering women in technology. She actively advocate for gender equality and inclusion in the tech industry. Outside of her engineering endeavors, Ruth finds joy in visiting high schools to empower young girls and indulge in her passion for cooking. Through education, mentorship, and embracing diversity, she strive to create a world where every woman's voice is heard and her potential in tech is realized. Join her (together with YCEM) on this empowering journey as we shape the future of technology together.",
 
     imgAlt: "Ruth's profile picture",
     imgSrc: ruthPic,
