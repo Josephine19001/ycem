@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 
 import sallyPic from "../../../public/assets/team-pictures/uni-reps/sally-aba.jpg";
 import janjayPic from "../../../public/assets/team-pictures/uni-reps/janjay.jpg";
+import ruthPic from "../../../public/assets/team-pictures/uni-reps/ruth.jpg";
 
 import IntroSection from "../shared/intro-section";
 import { FlexContainerRowSpaceBetween, Section } from "../shared/containers";
@@ -97,6 +98,17 @@ export const uniRepsInfo = [
 
     imgAlt: "Janjay's profile picture",
     imgSrc: janjayPic,
+    isNotStatic: false,
+    socialLinks: [],
+  },
+  {
+    name: "Ruth Siantey",
+    jobTitle: "Biomedical Engineering student, Valley View University, Ghana",
+    bioSummary:
+      "Ruth is a dedicated student in the Biomedical Engineering field and deeply committed to empowering women in technology. She actively advocate for gender equality and inclusion in the tech industry. Outside of my engineering endeavors, Ruth finds joy in visiting high schools to empower young girls and indulge in my passion for cooking. Through education, mentorship, and embracing diversity, she strive to create a world where every woman's voice is heard and her potential in tech is realized. Join me on this empowering journey as we shape the future of technology together.",
+
+    imgAlt: "Ruth's profile picture",
+    imgSrc: ruthPic,
     isNotStatic: false,
     socialLinks: [],
   },
