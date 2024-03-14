@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { FlexContainerRowSpaceBetween } from "../../shared/containers";
 import InpageNav from "../in-page-nav";
 import EventItem from "../event-list-item";
+import biomedicalSeriesFlyer from '../../../../public/assets/events/biomedical.series.flyer.png'
 
 export const Container = styled(FlexContainerRowSpaceBetween)`
   justify-content: flex-start;
@@ -57,4 +58,14 @@ interface IEvent {
   location: string;
 }
 
-const events: any[] = [];
+const events: any[] = [
+  {
+    eventHref: "/events/upcoming-events/clinical-engineering-series-1",
+    month: "Mar",
+    date: "23",
+    title: "A Step into clinical engineering ",
+    timeDay: "Saturday, 03:30PM GMT",
+    location: "Online, Zoom",
+    eventImg: biomedicalSeriesFlyer,
+  },
+];
