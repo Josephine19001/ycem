@@ -24,6 +24,11 @@ export const navItems = [
   {
     href: "/events/upcoming-events",
     label: "Events",
+    hasDropdown: true,
+    subMenu: [
+      { href: "/events/upcoming-events", label: "Upcoming Events" },
+      { href: "/events/past-events", label: "Past Events" },
+    ],
   },
   {
     href: "/who-we-are",

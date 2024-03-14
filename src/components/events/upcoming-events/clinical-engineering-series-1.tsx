@@ -1,7 +1,6 @@
 import React from "react";
 import EventPage from "../event-page";
 import banner from "../../../../public/assets/events/biomedical-series-1.png";
-import { ButtonPrimary } from "../../shared/buttons";
 import { FlexContainerColumnGapped } from "../../shared/containers";
 
 const ClinicalEngineeringSeries = () => {
