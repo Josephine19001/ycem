@@ -34,6 +34,15 @@ export default PastEvents;
 
 export const events = [
   {
+    eventHref: "/events/past-events/clinical-engineering-series-1",
+    month: "Mar",
+    date: "23",
+    title: "A Step into clinical engineering ",
+    timeDay: "Saturday, 03:30PM GMT",
+    location: "Online, Zoom",
+    eventImg: biomedicalSeriesFlyer,
+  },
+  {
     eventHref: "/events/past-events/exploring-the-world-of-ai",
     month: "Feb",
     date: "24",
@@ -50,14 +59,5 @@ export const events = [
     timeDay: "Saturday, 3:30PM - 5:00PM GMT",
     location: "Online, Google Meet",
     eventImg: girlTodayEvent,
-  },
-  {
-    eventHref: "/events/past-events/clinical-engineering-series-1",
-    month: "Mar",
-    date: "23",
-    title: "A Step into clinical engineering ",
-    timeDay: "Saturday, 03:30PM GMT",
-    location: "Online, Zoom",
-    eventImg: biomedicalSeriesFlyer,
   },
 ];

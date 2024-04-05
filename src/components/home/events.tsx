@@ -1,22 +1,9 @@
-import { useEffect } from "react";
 import Image from "next/image";
 import styled, { keyframes } from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { events } from "../events/past-events/events";
 import { SectionDescription, SectionTitle } from "../shared/typography";
-import { ButtonLink } from "../shared/nav-link";
-import { ButtonPrimary, ButtonSecondary } from "../shared/buttons";
+import { ButtonPrimary } from "../shared/buttons";
 import Link from "next/link";
-
-const fadeInAnimation = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`;
 
 const ContainerFluid = styled.div`
   width: 100%;
