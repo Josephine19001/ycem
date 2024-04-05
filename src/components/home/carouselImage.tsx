@@ -39,6 +39,7 @@ const CarouselImage: React.FC<CarouselImageProps> = ({
 }) => (
   <HeroImage className="d-flex align-items-center">
     <Image
+      priority
       src={src}
       alt={alt}
       layout="fill"

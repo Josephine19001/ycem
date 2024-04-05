@@ -151,12 +151,14 @@ const Home = () => {
                     src={home1}
                     alt=""
                     style={{ objectFit: "cover" }}
+                    priority
                   />
                   <Image
                     className="position-absolute top-0 end-0 bg-white ps-2 pb-2"
                     src={home2}
                     alt=""
                     style={{ width: "200px", height: "200px" }}
+                    priority
                   />
                 </div>
               </div>

@@ -150,6 +150,7 @@ const Event = () => {
                 <EventImg className="project-img">
                   <Image
                     src={event.eventImg}
+                    priority
                     className="img-fluid w-100 rounded"
                     alt=""
                   />
