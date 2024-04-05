@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,6 +18,7 @@
   --color-gray-light: #6e6f7191;
   --color-primary-transparent: #e3f3f2;
   --color-light: #FFFEFC;
+  --dark: #001D23;
 
   --color-light-active: #465b5a;
   --color-success: rgb(15, 98, 15);
@@ -201,3 +202,140 @@ footer {
   list-style: square;
   margin-left: 20px;
 }
+
+.btn-with-arrow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.about-home{
+  border-radius: 6px !important;
+  background-color: #F8F8F9 !important;
+  padding: 1.5rem !important;
+  border-width: 5px !important;
+  border-color: #fff !important;
+  border-bottom: 5px solid  var(--color-primary) !important;
+}
+
+.display-4 {
+  font-size:calc(1.475rem + 2.7vw);
+  font-weight:700;line-height:1.2
+}
+
+@media (min-width: 1200px){
+  .display-4{
+    font-size:3.5rem
+  }
+}
+
+/*** Button ***/
+.btn {
+  font-weight: 500;
+  transition: .5s;
+}
+
+.btn.btn-primary,
+.btn.btn-outline-primary:hover {
+  color: #FFFFFF;
+}
+
+.btn.btn-primary:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  background: transparent;
+}
+.btn.btn-outline-primary{
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+.btn.btn-outline-primary:hover{
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #f0f1f1;
+}
+
+.btn.btn-primary{
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+
+.btn-square {
+  width: 38px;
+  height: 38px;
+}
+
+.btn-sm-square {
+  width: 32px;
+  height: 32px;
+}
+
+.btn-lg-square {
+  width: 48px;
+  height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+}
+
+
+
+
+/*** Header ***/
+.carousel-caption {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--dark);
+  border: 12px solid var(--dark);
+  border-radius: 3rem;
+}
+
+@media (max-width: 768px) {
+  #header-carousel .carousel-item {
+      position: relative;
+      min-height: 450px;
+  }
+  
+  #header-carousel .carousel-item img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+}
+
+.page-header {
+  padding-top: 12rem;
+  padding-bottom: 6rem;
+  background: linear-gradient(rgba(0, 29, 35, .8), rgba(0, 29, 35, .8)), url(../public/assets/ycem-kids.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.page-header .breadcrumb-item+.breadcrumb-item::before {
+  color: #999999;
+}
+

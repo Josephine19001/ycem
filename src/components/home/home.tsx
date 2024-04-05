@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import {
   FlexContainerColumnSpaceBetween,
   FlexContainerRowSpaceBetween,
@@ -11,16 +13,14 @@ import {
   SectionDescription,
   SectionTitle,
 } from "../shared/typography";
-import { homeServiceSectionContent, aboutUsContent } from "../shared/constants";
+import { homeServiceSectionContent } from "../shared/constants";
 import JoiningUs from "../shared/joining-us";
 import { Divider } from "../shared/footer";
-import {
-  AboutSectionContainer,
-  ContentWrapper,
-  ImageContainer,
-} from "../who-we-are/who-we-are";
-import heroBgImage from "../../../public/assets/hero-bg.jpeg";
-import accraGirlGroupPic from "../../../public/assets/accra-girls-group.jpg";
+import home1 from "../../../public/home/home1.jpg";
+import home2 from "../../../public/home/home2.jpg";
+import HeroCarousel from "./carouselImage";
+import Event from "./events";
+import Link from "next/link";
 
 // Solutions Section Components
 const ServicesSectionContainer = styled(FlexContainerRowSpaceBetween)`
@@ -121,11 +121,6 @@ const HeroSection = styled(Section)`
   }
 `;
 
-const HeroImage = styled(Image)`
-  width: 100%;
-  height: auto;
-`;
-
 const ActivityImageContainer = styled.div`
   width: 200px;
   img {
@@ -139,52 +134,109 @@ const Home = () => {
   return (
     <div>
       <HeroSection>
-        <HeroImage
-          priority
-          src={heroBgImage}
-          alt="Hero Image Alt Text"
-          layout="fill"
-          objectFit="cover"
-        />
-        <div id="hero-text">
-          <div className="hero-inner-content">
-            <h1>Empowering HER Future in Engineering</h1>
-            <p>
-              At YCEM, we believe that every young girl has the power to
-              engineer her own future. Our mission is to provide the tools,
-              resources, and support needed to empower young girls of all ages
-              and backgrounds to succeed and overcome barriers. Together, we can
-              create a world where every girl&apos;s choice matters, where she can
-              make meaningful decisions in the engineering fields that will
-              accentuate her strengths, and where she can thrive and succeed
-              in all aspects of life.
-            </p>
-          </div>
-        </div>
-        <div id="overlay"></div>
+        <HeroCarousel />
       </HeroSection>
 
       <Section style={{ marginTop: "50px" }}>
-        <AboutSectionContainer>
-          <FlexContainerRowSpaceBetween $gap="100px">
-            <ImageContainer>
-              <Image
-                priority
-                src={accraGirlGroupPic}
-                alt={`A a group picture of volunteer`}
-                style={{ width: "100%" }}
-              />
-            </ImageContainer>
-            <ContentWrapper>
-              <SectionTitle>Who We Are</SectionTitle>
-              <SectionDescription>
-                Empowering Young Females in Engineering Careers
-              </SectionDescription>
-              <p>{aboutUsContent.text1}</p>
-              <p>{aboutUsContent.text2}</p>
-            </ContentWrapper>
-          </FlexContainerRowSpaceBetween>
-        </AboutSectionContainer>
+        <div className="container-xxl py-5">
+          <div className="container">
+            <div className="row g-5">
+              <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div
+                  className="position-relative overflow-hidden h-100"
+                  style={{ minHeight: "400px" }}
+                >
+                  <Image
+                    className="position-absolute w-100 h-100 pt-5 pe-5"
+                    src={home1}
+                    alt=""
+                    style={{ objectFit: "cover" }}
+                    priority
+                  />
+                  <Image
+                    className="position-absolute top-0 end-0 bg-white ps-2 pb-2"
+                    src={home2}
+                    alt=""
+                    style={{ width: "200px", height: "200px" }}
+                    priority
+                  />
+                </div>
+              </div>
+              <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div className="h-100">
+                  <SectionTitle>About us</SectionTitle>
+
+                  <SectionDescription style={{ margin: "16px 0" }}>
+                    We Encourage Careers in Engineering for Young Ladies
+                  </SectionDescription>
+                  <div className="about-home p-4 mb-4">
+                    <p className="text-dark mb-2 ">
+                      YCEM is dedicated to empowering young females in
+                      engineering, bridging the gender gap through events,
+                      mentorship, and hands-on experiences.
+                    </p>
+                    <span style={{ color: "var(--color-primary)" }}>
+                      Founded in 2020
+                    </span>
+                  </div>
+                  <p className="mb-5">
+                    We inspire and encourage young women to pursue engineering
+                    fields, fostering innovation and diversity. Join us to shape
+                    the future of engineering careers for young females.
+                  </p>
+                  <FlexContainerRowSpaceBetween
+                    style={{ justifyContent: "flex-start" }}
+                  >
+                    <Link
+                      className="btn btn-primary py-2 px-3 me-3 btn-with-arrow"
+                      href="/who-we-are"
+                    >
+                      <span style={{ marginRight: "5px" }}>Learn More</span>
+                      <span
+                        style={{
+                          backgroundColor: "white",
+                          borderRadius: "50%",
+                          width: "30px",
+                          height: "30px",
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                        }}
+                      >
+                        <FontAwesomeIcon
+                          icon={faArrowRight}
+                          style={{ color: "var(--color-primary)" }}
+                        />
+                      </span>{" "}
+                    </Link>
+                    <Link
+                      className="btn btn-outline-primary py-2 px-3 btn-with-arrow"
+                      href="/contact"
+                    >
+                      Contact Us
+                      <div
+                        style={{
+                          backgroundColor: "var(--color-primary)",
+                          borderRadius: "50%",
+                          width: "30px",
+                          height: "30px",
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                        }}
+                      >
+                        <FontAwesomeIcon
+                          icon={faArrowRight}
+                          style={{ color: "white" }}
+                        />
+                      </div>
+                    </Link>
+                  </FlexContainerRowSpaceBetween>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </Section>
       <Divider margin="50px 0" />
 
@@ -215,6 +267,13 @@ const Home = () => {
           </ServicesSectionRight>
         </ServicesSectionContainer>
       </Section>
+
+      <Divider margin="50px 0" />
+
+      <Section>
+        <Event />
+      </Section>
+
       <Divider margin="50px 0" />
 
       <JoiningUs />

@@ -1,13 +1,13 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
 import Head from "next/head";
-import EventsComponent from "../../../src/components/events/upcoming-events/clinical-engineering-series-1";
+import EventsComponent from "../../../src/components/events/upcoming-events/exploring-bioinformatics-series-2";
 
-const ClinicalEngineeringSeries: NextPage = () => {
+const ExploringBioInformatics: NextPage = () => {
   return (
     <>
       <Head>
-        <title>A Step Into Clinical Engineering - ycem.org</title>
+        <title>Exploring Bioinformatics and Beyond - ycem.org</title>
       </Head>
       <NextSeo
         openGraph={{
@@ -17,7 +17,7 @@ const ClinicalEngineeringSeries: NextPage = () => {
           siteName: "YCEM",
           title: "Your Choice in Engineering Matters",
           description:
-            "Introducing 'A Step Into Clinical Engineering' – our new biomedical series featuring insightful journeys in the Biomed world. Dive into engaging events and seize career guidance and mentorship opportunities. Join us!",
+            "Introducing 'Exploring Bioinformatics and Beyond' – our new biomedical series featuring insightful journeys in the Biomed world. Dive into engaging events and seize career guidance and mentorship opportunities. Join us!",
           images: [
             {
               url: "public/assets/events/biomedical.series.flyer.png",
@@ -33,4 +33,4 @@ const ClinicalEngineeringSeries: NextPage = () => {
   );
 };
 
-export default ClinicalEngineeringSeries;
+export default ExploringBioInformatics;

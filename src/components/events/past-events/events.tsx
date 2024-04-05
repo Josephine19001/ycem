@@ -2,6 +2,8 @@ import React from "react";
 import InpageNav from "../in-page-nav";
 import girlTodayEvent from "../../../../public/assets/events/girls-today-event.jpg";
 import exploringTheWorldOfAI from "../../../../public/assets/events/exploring-the-world-of-ai-banner.png";
+import biomedicalSeriesFlyer from "../../../../public/assets/events/biomedical.series.flyer.png";
+
 import { Container } from "../upcoming-events/events";
 import EventItem from "../event-list-item";
 
@@ -30,7 +32,16 @@ const PastEvents = () => {
 
 export default PastEvents;
 
-const events = [
+export const events = [
+  {
+    eventHref: "/events/past-events/clinical-engineering-series-1",
+    month: "Mar",
+    date: "23",
+    title: "A Step into clinical engineering ",
+    timeDay: "Saturday, 03:30PM GMT",
+    location: "Online, Zoom",
+    eventImg: biomedicalSeriesFlyer,
+  },
   {
     eventHref: "/events/past-events/exploring-the-world-of-ai",
     month: "Feb",

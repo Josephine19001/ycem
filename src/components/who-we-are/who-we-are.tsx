@@ -12,9 +12,8 @@ import { ButtonPrimary } from "../shared/buttons";
 import { useRouter } from "next/router";
 import { Divider } from "../shared/footer";
 import useSmallerScreens from "../../hooks/use-smaller-screens";
-import { aboutUsContent } from "../shared/constants";
-import accraGirlGroupPic from "../../../public/assets/accra-girls-group.jpg";
-import studentPic from "../../../public/assets/student.jpg";
+import accraGirlGroupPic from "../../../public/hero/accra-girls-group.jpg";
+import studentPic from "../../../public/ycem-talk2.jpg";
 import ContactFormModal from "../shared/contact-form-modal";
 
 export const AboutSectionContainer = styled(FlexContainerColumnSpaceBetween)`
@@ -149,6 +148,8 @@ const WhoWeAre = () => {
             <ImageContainer>
               <Image
                 priority
+                height={200}
+                width={400}
                 src={studentPic}
                 alt={
                   "A picture of an Accra girls secondary school student speaking"

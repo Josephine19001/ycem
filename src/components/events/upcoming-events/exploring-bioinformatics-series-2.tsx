@@ -1,24 +1,33 @@
 import React from "react";
 import EventPage from "../event-page";
-import banner from "../../../../public/assets/events/biomedical-series-1.png";
+import banner from "../../../../public/assets/events/Bioinformatics.png";
 import { FlexContainerColumnGapped } from "../../shared/containers";
 
 const ClinicalEngineeringSeries = () => {
   return (
     <EventPage
       timeDay={"Saturday, 3:30PM GMT"}
-      date="March 23rd, 2024"
+      date="April 13rd, 2024"
       location="Online, Zoom"
-      eventLink="https://forms.gle/yb2HCoc4pZWrNBV98"
+      eventLink="https://docs.google.com/forms/d/e/1FAIpQLScG9H7eb6sCQdrH7R6Ri-xo4iAOgnhEvWxIovOUatw1jWAz8w/viewform"
       eventBanner={banner}
       description={
         <FlexContainerColumnGapped>
           <p>
+            Join us on an exciting journey of discovery with NATALIE KOKROKO, a
+            Ph.D. Computer Science student at Rice University in Texas, USA.
+            With a Bachelor&apos;s Degree in Biomedical Engineering, where she
+            discovered her enthusiasm for Bioinformatics, Natalie&apos;s research
+            bridges Biomedical Science and Computer Science. You don&apos;t want to
+            miss out on insightful discussions and answers to your burning
+            questions about Bioinformatics. 🥳
+          </p>
+          <p>
             Step into the exciting world of Clinical Engineering with our new
             series! Let&apos;s embark on a journey,{" "}
-            <b>&apos;A Step Into Clinical Engineering&apos;! </b>, where we
-            delve deep into the heart of biomedical innovation. Our esteemed
-            guest will take you on a journey through their professional
+            <b>&apos;Exploring Bioinformatics and Beyond&apos;!</b>, where we delve deep
+            into the heart of biomedical innovation. Our esteemed guest, Natalie
+            Kokroko, will take you on a journey through her professional
             experiences, offering invaluable insights into the intricacies of
             Clinical Engineering.
           </p>
