@@ -135,9 +135,9 @@ const Event = () => {
           <SectionDescription style={{ margin: "16px 0" }}>
             Checkout Some Of Our Past And Upcoming Events
           </SectionDescription>
-          <a href="/events/upcoming-events">
+          <Link href="/events/upcoming-events">
             <ButtonPrimary>Learn more</ButtonPrimary>
-          </a>
+          </Link>
         </EventHeader>
         <div className="row g-5">
           {events.map((event, index) => (
