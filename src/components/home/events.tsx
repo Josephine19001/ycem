@@ -7,6 +7,7 @@ import { events } from "../events/past-events/events";
 import { SectionDescription, SectionTitle } from "../shared/typography";
 import { ButtonLink } from "../shared/nav-link";
 import { ButtonPrimary, ButtonSecondary } from "../shared/buttons";
+import Link from "next/link";
 
 const fadeInAnimation = keyframes`
   from {
@@ -153,9 +154,9 @@ const Event = () => {
                     alt=""
                   />
                   <EventContent className="project-content">
-                    <a href={event.eventHref}>
+                    <Link href={event.eventHref}>
                       <ButtonPrimary>Read More</ButtonPrimary>
-                    </a>
+                    </Link>
                   </EventContent>
                 </EventImg>
               </EventItem>

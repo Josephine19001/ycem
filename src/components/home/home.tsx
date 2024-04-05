@@ -20,6 +20,7 @@ import home1 from "../../../public/home/home1.jpg";
 import home2 from "../../../public/home/home2.jpg";
 import HeroCarousel from "./carouselImage";
 import Event from "./events";
+import Link from "next/link";
 
 // Solutions Section Components
 const ServicesSectionContainer = styled(FlexContainerRowSpaceBetween)`
@@ -184,7 +185,7 @@ const Home = () => {
                   <FlexContainerRowSpaceBetween
                     style={{ justifyContent: "flex-start" }}
                   >
-                    <a
+                    <Link
                       className="btn btn-primary py-2 px-3 me-3 btn-with-arrow"
                       href="/who-we-are"
                     >
@@ -205,8 +206,8 @@ const Home = () => {
                           style={{ color: "var(--color-primary)" }}
                         />
                       </span>{" "}
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       className="btn btn-outline-primary py-2 px-3 btn-with-arrow"
                       href="/contact"
                     >
@@ -227,7 +228,7 @@ const Home = () => {
                           style={{ color: "white" }}
                         />
                       </div>
-                    </a>
+                    </Link>
                   </FlexContainerRowSpaceBetween>
                 </div>
               </div>
@@ -264,7 +265,7 @@ const Home = () => {
           </ServicesSectionRight>
         </ServicesSectionContainer>
       </Section>
-      
+
       <Divider margin="50px 0" />
 
       <Section>

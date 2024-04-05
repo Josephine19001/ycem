@@ -16,7 +16,7 @@ const GirlsTodayInnovatorsTomorrow = () => {
           <h2>Event Summary</h2>
           <p>
             Step into the exciting world of Clinical Engineering with our latest
-            series, 'A Step Into Clinical Engineering,' where we delved deep
+            series, &apos;A Step Into Clinical Engineering,&apos; where we delved deep
             into the heart of biomedical innovation. Our esteemed guest took us
             on a journey through their professional experiences, offering
             invaluable insights into the intricacies of Clinical Engineering.
@@ -24,7 +24,7 @@ const GirlsTodayInnovatorsTomorrow = () => {
           <p>
             We delved into key topics that not only introduced participants to
             the fundamentals of clinical engineering but also showcased its
-            applications in today's dynamic healthcare landscape. Whether you
+            applications in today&apos;s dynamic healthcare landscape. Whether you
             were a tech enthusiast, a budding professional, or simply curious
             about the possibilities Biomedical Engineering holds, this event
             served as your gateway to understanding the present and shaping the
