@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Carousel } from "react-bootstrap";
 import accraGirlGroupPic from "../../../public/hero/accra-girls-group.jpg";
 import hero1 from "../../../public/hero/hero1.jpg";
-import hero2 from "../../../public/hero/hero1.jpg";
+import hero2 from "../../../public/hero/hero2.jpg";
 import Link from "next/link";
 
 // Styled-components

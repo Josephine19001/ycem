@@ -16,8 +16,8 @@ import {
 import { homeServiceSectionContent } from "../shared/constants";
 import JoiningUs from "../shared/joining-us";
 import { Divider } from "../shared/footer";
-import home1 from "../../../public/hero/hero1.jpg";
-import home2 from "../../../public/hero/hero2.jpg";
+import home1 from "../../../public/home/home1.jpg";
+import home2 from "../../../public/home/home2.jpg";
 import HeroCarousel from "./carouselImage";
 import Event from "./events";
 import Link from "next/link";
