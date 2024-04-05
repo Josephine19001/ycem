@@ -127,7 +127,10 @@ const Footer = () => {
             >
               <CustomizedIcon icon={faInstagramSquare} size="2x" />
             </a>
-            <a href="https://gh.linkedin.com/in/ycem" target="_blank">
+            <a
+              href="https://www.linkedin.com/company/your-choice-in-engineering-matters-ycem/mycompany/"
+              target="_blank"
+            >
               <CustomizedIcon icon={faLinkedin} size="2x" />
             </a>
             <a href="https://www.youtube.com/@YCEMGh" target="_blank">

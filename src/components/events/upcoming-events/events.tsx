@@ -3,45 +3,56 @@ import styled from "styled-components";
 import { FlexContainerRowSpaceBetween } from "../../shared/containers";
 import InpageNav from "../in-page-nav";
 import EventItem from "../event-list-item";
-import biomedicalSeriesFlyer from '../../../../public/assets/events/biomedical.series.flyer.png'
+import exploringBioInformaticPic from "../../../../public/assets/events/exploring-bioinformatic.png";
 
 export const Container = styled(FlexContainerRowSpaceBetween)`
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   gap: 50px;
+  flex-wrap: wrap;
+`;
+
+const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
 const UpcomingEvents = () => {
   return (
     <InpageNav>
-      <Container>
-        {events.length !== 0 ? (
-          events.map(
-            ({
-              eventHref,
-              eventImg,
-              month,
-              date,
-              title,
-              timeDay,
-              location,
-            }) => (
-              <EventItem
-                key={title}
-                eventHref={eventHref}
-                eventImg={eventImg}
-                month={month}
-                date={date}
-                timeDay={timeDay}
-                location={location}
-                title={title}
-              />
+      <Wrapper>
+        <Container>
+          {events.length !== 0 ? (
+            events.map(
+              ({
+                eventHref,
+                eventImg,
+                month,
+                date,
+                title,
+                timeDay,
+                location,
+              }) => (
+                <EventItem
+                  key={title}
+                  eventHref={eventHref}
+                  eventImg={eventImg}
+                  month={month}
+                  date={date}
+                  timeDay={timeDay}
+                  location={location}
+                  title={title}
+                />
+              )
             )
-          )
-        ) : (
-          <p> We are currently planning our next event. Be on the lookout😇</p>
-        )}
-      </Container>
+          ) : (
+            <p>
+              {" "}
+              We are currently planning our next event. Be on the lookout😇
+            </p>
+          )}
+        </Container>
+      </Wrapper>
     </InpageNav>
   );
 };
@@ -60,12 +71,12 @@ interface IEvent {
 
 const events: any[] = [
   {
-    eventHref: "/events/upcoming-events/clinical-engineering-series-1",
-    month: "Mar",
-    date: "23",
-    title: "A Step into clinical engineering ",
+    eventHref: "/events/past-events/clinical-engineering-series-1",
+    month: "Apr",
+    date: "13",
+    title: "Exploring Bioinformatics and Beyond",
     timeDay: "Saturday, 03:30PM GMT",
     location: "Online, Zoom",
-    eventImg: biomedicalSeriesFlyer,
+    eventImg: exploringBioInformaticPic,
   },
 ];
