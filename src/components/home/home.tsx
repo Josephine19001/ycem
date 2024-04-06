@@ -240,7 +240,7 @@ const Home = () => {
         <FlexContainerColumnCenter>
           <SectionTitle>Highlights</SectionTitle>
           <SectionDescription>
-            Achievements and events Highlights.
+            Achievements and events Highlights
           </SectionDescription>
         </FlexContainerColumnCenter>
         <Dashboard />
