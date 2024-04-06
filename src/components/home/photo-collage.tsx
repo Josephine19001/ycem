@@ -14,22 +14,22 @@ const PhotoCollage = () => {
   return (
     <div className="container-fluid">
       <Row className="d-flex flex-row flex-wrap justify-content-center">
-        <Col className="d-flex flex-column">
+        <Col xs={12} sm={6} md={3} lg={3} className="d-flex flex-column">
           <Image src={img4} alt="Image 4" />
           <Image src={img2} alt="Image 2" />
         </Col>
 
-        <Col className="d-flex flex-column">
+        <Col xs={12} sm={6} md={3} lg={3} className="d-flex flex-column">
           <Image src={img10} alt="Image 1" />
           <Image src={img5} alt="Image 5" className="scale" />
         </Col>
 
-        <Col className="d-flex flex-column">
+        <Col xs={12} sm={6} md={3} lg={3} className="d-flex flex-column">
           <Image src={img8} alt="Image 8" className="m-1 p-1" />
           <Image src={img6} alt="Image 6" className="scale mb-2" />
         </Col>
 
-        <Col className="d-flex flex-column">
+        <Col xs={12} sm={6} md={3} lg={3} className="d-flex flex-column">
           <Image src={img7} alt="Image 7" />
           <Image src={img9} alt="Image 9" className="image m-1 p-1" />
         </Col>

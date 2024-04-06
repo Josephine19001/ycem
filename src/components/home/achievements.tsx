@@ -81,7 +81,6 @@ const Counter: React.FC<{
     case "Members & Volunteers":
       icon = <FontAwesomeIcon icon={faUsersCog} />;
       boxColor = "var(--color-primary)";
-
       break;
     case "Participants":
       icon = <FontAwesomeIcon icon={faUsers} />;
@@ -106,7 +105,7 @@ const Dashboard: React.FC = () => {
   return (
     <StyledContainer>
       <section id="currentReach">
-        <Row>
+        <Row xs={1} sm={2} md={2} lg={4}>
           <Col>
             <Counter counter={6} text="Hosted Events" />
           </Col>
