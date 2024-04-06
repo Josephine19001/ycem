@@ -48,7 +48,7 @@ const CarouselImage: React.FC<CarouselImageProps> = ({
     />
     <Overlay />
     <div className="carousel-caption">
-      <div className="container">
+      <div className="container hero-container">
         <div className="row justify-content-center">
           <div className="col-lg-7 pt-5">
             <h1 className="display-4 text-white mb-3 animated slideInDown">

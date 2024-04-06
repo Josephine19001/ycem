@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import {
+  FlexContainerColumnCenter,
   FlexContainerColumnSpaceBetween,
   FlexContainerRowSpaceBetween,
   Section,
@@ -21,6 +22,8 @@ import home2 from "../../../public/home/home2.jpg";
 import HeroCarousel from "./carouselImage";
 import Event from "./events";
 import Link from "next/link";
+import PhotoCollage from "./photo-collage";
+import Dashboard from "./achievements";
 
 // Solutions Section Components
 const ServicesSectionContainer = styled(FlexContainerRowSpaceBetween)`
@@ -153,13 +156,6 @@ const Home = () => {
                     style={{ objectFit: "cover" }}
                     priority
                   />
-                  <Image
-                    className="position-absolute top-0 end-0 bg-white ps-2 pb-2"
-                    src={home2}
-                    alt=""
-                    style={{ width: "200px", height: "200px" }}
-                    priority
-                  />
                 </div>
               </div>
               <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -176,7 +172,7 @@ const Home = () => {
                       mentorship, and hands-on experiences.
                     </p>
                     <span style={{ color: "var(--color-primary)" }}>
-                      Founded in 2020
+                      Founded in 2021
                     </span>
                   </div>
                   <p className="mb-5">
@@ -238,6 +234,19 @@ const Home = () => {
           </div>
         </div>
       </Section>
+      <Divider margin="50px 0" />
+
+      <Section>
+        <FlexContainerColumnCenter>
+          <SectionTitle>Highlights</SectionTitle>
+          <SectionDescription>
+            Achievements and events Highlights.
+          </SectionDescription>
+        </FlexContainerColumnCenter>
+        <Dashboard />
+        <PhotoCollage />
+      </Section>
+
       <Divider margin="50px 0" />
 
       <Section>
