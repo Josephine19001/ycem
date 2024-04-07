@@ -4,7 +4,7 @@ import banner from "../../../../public/assets/events/student.jpg";
 import { ButtonPrimary } from "../../shared/buttons";
 
 {
-  /* <EventPage
+   <EventPage
       timeDay={"Friday, 1PM GMT"}
       date="March 25th, 2022"
       location="Accra Girls&apos; Senior High School"
@@ -36,5 +36,5 @@ import { ButtonPrimary } from "../../shared/buttons";
           </p>
         </FlexContainerColumnGapped>
       }
-    /> */
+    /> 
 }
