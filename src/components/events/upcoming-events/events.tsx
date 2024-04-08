@@ -71,7 +71,7 @@ interface IEvent {
 
 const events: any[] = [
   {
-    eventHref: "/events/past-events/exploring-bioinformatics-series-2",
+    eventHref: "/events/upcoming-events/exploring-bioinformatics-series-2",
     month: "Apr",
     date: "13",
     title: "Exploring Bioinformatics and Beyond",
