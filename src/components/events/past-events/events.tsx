@@ -1,8 +1,8 @@
 import React from "react";
 import InpageNav from "../in-page-nav";
-import girlTodayEvent from "../../../../public/assets/events/girls-today-event.jpg";
-import exploringTheWorldOfAI from "../../../../public/assets/events/exploring-the-world-of-ai-banner.png";
-import biomedicalSeriesFlyer from "../../../../public/assets/events/biomedical.series.flyer.png";
+import girlTodayEvent from "public/assets/events/girls-today-event.jpg";
+import exploringTheWorldOfAI from "public/assets/events/exploring-the-world-of-ai-banner.png";
+import biomedicalSeriesFlyer from "public/assets/events/biomedical.series.flyer.png";
 
 import { Container } from "../upcoming-events/events";
 import EventItem from "../event-list-item";

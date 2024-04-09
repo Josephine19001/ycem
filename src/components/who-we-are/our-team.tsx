@@ -4,20 +4,20 @@ import { useRouter } from "next/router";
 import { faBlog } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
-import elizabethPic from "../../../public/assets/team-pictures/elisabeth-boamah.jpg";
-import josephinePic from "../../../public/assets/team-pictures/josephine.jpg";
-import vanessaPic from "../../../public/assets/team-pictures/vanessa.jpg";
-import karecePic from "../../../public/assets/team-pictures/karece.jpg";
-import hilaryPic from "../../../public/assets/team-pictures/hilary.png";
-import abenaPic from "../../../public/assets/team-pictures/abena.jpeg";
-import daniellePic from "../../../public/assets/team-pictures/danielle.png";
-import florentynaPic from "../../../public/assets/team-pictures/florentyna.jpeg";
-import gertrudePic from "../../../public/assets/team-pictures/gertrude.png";
-import ursulaPic from "../../../public/assets/team-pictures/ursula.jpeg";
-import oforiwaaPic from "../../../public/assets/team-pictures/oforiwaa.jpeg";
-import perpetualPic from "../../../public/assets/team-pictures/perpetual.jpg";
-import emmanuellaPic from "../../../public/assets/team-pictures/emmanuella.jpg";
-import vivianPic from "../../../public/assets/team-pictures/vivian-agyapong.jpg";
+import elizabethPic from "public/assets/team-pictures/elisabeth-boamah.jpg";
+import josephinePic from "public/assets/team-pictures/josephine.jpg";
+import vanessaPic from "public/assets/team-pictures/vanessa.jpg";
+import karecePic from "public/assets/team-pictures/karece.jpg";
+import hilaryPic from "public/assets/team-pictures/hilary.png";
+import abenaPic from "public/assets/team-pictures/abena.jpeg";
+import daniellePic from "public/assets/team-pictures/danielle.png";
+import florentynaPic from "public/assets/team-pictures/florentyna.jpeg";
+import gertrudePic from "public/assets/team-pictures/gertrude.png";
+import ursulaPic from "public/assets/team-pictures/ursula.jpeg";
+import oforiwaaPic from "public/assets/team-pictures/oforiwaa.jpeg";
+import perpetualPic from "public/assets/team-pictures/perpetual.jpg";
+import emmanuellaPic from "public/assets/team-pictures/emmanuella.jpg";
+import vivianPic from "public/assets/team-pictures/vivian-agyapong.jpg";
 
 import IntroSection from "../shared/intro-section";
 import {

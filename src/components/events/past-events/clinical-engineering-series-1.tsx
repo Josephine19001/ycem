@@ -1,6 +1,6 @@
 import React from "react";
 import EventPage, { Description } from "../past-event-page";
-import banner from "../../../../public/assets/events/biomedical-series-1.png";
+import banner from "public/assets/events/biomedical-series-1.png";
 import { ButtonPrimary } from "../../shared/buttons";
 
 const GirlsTodayInnovatorsTomorrow = () => {
@@ -16,19 +16,20 @@ const GirlsTodayInnovatorsTomorrow = () => {
           <h2>Event Summary</h2>
           <p>
             Step into the exciting world of Clinical Engineering with our latest
-            series, &apos;A Step Into Clinical Engineering,&apos; where we delved deep
-            into the heart of biomedical innovation. Our esteemed guest took us
-            on a journey through their professional experiences, offering
-            invaluable insights into the intricacies of Clinical Engineering.
+            series, &apos;A Step Into Clinical Engineering,&apos; where we
+            delved deep into the heart of biomedical innovation. Our esteemed
+            guest took us on a journey through their professional experiences,
+            offering invaluable insights into the intricacies of Clinical
+            Engineering.
           </p>
           <p>
             We delved into key topics that not only introduced participants to
             the fundamentals of clinical engineering but also showcased its
-            applications in today&apos;s dynamic healthcare landscape. Whether you
-            were a tech enthusiast, a budding professional, or simply curious
-            about the possibilities Biomedical Engineering holds, this event
-            served as your gateway to understanding the present and shaping the
-            future of healthcare innovation.
+            applications in today&apos;s dynamic healthcare landscape. Whether
+            you were a tech enthusiast, a budding professional, or simply
+            curious about the possibilities Biomedical Engineering holds, this
+            event served as your gateway to understanding the present and
+            shaping the future of healthcare innovation.
           </p>
 
           <h3>We Value Your Feedback</h3>
