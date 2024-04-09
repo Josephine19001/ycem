@@ -55,9 +55,9 @@ const ExploringTheWorldOfAI = () => {
               significant advancements across various sectors.
             </li>
           </ul>
-          <h3>Accessing Resources</h3>
+          <h3>Relive the moment </h3>
           <p>
-            For those unable to attend the live session or wishing to revisit
+            For those unable to attend the event or wishing to revisit
             the discussions, the event recording can be accessed below.
             Additionally, presentation slides are available{" "}
             <a
