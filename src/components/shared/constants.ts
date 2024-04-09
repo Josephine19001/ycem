@@ -11,10 +11,10 @@ import {
   faPenRuler,
 } from "@fortawesome/free-solid-svg-icons";
 
-import mentoringPic from "../../../public/assets/mentor.jpg";
-import volunteeringPic from "../../../public/assets/volunteering.jpg";
-import techTalkPic from "../../../public/assets/tech-talks.jpg";
-import communityPic from "../../../public/assets/community.jpg";
+import mentoringPic from "public/assets/mentor.jpg";
+import volunteeringPic from "public/assets/volunteering.jpg";
+import techTalkPic from "public/assets/tech-talks.jpg";
+import communityPic from "public/assets/community.jpg";
 
 export const navItems = [
   {

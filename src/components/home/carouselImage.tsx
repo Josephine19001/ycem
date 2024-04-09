@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 import styled from "styled-components";
 import { Carousel } from "react-bootstrap";
-import accraGirlGroupPic from "../../../public/hero/accra-girls-group.jpg";
-import hero1 from "../../../public/hero/hero1.jpg";
-import hero2 from "../../../public/hero/hero2.jpg";
+import accraGirlGroupPic from "public/hero/accra-girls-group.jpg";
+import hero1 from "public/hero/hero1.jpg";
+import hero2 from "public/hero/hero2.jpg";
 import Link from "next/link";
 
 // Styled-components
@@ -42,8 +42,8 @@ const CarouselImage: React.FC<CarouselImageProps> = ({
       priority
       src={src}
       alt={alt}
-      layout="fill"
-      objectFit="cover"
+      fill
+      style={{ objectFit: "cover" }}
       aria-label={`${caption.title}: ${caption.text}`}
     />
     <Overlay />

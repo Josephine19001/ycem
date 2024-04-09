@@ -1,6 +1,6 @@
 import React from "react";
 import EventPage, { Description } from "../past-event-page";
-import banner from "../../../../public/assets/events/exploring-the-world-of-ai-landscape-flyer.png";
+import banner from "public/assets/events/exploring-the-world-of-ai-landscape-flyer.png";
 import { ButtonPrimary } from "../../shared/buttons";
 import IframeVideos from "../../shared/iframe";
 

@@ -12,8 +12,8 @@ import { ButtonPrimary } from "../shared/buttons";
 import { useRouter } from "next/router";
 import { Divider } from "../shared/footer";
 import useSmallerScreens from "../../hooks/use-smaller-screens";
-import accraGirlGroupPic from "../../../public/hero/accra-girls-group.jpg";
-import studentPic from "../../../public/ycem-talk2.jpg";
+import accraGirlGroupPic from "public/hero/accra-girls-group.jpg";
+import studentPic from "public/ycem-talk2.jpg";
 import ContactFormModal from "../shared/contact-form-modal";
 
 export const AboutSectionContainer = styled(FlexContainerColumnSpaceBetween)`

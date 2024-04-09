@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { FlexContainerRowSpaceBetween } from "../../shared/containers";
 import InpageNav from "../in-page-nav";
 import EventItem from "../event-list-item";
-import exploringBioInformaticPic from "../../../../public/assets/events/exploring-bioinformatic.png";
+import exploringBioInformaticPic from "public/assets/events/exploring-bioinformatic.png";
 
 export const Container = styled(FlexContainerRowSpaceBetween)`
   justify-content: center;

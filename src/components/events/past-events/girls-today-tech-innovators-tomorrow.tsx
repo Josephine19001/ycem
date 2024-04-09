@@ -1,6 +1,6 @@
 import React from "react";
 import EventPage, { Description } from "../past-event-page";
-import banner from "../../../../public/assets/events/girl-today-innovation-banner.png";
+import banner from "public/assets/events/girl-today-innovation-banner.png";
 import { ButtonPrimary } from "../../shared/buttons";
 
 const GirlsTodayInnovatorsTomorrow = () => {
