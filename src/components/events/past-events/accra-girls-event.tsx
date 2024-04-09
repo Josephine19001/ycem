@@ -1,6 +1,6 @@
 import React from "react";
 import EventPage, { Description } from "../past-event-page";
-import banner from "../../../../public/assets/hilary-speaking.jpg";
+import banner from "../../../../public/assets/events/Second option~2.png";
 import { ButtonPrimary } from "../../shared/buttons";
 
 const AccraGirlsEvent = () => {
