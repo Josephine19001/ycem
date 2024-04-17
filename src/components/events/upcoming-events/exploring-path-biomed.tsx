@@ -7,13 +7,12 @@ const ExploringPathBiomedicalVsMedicine = () => {
   return (
     <EventPage
       timeDay={"Saturday, 3:30PM GMT"}
-      date="April 27rd, 2024"
+      date="April 27th, 2024"
       location="Online, Zoom"
       eventLink="https://forms.gle/krxVdrm9sfAfJ7Gm8"
       eventBanner={banner}
       description={
         <FlexContainerColumnGapped>
-          <h2>Event Description</h2>
           <p>
             Prepare for an immersive journey into the future of Biomedical
             Engineering! We are exploring medicine as a path after Biomedical
