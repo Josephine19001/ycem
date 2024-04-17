@@ -20,7 +20,7 @@ const ExploringPathBiomedicalVsMedicine = () => {
             foundational principles of Biomedical Engineering to applying its
             transformative applications in healthcare, this event is designed to
             ignite your curiosity and inspire your career journey. Whether
-            you're a tech enthusiast, a budding professional, or simply curious
+            you&apos;re a tech enthusiast, a budding professional, or simply curious
             about the possibilities Biomedical Engineering holds, this event is
             your gateway to understanding the present and shaping the future of
             healthcare innovation.
