@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { FlexContainerRowSpaceBetween } from "../../shared/containers";
 import InpageNav from "../in-page-nav";
 import EventItem from "../event-list-item";
-import exploringBioInformaticPic from "public/assets/events/exploring-bioinformatic.png";
+import biomedMedicineFLyer from "../../../../public/assets/events/biomed-medicine-flyer.png";
 
 export const Container = styled(FlexContainerRowSpaceBetween)`
   justify-content: center;
@@ -71,12 +71,13 @@ interface IEvent {
 
 const events: any[] = [
   {
-    eventHref: "/events/upcoming-events/exploring-bioinformatics-series-2",
+    eventHref:
+      "/events/upcoming-events/exploring-path-biomedical-engineering-vs-medicine",
     month: "Apr",
-    date: "13",
-    title: "Exploring Bioinformatics and Beyond",
+    date: "27",
+    title: "Exploring paths: Medicine vs. Biomedical Engineering",
     timeDay: "Saturday, 03:30PM GMT",
     location: "Online, Zoom",
-    eventImg: exploringBioInformaticPic,
+    eventImg: biomedMedicineFLyer,
   },
 ];

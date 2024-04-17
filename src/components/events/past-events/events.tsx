@@ -3,6 +3,7 @@ import InpageNav from "../in-page-nav";
 import girlTodayEvent from "public/assets/events/girls-today-event.jpg";
 import exploringTheWorldOfAI from "public/assets/events/exploring-the-world-of-ai-banner.png";
 import biomedicalSeriesFlyer from "public/assets/events/biomedical.series.flyer.png";
+import exploringBioInformaticPic from "public/assets/events/exploring-bioinformatic.png";
 
 import { Container } from "../upcoming-events/events";
 import EventItem from "../event-list-item";
@@ -33,6 +34,15 @@ const PastEvents = () => {
 export default PastEvents;
 
 export const events = [
+  {
+    eventHref: "/events/upcoming-events/exploring-bioinformatics-series-2",
+    month: "Apr",
+    date: "13",
+    title: "Exploring Bioinformatics and Beyond",
+    timeDay: "Saturday, 03:30PM GMT",
+    location: "Online, Zoom",
+    eventImg: exploringBioInformaticPic,
+  },
   {
     eventHref: "/events/past-events/clinical-engineering-series-1",
     month: "Mar",
