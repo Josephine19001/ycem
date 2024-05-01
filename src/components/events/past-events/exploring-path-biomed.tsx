@@ -1,7 +1,6 @@
 import React from "react";
-import EventPage from "../past-event-page";
+import EventPage, { Description } from "../past-event-page";
 import banner from "public/assets/events/biomed-medicine-banner.png";
-import { FlexContainerColumnGapped } from "../../shared/containers";
 import { ButtonPrimary } from "../../shared/buttons";
 
 const ExploringPathBiomedicalVsMedicine = () => {
@@ -13,7 +12,7 @@ const ExploringPathBiomedicalVsMedicine = () => {
       feedBackLink=""
       eventBanner={banner}
       description={
-        <FlexContainerColumnGapped>
+        <Description>
           <h2>Event Summary</h2>
 
           <p>
@@ -34,7 +33,7 @@ const ExploringPathBiomedicalVsMedicine = () => {
               Feedback form
             </ButtonPrimary>
           </span>
-        </FlexContainerColumnGapped>
+        </Description>
       }
     />
   );
