@@ -4,7 +4,7 @@ import girlTodayEvent from "public/assets/events/girls-today-event.jpg";
 import exploringTheWorldOfAI from "public/assets/events/exploring-the-world-of-ai-banner.png";
 import biomedicalSeriesFlyer from "public/assets/events/biomedical.series.flyer.png";
 import exploringBioInformaticPic from "public/assets/events/exploring-bioinformatic.png";
-import biomedMedicineFLyer from "./public/assets/events/biomed-medicine-flyer.png";
+import biomedMedicineFLyer from "public/assets/events/biomed-medicine-flyer.png";
 
 import { Container } from "../upcoming-events/events";
 import EventItem from "../event-list-item";
