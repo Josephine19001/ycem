@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { FlexContainerRowSpaceBetween } from "../../shared/containers";
 import InpageNav from "../in-page-nav";
 import EventItem from "../event-list-item";
+import aiMedicineFLyer from "public/assets/events/ai-in-medicine.png";
 
 export const Container = styled(FlexContainerRowSpaceBetween)`
   justify-content: center;
@@ -58,25 +59,14 @@ const UpcomingEvents = () => {
 
 export default UpcomingEvents;
 
-interface IEvent {
-  eventHref: string;
-  eventImg: string;
-  month: string;
-  date: string;
-  title: string;
-  timeDay: string;
-  location: string;
-}
-
 const events: any[] = [
-  // {
-  //   eventHref:
-  //     "/events/upcoming-events/exploring-path-biomedical-engineering-vs-medicine",
-  //   month: "Apr",
-  //   date: "27",
-  //   title: "Exploring paths: Medicine vs. Biomedical Engineering",
-  //   timeDay: "Saturday, 03:30PM GMT",
-  //   location: "Online, Zoom",
-  //   eventImg: biomedMedicineFLyer,
-  // },
+  {
+    eventHref: "/events/upcoming-events/ai-in-medicine",
+    month: "May",
+    date: "11",
+    title: "AI IN MEDICAL IMAGING: REVOLUTIONIZING HEALTHCARE",
+    timeDay: "Saturday, 03:00PM GMT",
+    location: "Online, Zoom",
+    eventImg: aiMedicineFLyer,
+  },
 ];
