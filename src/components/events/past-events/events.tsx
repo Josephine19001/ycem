@@ -4,6 +4,7 @@ import girlTodayEvent from "public/assets/events/girls-today-event.jpg";
 import exploringTheWorldOfAI from "public/assets/events/exploring-the-world-of-ai-banner.png";
 import biomedicalSeriesFlyer from "public/assets/events/biomedical.series.flyer.png";
 import exploringBioInformaticPic from "public/assets/events/exploring-bioinformatic.png";
+import biomedMedicineFLyer from "./public/assets/events/biomed-medicine-flyer.png";
 
 import { Container } from "../upcoming-events/events";
 import EventItem from "../event-list-item";
@@ -34,6 +35,16 @@ const PastEvents = () => {
 export default PastEvents;
 
 export const events = [
+  {
+    eventHref:
+      "/events/past-events/exploring-path-biomedical-engineering-vs-medicine",
+    month: "Apr",
+    date: "27",
+    title: "Exploring paths: Medicine vs. Biomedical Engineering",
+    timeDay: "Saturday, 03:30PM GMT",
+    location: "Online, Zoom",
+    eventImg: biomedMedicineFLyer,
+  },
   {
     eventHref: "/events/past-events/exploring-bioinformatics-series-2",
     month: "Apr",

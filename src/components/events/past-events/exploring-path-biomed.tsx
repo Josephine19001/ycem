@@ -1,7 +1,8 @@
 import React from "react";
-import EventPage from "../event-page";
+import EventPage from "../past-event-page";
 import banner from "public/assets/events/biomed-medicine-banner.png";
 import { FlexContainerColumnGapped } from "../../shared/containers";
+import { ButtonPrimary } from "../../shared/buttons";
 
 const ExploringPathBiomedicalVsMedicine = () => {
   return (
@@ -9,10 +10,12 @@ const ExploringPathBiomedicalVsMedicine = () => {
       timeDay={"Saturday, 3:30PM GMT"}
       date="April 27th, 2024"
       location="Online, Zoom"
-      eventLink="https://forms.gle/krxVdrm9sfAfJ7Gm8"
+      feedBackLink=""
       eventBanner={banner}
       description={
         <FlexContainerColumnGapped>
+          <h2>Event Summary</h2>
+
           <p>
             Prepare for an immersive journey into the future of Biomedical
             Engineering! We are exploring medicine as a path after Biomedical
@@ -25,6 +28,12 @@ const ExploringPathBiomedicalVsMedicine = () => {
             event is your gateway to understanding the present and shaping the
             future of healthcare innovation.
           </p>
+
+          <span>
+            <ButtonPrimary onClick={() => window.open("", "_blank")}>
+              Feedback form
+            </ButtonPrimary>
+          </span>
         </FlexContainerColumnGapped>
       }
     />
