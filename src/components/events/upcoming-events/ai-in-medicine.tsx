@@ -19,7 +19,7 @@ const AIInMedicine = () => {
             Join us as we delve into key topics that will not only introduce you
             to the fundamentals of Medical Imaging but also showcase the
             applications of AI in this transformative field of Biomedical
-            Engineering. Whether you're a tech enthusiast, a budding
+            Engineering. Whether you&apos;re a tech enthusiast, a budding
             professional, or simply curious about the possibilities Biomedical
             Engineering holds, this event is your gateway to understanding the
             present and shaping the future of healthcare innovation.
