@@ -1,6 +1,6 @@
 import React from "react";
 import EventPage, { Description } from "../past-event-page";
-import banner from "../../../../public/assets/accra-girls-event-banner.png";
+import banner from "public/assets/events/accra-girls-event-banner.png";
 import { ButtonPrimary } from "../../shared/buttons";
 
 const AccraGirlsEvent = () => {
