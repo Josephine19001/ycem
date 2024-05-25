@@ -6,6 +6,7 @@ import biomedicalSeriesFlyer from "public/assets/events/biomedical.series.flyer.
 import exploringBioInformaticPic from "public/assets/events/exploring-bioinformatic.png";
 import biomedMedicineFLyer from "public/assets/events/biomed-medicine-flyer.png";
 
+import accraGirlsEvent from "public/assets/hilary-speaking.jpg";
 import { Container } from "../upcoming-events/events";
 import EventItem from "../event-list-item";
 
@@ -64,6 +65,15 @@ export const events = [
     eventImg: biomedicalSeriesFlyer,
   },
   {
+    eventHref: "/events/past-events/girls-today-tech-innovators-tomorrow",
+    month: "Nov",
+    date: "11",
+    title: "Girls Today, Tech Innovators Tomorrow",
+    timeDay: "Saturday, 3:30PM - 5:00PM GMT",
+    location: "Online, Google Meet",
+    eventImg: girlTodayEvent,
+  },
+  {
     eventHref: "/events/past-events/exploring-the-world-of-ai",
     month: "Feb",
     date: "24",
@@ -80,5 +90,14 @@ export const events = [
     timeDay: "Saturday, 3:30PM - 5:00PM GMT",
     location: "Online, Google Meet",
     eventImg: girlTodayEvent,
+  },
+  {
+    eventHref: "/events/past-events/accra-girls-event",
+    month: "Mar",
+    date: "25",
+    title: "Accra Girls Senior High School Outreach",
+    timeDay: "Saturday, 1:00PM GMT",
+    location: "Accra Girls Senior High School",
+    eventImg: accraGirlsEvent,
   },
 ];
