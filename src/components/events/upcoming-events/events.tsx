@@ -1,9 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import { FlexContainerRowSpaceBetween } from "../../shared/containers";
-import InpageNav from "../in-page-nav";
-import EventItem from "../event-list-item";
-import aiMedicineFLyer from "public/assets/events/ai-in-medicine.png";
+import React from 'react';
+import styled from 'styled-components';
+import { FlexContainerRowSpaceBetween } from '../../shared/containers';
+import InpageNav from '../in-page-nav';
+import EventItem from '../event-list-item';
 
 export const Container = styled(FlexContainerRowSpaceBetween)`
   justify-content: center;
@@ -31,7 +30,7 @@ const UpcomingEvents = () => {
                 date,
                 title,
                 timeDay,
-                location,
+                location
               }) => (
                 <EventItem
                   key={title}
@@ -47,7 +46,7 @@ const UpcomingEvents = () => {
             )
           ) : (
             <p>
-              {" "}
+              {' '}
               We are currently planning our next event. Be on the lookout😇
             </p>
           )}
@@ -59,14 +58,4 @@ const UpcomingEvents = () => {
 
 export default UpcomingEvents;
 
-const events: any[] = [
-  {
-    eventHref: "/events/upcoming-events/ai-in-medicine",
-    month: "May",
-    date: "11",
-    title: "AI IN MEDICAL IMAGING: REVOLUTIONIZING HEALTHCARE",
-    timeDay: "Saturday, 03:00PM GMT",
-    location: "Online, Zoom",
-    eventImg: aiMedicineFLyer,
-  },
-];
+const events: any[] = [];
