@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { FlexContainerRowSpaceBetween } from '../../shared/containers';
 import InpageNav from '../in-page-nav';
 import EventItem from '../event-list-item';
+import cloundWebinar from 'public/assets/events/cloud-webinar.png';
+import ycemDunk from 'public/assets/events/ycem-dunk.png';
 
 export const Container = styled(FlexContainerRowSpaceBetween)`
   justify-content: center;
@@ -58,4 +60,23 @@ const UpcomingEvents = () => {
 
 export default UpcomingEvents;
 
-const events: any[] = [];
+export const events: any[] = [
+  {
+    eventHref: '/events/upcoming-events/cloud-computing-journey',
+    month: 'July',
+    date: '6th',
+    title: 'THE CLOUD COMPUTING JOURNEY: INSPIRING BEGINNERS TO SOAR',
+    timeDay: 'Saturday, 03:00PM GMT',
+    location: 'Online, Google Meet',
+    eventImg: cloundWebinar
+  },
+  {
+    eventHref: '/events/upcoming-events/ycem-dunk',
+    month: 'August',
+    date: '21-23rd',
+    title: 'YCEM AND DUNK',
+    timeDay: 'Wednesday-Saturday',
+    location: 'In-Person, Accra',
+    eventImg: ycemDunk
+  }
+];

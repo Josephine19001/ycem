@@ -142,7 +142,7 @@ const FundraiserItem = ({
         </FlexContainerRowSpaceBetween>
         <ProgressBar>
           <ProgressLabel goal={goal} raised={raised}>
-            {raised}%
+            {raised}
           </ProgressLabel>
         </ProgressBar>
       </ProgressBarContainer>

@@ -1,9 +1,10 @@
-import Image from "next/image";
-import styled, { keyframes } from "styled-components";
-import { events } from "../events/past-events/events";
-import { SectionDescription, SectionTitle } from "../shared/typography";
-import { ButtonPrimary } from "../shared/buttons";
-import Link from "next/link";
+import Image from 'next/image';
+import styled, { keyframes } from 'styled-components';
+import { events as pastEvents } from '../events/past-events/events';
+import { events as incomingEvents } from '../events/upcoming-events/events';
+import { SectionDescription, SectionTitle } from '../shared/typography';
+import { ButtonPrimary } from '../shared/buttons';
+import Link from 'next/link';
 
 const ContainerFluid = styled.div`
   width: 100%;
@@ -56,7 +57,7 @@ const EventImg = styled.div`
   padding: 5px;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 150px;
     height: 150px;
@@ -70,7 +71,7 @@ const EventImg = styled.div`
   }
 
   &::after {
-    content: "";
+    content: '';
     width: 150px;
     height: 150px;
     position: absolute;
@@ -109,6 +110,11 @@ const EventItem = styled.div`
   }
 `;
 
+const relevantEvents =
+  incomingEvents.length < 3
+    ? [...incomingEvents, ...pastEvents]
+    : incomingEvents;
+
 const Event = () => {
   return (
     <ContainerFluid className="container-fluid project py-5 mb-5">
@@ -116,18 +122,18 @@ const Event = () => {
         <EventHeader
           className="text-center mx-auto pb-5 wow fadeIn"
           data-wow-delay=".3s"
-          style={{ maxWidth: "600px" }}
+          style={{ maxWidth: '600px' }}
         >
           <SectionTitle>Events</SectionTitle>
-          <SectionDescription style={{ margin: "16px 0" }}>
-            Checkout Some Of Our Past And Upcoming Events
+          <SectionDescription style={{ margin: '16px 0' }}>
+            Upcoming And Past Initiatives
           </SectionDescription>
           <Link href="/events/upcoming-events">
-            <ButtonPrimary>Learn more</ButtonPrimary>
+            <ButtonPrimary>Upcoming Events</ButtonPrimary>
           </Link>
         </EventHeader>
         <div className="row g-5">
-          {events.map((event, index) => (
+          {relevantEvents.slice(0, 3).map((event: any, index: any) => (
             <div
               key={index}
               className={`col-md-6 col-lg-4 wow fadeIn`}

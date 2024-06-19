@@ -107,7 +107,7 @@ const Dashboard: React.FC = () => {
       <section id="currentReach">
         <Row xs={1} sm={2} md={2} lg={4}>
           <Col>
-            <Counter counter={7} text="Hosted Events" />
+            <Counter counter={8} text="Hosted Events" />
           </Col>
           <Col>
             <Counter counter={23} text="Members & Volunteers" />

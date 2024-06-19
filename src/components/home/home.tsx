@@ -19,13 +19,11 @@ import JoiningUs from '../shared/joining-us';
 import { Divider } from '../shared/footer';
 import home1 from 'public/home/home1.jpg';
 import HeroCarousel from './carouselImage';
-import Event from './events';
 import Link from 'next/link';
 import PhotoCollage from './photo-collage';
 import Dashboard from './achievements';
-import Fundraiser from './fundraiser';
+import Event from './events';
 
-// Solutions Section Components
 const ServicesSectionContainer = styled(FlexContainerRowSpaceBetween)`
   padding: var(--section-container-padding);
   border: 1px solid var(--bg-color-light);
@@ -163,7 +161,8 @@ const Home = () => {
                   <SectionTitle>About us</SectionTitle>
 
                   <SectionDescription style={{ margin: '16px 0' }}>
-                    We Encourage Careers in Engineering for Young Ladies
+                    We Encourage Young Ladies to no be Afraid to Pursue a Career
+                    in Engineering and Technology
                   </SectionDescription>
                   <div className="about-home p-4 mb-4">
                     <p className="text-dark mb-2 ">
@@ -185,9 +184,11 @@ const Home = () => {
                   >
                     <Link
                       className="btn btn-primary py-2 px-3 me-3 btn-with-arrow"
-                      href="/who-we-are"
+                      href="/donations"
                     >
-                      <span style={{ marginRight: '5px' }}>Learn More</span>
+                      <span style={{ marginRight: '5px' }}>
+                        Help Through Donation
+                      </span>
                       <span
                         style={{
                           backgroundColor: 'white',
@@ -209,7 +210,7 @@ const Home = () => {
                       className="btn btn-outline-primary py-2 px-3 btn-with-arrow"
                       href="/contact"
                     >
-                      Contact Us
+                      Let's Work Together
                       <div
                         style={{
                           backgroundColor: 'var(--color-primary)',
@@ -233,17 +234,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </Section>
-      <Divider margin="50px 0" />
-
-      <Section>
-        <FlexContainerColumnCenter>
-          <SectionTitle>Funds Raising Projects</SectionTitle>
-          <SectionDescription>Support our upcoming projects</SectionDescription>
-          <div style={{ marginTop: '24px' }}>
-            <Fundraiser />
-          </div>
-        </FlexContainerColumnCenter>
       </Section>
       <Divider margin="50px 0" />
 
