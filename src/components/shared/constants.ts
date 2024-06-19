@@ -41,7 +41,7 @@ export const navItems = [
     ]
   },
   {
-    href: '/donations',
+    href: '/support-us',
     label: 'Support Us'
   },
   {
