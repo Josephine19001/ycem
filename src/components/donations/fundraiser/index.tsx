@@ -28,7 +28,7 @@ const fundRaiserContent = [
     title: 'Donation',
     subtitle: 'New Computer Lab (DUNK)',
     description:
-      'Help provide a computer lab and training to DUNK. DUNK is a non-profit organization that provides education to underprivileged children in through sports.',
+      'Help provide a computer lab and training to DUNK. DUNK is a non-profit organization that provides education to at-risk women and children through sports, trainings & life skills.',
     goal: 2500,
     raised: 955,
     image: dunkImage1,
