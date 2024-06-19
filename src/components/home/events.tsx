@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { SectionDescription, SectionTitle } from '../shared/typography';
 import { ButtonPrimary } from '../shared/buttons';
 import Link from 'next/link';
-import { FlexContainerRowCenter } from '../shared/containers';
 
 const ContainerFluid = styled.div`
   width: 100%;
@@ -69,7 +68,7 @@ const EventContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent overlay */
+  background: rgba(0, 0, 0, 0.6);
   color: white;
   opacity: 0;
   border-radius: 10px;
@@ -89,6 +88,24 @@ const EventItem = styled.div`
 
   &:hover ${EventContent} {
     opacity: 1;
+  }
+`;
+
+const EventItemsContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+`;
+
+const EventItemWrapper = styled.div`
+  width: 100%;
+
+  @media (min-width: 576px) {
+    width: 50%;
+  }
+  @media (min-width: 992px) {
+    width: 33.33%;
   }
 `;
 
@@ -113,11 +130,11 @@ const Event = ({ incomingEvents }: IProps) => {
             <ButtonPrimary>Upcoming Events</ButtonPrimary>
           </Link>
         </EventHeader>
-        <FlexContainerRowCenter $gap="40px">
+        <EventItemsContainer>
           {incomingEvents.slice(0, 3).map((event: any, index: any) => (
-            <div
+            <EventItemWrapper
               key={index}
-              className={`col-md-6 col-lg-4 wow fadeIn`}
+              className="wow fadeIn"
               data-wow-delay={`.${3 + index * 2}s`}
             >
               <EventItem className="project-item">
@@ -137,9 +154,9 @@ const Event = ({ incomingEvents }: IProps) => {
                   </EventContent>
                 </EventImg>
               </EventItem>
-            </div>
+            </EventItemWrapper>
           ))}
-        </FlexContainerRowCenter>
+        </EventItemsContainer>
       </Container>
     </ContainerFluid>
   );
