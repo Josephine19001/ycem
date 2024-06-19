@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import EventPage from '../event-page';
-import banner from 'public/assets/events/cloud-banner.png';
+import banner from 'public/assets/events/ycem-dunk-banner.png';
 import {
   FlexContainerColumn,
   FlexContainerColumnGapped
@@ -33,13 +33,12 @@ const YcemAndDunk = () => {
         <FlexContainerColumn style={{ alignItems: 'flex-start' }}>
           <Header>Objective</Header>
           <p>
-            The YCEM and Dunk event is a 3-day event that aims to provide a
-            computer lab and training to Dunk, a community in Accra. The event
-            will feature a series of workshops and training sessions on basic
-            computer skills, coding, and solving real-life problems with arduino
-            and other tech-related topics. The goal is to empower the community
-            members with the skills and knowledge they need to thrive in the
-            digital age.
+            The YCEM and Dunk event is a 3-day event that aims to excite yong
+            girls into engineering. The event will feature a series of workshops
+            and training sessions on basic computer skills, coding, and solving
+            real-life problems with arduino and other tech-related topics. The
+            goal is to empower the community members with the skills and
+            knowledge they need to thrive in the digital age.
           </p>
           <Header>Projects</Header>
           <FlexContainerColumnGapped>
