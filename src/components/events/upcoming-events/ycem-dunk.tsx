@@ -66,7 +66,7 @@ const YcemAndDunk = () => {
                 This project will introduce students to the basics of
                 Information and Communication Technology (ICT), including how to
                 use computers, navigate the internet, and understand the
-                importance of digital literacy in today's world.
+                importance of digital literacy in today&apos;s world.
               </p>
               <p>
                 <strong>Why:</strong> In a rapidly digitizing world, having a
@@ -85,10 +85,10 @@ const YcemAndDunk = () => {
               </p>
               <p>
                 <strong>Why:</strong> Agriculture is a significant part of
-                Ghana's economy. Learning to automate plant watering introduces
-                concepts of environmental sustainability, engineering, and
-                technology, inspiring students to innovate in the agricultural
-                sector.
+                Ghana&apos;s economy. Learning to automate plant watering
+                introduces concepts of environmental sustainability,
+                engineering, and technology, inspiring students to innovate in
+                the agricultural sector.
               </p>
             </div>
           </FlexContainerColumnGapped>

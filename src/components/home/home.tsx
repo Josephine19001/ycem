@@ -210,7 +210,7 @@ const Home = () => {
                       className="btn btn-outline-primary py-2 px-3 btn-with-arrow"
                       href="/contact"
                     >
-                      Let's Work Together
+                      Let&apos;s Work Together
                       <div
                         style={{
                           backgroundColor: 'var(--color-primary)',
