@@ -52,20 +52,23 @@ const ProgressBarContainer = styled.div`
   padding: 8px;
 `;
 
-const ProgressBar = styled.div`
-  background-color: #02adb5;
+const ProgressBar = styled.div<{ amountRaisedPercent: number }>`
+  background-color: #fff;
+  background-image: ${({ amountRaisedPercent }) =>
+    `linear-gradient(to right, #02adb5 ${amountRaisedPercent}%, #fff ${amountRaisedPercent}%)`};
   height: 8px;
   position: relative;
   margin-bottom: 8px;
 `;
 
-const ProgressLabel = styled.span<{ raised: number; goal: number }>`
-  background-color: #02adb5;
+const ProgressLabel = styled.span<{ amountRaisedPercent: number }>`
+  background-color: var(--color-primary);
   color: #fffefc;
   padding: 4px 8px;
   position: absolute;
   top: -14px;
-  left: ${({ raised, goal }) => `${(raised / goal) * 100}%`};
+  left: ${({ amountRaisedPercent }) => `${amountRaisedPercent}%`};
+  transform: translateX(-50%);
 `;
 
 const ImageContainer = styled.div`
@@ -105,7 +108,7 @@ interface IProp {
   raised: number;
   link: string;
 }
-
+//make raised left blue and rest white
 const FundraiserItem = ({
   image,
   title,
@@ -118,6 +121,8 @@ const FundraiserItem = ({
   const handleOverlayClick = () => {
     window.open(link);
   };
+
+  const amountRaisedPercent = Math.floor((raised / goal) * 100);
 
   return (
     <Container>
@@ -140,9 +145,9 @@ const FundraiserItem = ({
             <span style={{ color: 'var(--color-primary-darker)' }}>Raised</span>
           </span>
         </FlexContainerRowSpaceBetween>
-        <ProgressBar>
-          <ProgressLabel goal={goal} raised={raised}>
-            {raised}
+        <ProgressBar amountRaisedPercent={amountRaisedPercent}>
+          <ProgressLabel amountRaisedPercent={amountRaisedPercent}>
+            {amountRaisedPercent}%
           </ProgressLabel>
         </ProgressBar>
       </ProgressBarContainer>
