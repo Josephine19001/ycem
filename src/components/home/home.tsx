@@ -185,7 +185,7 @@ const Home = () => {
                   >
                     <Link
                       className="btn btn-primary py-2 px-3 me-3 btn-with-arrow"
-                      href="/donations"
+                      href="/support-us"
                     >
                       <span style={{ marginRight: '5px' }}>
                         Help Through Donation
