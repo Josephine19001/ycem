@@ -137,12 +137,12 @@ const FundraiserItem = ({
       <ProgressBarContainer>
         <FlexContainerRowSpaceBetween style={{ marginBottom: '24px' }}>
           <span>
-            ${goal}{' '}
-            <span style={{ color: 'var(--color-primary-darker)' }}>Goal</span>
-          </span>
-          <span>
             ${raised}{' '}
             <span style={{ color: 'var(--color-primary-darker)' }}>Raised</span>
+          </span>
+          <span>
+            ${goal}{' '}
+            <span style={{ color: 'var(--color-primary-darker)' }}>Goal</span>
           </span>
         </FlexContainerRowSpaceBetween>
         <ProgressBar amountRaisedPercent={amountRaisedPercent}>

@@ -162,8 +162,8 @@ const Home = () => {
                   <SectionTitle>About us</SectionTitle>
 
                   <SectionDescription style={{ margin: '16px 0' }}>
-                    We Encourage Young Ladies to no be Afraid to Pursue a Career
-                    in Engineering and Technology
+                    We encourage young ladies to pursue careers in engineering
+                    and technology
                   </SectionDescription>
                   <div className="about-home p-4 mb-4">
                     <p className="text-dark mb-2 ">
