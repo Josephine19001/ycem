@@ -1,10 +1,9 @@
 import Image from 'next/image';
-import styled, { keyframes } from 'styled-components';
-import { events as pastEvents } from '../events/past-events/events';
-import { events as incomingEvents } from '../events/upcoming-events/events';
+import styled from 'styled-components';
 import { SectionDescription, SectionTitle } from '../shared/typography';
 import { ButtonPrimary } from '../shared/buttons';
 import Link from 'next/link';
+import { FlexContainerRowCenter } from '../shared/containers';
 
 const ContainerFluid = styled.div`
   width: 100%;
@@ -54,35 +53,11 @@ const EventHeader = styled.div`
 
 const EventImg = styled.div`
   position: relative;
-  padding: 5px;
-
-  &::before {
-    content: '';
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    top: 0;
-    left: 0;
-    background: var(--color-primary-lighter);
-    border-radius: 10px;
-    opacity: 1;
-    z-index: -1;
-    transition: 0.5s;
-  }
-
-  &::after {
-    content: '';
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    background: var(--color-primary-lighter);
-    border-radius: 10px;
-    opacity: 1;
-    z-index: -1;
-    transition: 0.5s;
-  }
+  width: 100%;
+  padding-bottom: calc(100% + 70px);
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #f1f1f1;
 `;
 
 const EventContent = styled.div`
@@ -97,25 +72,31 @@ const EventContent = styled.div`
   background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent overlay */
   color: white;
   opacity: 0;
+  border-radius: 10px;
+  transition: opacity 0.5s;
 `;
 
 const EventItem = styled.div`
-  &:hover ${EventContent} {
-    opacity: 1;
-    transition: 0.5s;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.03);
   }
 
-  &:hover ${EventImg}::before, &:hover ${EventImg}::after {
-    opacity: 0;
+  &:hover ${EventContent} {
+    opacity: 1;
   }
 `;
 
-const relevantEvents =
-  incomingEvents.length < 3
-    ? [...incomingEvents, ...pastEvents]
-    : incomingEvents;
+type IProps = {
+  incomingEvents: any;
+};
 
-const Event = () => {
+const Event = ({ incomingEvents }: IProps) => {
   return (
     <ContainerFluid className="container-fluid project py-5 mb-5">
       <Container>
@@ -126,14 +107,14 @@ const Event = () => {
         >
           <SectionTitle>Events</SectionTitle>
           <SectionDescription style={{ margin: '16px 0' }}>
-            Upcoming And Past Initiatives
+            Upcoming Events
           </SectionDescription>
           <Link href="/events/upcoming-events">
             <ButtonPrimary>Upcoming Events</ButtonPrimary>
           </Link>
         </EventHeader>
-        <div className="row g-5">
-          {relevantEvents.slice(0, 3).map((event: any, index: any) => (
+        <FlexContainerRowCenter $gap="40px">
+          {incomingEvents.slice(0, 3).map((event: any, index: any) => (
             <div
               key={index}
               className={`col-md-6 col-lg-4 wow fadeIn`}
@@ -144,8 +125,10 @@ const Event = () => {
                   <Image
                     src={event.eventImg}
                     priority
-                    className="img-fluid w-100 rounded"
+                    className="img-fluid rounded"
                     alt=""
+                    layout="fill"
+                    objectFit="cover"
                   />
                   <EventContent className="project-content">
                     <Link href={event.eventHref}>
@@ -156,7 +139,7 @@ const Event = () => {
               </EventItem>
             </div>
           ))}
-        </div>
+        </FlexContainerRowCenter>
       </Container>
     </ContainerFluid>
   );

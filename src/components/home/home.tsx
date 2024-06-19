@@ -23,6 +23,7 @@ import Link from 'next/link';
 import PhotoCollage from './photo-collage';
 import Dashboard from './achievements';
 import Event from './events';
+import { events as incomingEvents } from '../events/upcoming-events/events';
 
 const ServicesSectionContainer = styled(FlexContainerRowSpaceBetween)`
   padding: var(--section-container-padding);
@@ -278,12 +279,15 @@ const Home = () => {
         </ServicesSectionContainer>
       </Section>
 
-      <Divider margin="50px 0" />
+      {incomingEvents.length > 0 && (
+        <div>
+          <Divider margin="50px 0" />
 
-      <Section>
-        <Event />
-      </Section>
-
+          <Section>
+            <Event incomingEvents={incomingEvents} />
+          </Section>
+        </div>
+      )}
       <Divider margin="50px 0" />
 
       <JoiningUs />
