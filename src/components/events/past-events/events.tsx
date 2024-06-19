@@ -1,6 +1,6 @@
 import React from 'react';
 import InpageNav from '../in-page-nav';
-import girlTodayEvent from 'public/assets/events/girls-today-event.jpg';
+import girlTodayEvent from '/public/assets/events/girls-today-event.jpg';
 import exploringTheWorldOfAI from 'public/assets/events/exploring-the-world-of-ai-banner.png';
 import biomedicalSeriesFlyer from 'public/assets/events/biomedical.series.flyer.png';
 import exploringBioInformaticPic from 'public/assets/events/exploring-bioinformatic.png';

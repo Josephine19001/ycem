@@ -1,28 +1,29 @@
-import React from "react";
-import Image from "next/image";
-import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import React from 'react';
+import Image from 'next/image';
+import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import {
   FlexContainerColumnCenter,
   FlexContainerColumnSpaceBetween,
   FlexContainerRowSpaceBetween,
-  Section,
-} from "../shared/containers";
+  Section
+} from '../shared/containers';
 import {
   CardTitle,
   SectionDescription,
-  SectionTitle,
-} from "../shared/typography";
-import { homeServiceSectionContent } from "../shared/constants";
-import JoiningUs from "../shared/joining-us";
-import { Divider } from "../shared/footer";
-import home1 from "public/home/home1.jpg";
-import HeroCarousel from "./carouselImage";
-import Event from "./events";
-import Link from "next/link";
-import PhotoCollage from "./photo-collage";
-import Dashboard from "./achievements";
+  SectionTitle
+} from '../shared/typography';
+import { homeServiceSectionContent } from '../shared/constants';
+import JoiningUs from '../shared/joining-us';
+import { Divider } from '../shared/footer';
+import home1 from 'public/home/home1.jpg';
+import HeroCarousel from './carouselImage';
+import Event from './events';
+import Link from 'next/link';
+import PhotoCollage from './photo-collage';
+import Dashboard from './achievements';
+import Fundraiser from './fundraiser';
 
 // Solutions Section Components
 const ServicesSectionContainer = styled(FlexContainerRowSpaceBetween)`
@@ -139,20 +140,20 @@ const Home = () => {
         <HeroCarousel />
       </HeroSection>
 
-      <Section style={{ marginTop: "50px" }}>
+      <Section style={{ marginTop: '50px' }}>
         <div className="container-xxl py-5">
           <div className="container">
             <div className="row g-5">
               <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div
                   className="position-relative overflow-hidden h-100"
-                  style={{ minHeight: "400px" }}
+                  style={{ minHeight: '400px' }}
                 >
                   <Image
                     className="position-absolute w-100 h-100 pt-5 pe-5"
                     src={home1}
                     alt=""
-                    style={{ objectFit: "cover" }}
+                    style={{ objectFit: 'cover' }}
                     priority
                   />
                 </div>
@@ -161,7 +162,7 @@ const Home = () => {
                 <div className="h-100">
                   <SectionTitle>About us</SectionTitle>
 
-                  <SectionDescription style={{ margin: "16px 0" }}>
+                  <SectionDescription style={{ margin: '16px 0' }}>
                     We Encourage Careers in Engineering for Young Ladies
                   </SectionDescription>
                   <div className="about-home p-4 mb-4">
@@ -170,7 +171,7 @@ const Home = () => {
                       engineering, bridging the gender gap through events,
                       mentorship, and hands-on experiences.
                     </p>
-                    <span style={{ color: "var(--color-primary)" }}>
+                    <span style={{ color: 'var(--color-primary)' }}>
                       Founded in 2021
                     </span>
                   </div>
@@ -180,29 +181,29 @@ const Home = () => {
                     the future of engineering careers for young females.
                   </p>
                   <FlexContainerRowSpaceBetween
-                    style={{ justifyContent: "flex-start" }}
+                    style={{ justifyContent: 'flex-start' }}
                   >
                     <Link
                       className="btn btn-primary py-2 px-3 me-3 btn-with-arrow"
                       href="/who-we-are"
                     >
-                      <span style={{ marginRight: "5px" }}>Learn More</span>
+                      <span style={{ marginRight: '5px' }}>Learn More</span>
                       <span
                         style={{
-                          backgroundColor: "white",
-                          borderRadius: "50%",
-                          width: "30px",
-                          height: "30px",
-                          display: "flex",
-                          justifyContent: "center",
-                          alignItems: "center",
+                          backgroundColor: 'white',
+                          borderRadius: '50%',
+                          width: '30px',
+                          height: '30px',
+                          display: 'flex',
+                          justifyContent: 'center',
+                          alignItems: 'center'
                         }}
                       >
                         <FontAwesomeIcon
                           icon={faArrowRight}
-                          style={{ color: "var(--color-primary)" }}
+                          style={{ color: 'var(--color-primary)' }}
                         />
-                      </span>{" "}
+                      </span>{' '}
                     </Link>
                     <Link
                       className="btn btn-outline-primary py-2 px-3 btn-with-arrow"
@@ -211,18 +212,18 @@ const Home = () => {
                       Contact Us
                       <div
                         style={{
-                          backgroundColor: "var(--color-primary)",
-                          borderRadius: "50%",
-                          width: "30px",
-                          height: "30px",
-                          display: "flex",
-                          justifyContent: "center",
-                          alignItems: "center",
+                          backgroundColor: 'var(--color-primary)',
+                          borderRadius: '50%',
+                          width: '30px',
+                          height: '30px',
+                          display: 'flex',
+                          justifyContent: 'center',
+                          alignItems: 'center'
                         }}
                       >
                         <FontAwesomeIcon
                           icon={faArrowRight}
-                          style={{ color: "white" }}
+                          style={{ color: 'white' }}
                         />
                       </div>
                     </Link>
@@ -232,6 +233,17 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </Section>
+      <Divider margin="50px 0" />
+
+      <Section>
+        <FlexContainerColumnCenter>
+          <SectionTitle>Funds Raising Projects</SectionTitle>
+          <SectionDescription>Support our upcoming projects</SectionDescription>
+          <div style={{ marginTop: '24px' }}>
+            <Fundraiser />
+          </div>
+        </FlexContainerColumnCenter>
       </Section>
       <Divider margin="50px 0" />
 
@@ -267,7 +279,7 @@ const Home = () => {
                   />
                 </ActivityImageContainer>
                 <div>
-                  <CardTitle style={{ marginBottom: "5px" }}>{title}</CardTitle>
+                  <CardTitle style={{ marginBottom: '5px' }}>{title}</CardTitle>
                   <p>{description}</p>
                 </div>
               </ServiceWrapper>
