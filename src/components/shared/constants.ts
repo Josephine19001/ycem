@@ -41,12 +41,12 @@ export const navItems = [
     ]
   },
   {
-    href: '/support-us',
-    label: 'Support Us'
-  },
-  {
     href: '/get-involved',
     label: 'Get Involved'
+  },
+  {
+    href: '/contact',
+    label: 'Contact Us'
   }
 ];
 

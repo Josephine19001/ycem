@@ -1,17 +1,17 @@
-import React, { useState, useRef } from "react";
-import Image from "next/image";
-import { useRouter } from "next/router";
-import styled from "styled-components";
-import { useOnClickOutside } from "usehooks-ts";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useState, useRef } from 'react';
+import Image from 'next/image';
+import { useRouter } from 'next/router';
+import styled from 'styled-components';
+import { useOnClickOutside } from 'usehooks-ts';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import LogoSVG from "public/ycem-logo-no-bg.svg";
-import LogoSVGBg from "public/ycem-logo.svg";
-import NavLink from "./nav-link";
-import { FlexContainerRowSpaceBetween } from "./containers";
-import { navItems } from "./constants";
-import { ButtonPrimary } from "./buttons";
+import LogoSVG from 'public/ycem-logo-no-bg.svg';
+import LogoSVGBg from 'public/ycem-logo.svg';
+import NavLink from './nav-link';
+import { FlexContainerRowSpaceBetween } from './containers';
+import { navItems } from './constants';
+import { ButtonPrimary } from './buttons';
 
 export const LogoComponent = ({ footer }: { footer?: boolean }) => {
   return (
@@ -70,15 +70,15 @@ const TopBar = () => {
           </FlexContainerRowSpaceBetween>
         </Nav.Logo>
 
-        <FlexContainerRowSpaceBetween style={{ gap: "30px" }}>
+        <FlexContainerRowSpaceBetween style={{ gap: '30px' }}>
           <Nav.Items>
             <Navigation />
           </Nav.Items>
         </FlexContainerRowSpaceBetween>
 
         <Nav.ContactBtnContainer>
-          <ButtonPrimary onClick={() => router.push("/contact")}>
-            Contact us
+          <ButtonPrimary onClick={() => router.push('/support-us')}>
+            Support Us
           </ButtonPrimary>
         </Nav.ContactBtnContainer>
 
@@ -86,7 +86,7 @@ const TopBar = () => {
           <FontAwesomeIcon
             icon={isOpen ? faXmark : faBars}
             size="2x"
-            style={{ color: "var(--color-dark)", zIndex: "5" }}
+            style={{ color: 'var(--color-dark)', zIndex: '5' }}
             onClick={() => setIsOpen(!isOpen)}
           />
           <Nav.Overlay open={isOpen}>
@@ -94,7 +94,7 @@ const TopBar = () => {
               <Navigation closeNav={closeNav} />
               <ButtonPrimary
                 onClick={() => {
-                  router.push("/contact");
+                  router.push('/contact');
                   closeNav();
                 }}
               >
@@ -197,9 +197,9 @@ const Nav = {
     outline: none;
   `,
   Overlay: styled.div<{ open: boolean }>`
-    display: ${({ open }) => (open ? "flex" : "none")};
+    display: ${({ open }) => (open ? 'flex' : 'none')};
     flex-direction: column;
-    height: ${({ open }) => (open ? "100%" : 0)};
+    height: ${({ open }) => (open ? '100%' : 0)};
     width: 100%;
     transition: height 0.2s ease-in-out;
     background: var(--color-light);
@@ -209,7 +209,7 @@ const Nav = {
     right: 0;
   `,
   OverlayedItems: styled.ul<{ open: boolean }>`
-    display: ${({ open }) => (open ? "block" : "none")};
+    display: ${({ open }) => (open ? 'block' : 'none')};
     list-style: none;
     position: fixed;
     overflow: hidden;
@@ -235,5 +235,5 @@ const Nav = {
       line-height: 1.067em;
       text-decoration: none;
     }
-  `,
+  `
 };
