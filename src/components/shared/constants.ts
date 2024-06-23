@@ -78,7 +78,8 @@ export const homeServiceSectionContent = [
   {
     icon: communityPic,
     title: 'Scholarships',
-    description: 'Support young. We raise funds for scholarships.'
+    description:
+      'Support our efforts to fund young women in engineering and tech programs.'
   },
   {
     icon: techTalkPic,

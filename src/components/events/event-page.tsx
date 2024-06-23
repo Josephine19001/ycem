@@ -183,7 +183,7 @@ const EventPage = ({
               />
             </ShareIcon>
             <ShareIcon
-              href="https://www.linkedin.com/in/ycem?originalSubdomain=gh"
+              href="https://www.linkedin.com/company/your-choice-in-engineering-matters-ycem/"
               target="_blank"
             >
               <FontAwesomeIcon
