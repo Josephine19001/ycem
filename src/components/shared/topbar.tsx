@@ -94,11 +94,11 @@ const TopBar = () => {
               <Navigation closeNav={closeNav} />
               <ButtonPrimary
                 onClick={() => {
-                  router.push('/contact');
+                  router.push('/support-us');
                   closeNav();
                 }}
               >
-                Contact us
+                Support us
               </ButtonPrimary>
             </Nav.OverlayedItems>
           </Nav.Overlay>
