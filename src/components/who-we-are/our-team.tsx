@@ -1,33 +1,33 @@
-import React from "react";
-import styled from "styled-components";
-import { useRouter } from "next/router";
-import { faBlog } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import React from 'react';
+import styled from 'styled-components';
+import { useRouter } from 'next/router';
+import { faBlog } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
-import elizabethPic from "public/assets/team-pictures/elisabeth-boamah.jpg";
-import josephinePic from "public/assets/team-pictures/josephine.jpg";
-import vanessaPic from "public/assets/team-pictures/vanessa.jpg";
-import karecePic from "public/assets/team-pictures/karece.jpg";
-import hilaryPic from "public/assets/team-pictures/hilary.png";
-import abenaPic from "public/assets/team-pictures/abena.jpeg";
-import daniellePic from "public/assets/team-pictures/danielle.png";
-import florentynaPic from "public/assets/team-pictures/florentyna.jpeg";
-import gertrudePic from "public/assets/team-pictures/gertrude.png";
-import ursulaPic from "public/assets/team-pictures/ursula.jpeg";
-import oforiwaaPic from "public/assets/team-pictures/oforiwaa.jpeg";
-import perpetualPic from "public/assets/team-pictures/perpetual.jpg";
-import emmanuellaPic from "public/assets/team-pictures/emmanuella.jpg";
-import vivianPic from "public/assets/team-pictures/vivian-agyapong.jpg";
+import elizabethPic from 'public/assets/team-pictures/elisabeth-boamah.jpg';
+import josephinePic from 'public/assets/team-pictures/josephine.jpg';
+import vanessaPic from 'public/assets/team-pictures/vanessa.jpg';
+import karecePic from 'public/assets/team-pictures/karece.jpg';
+import hilaryPic from 'public/assets/team-pictures/hilary.png';
+import abenaPic from 'public/assets/team-pictures/abena.jpeg';
+import daniellePic from 'public/assets/team-pictures/danielle.png';
+import florentynaPic from 'public/assets/team-pictures/florentyna.jpeg';
+import gertrudePic from 'public/assets/team-pictures/gertrude.png';
+import ursulaPic from 'public/assets/team-pictures/ursula.jpeg';
+import oforiwaaPic from 'public/assets/team-pictures/oforiwaa.jpeg';
+import perpetualPic from 'public/assets/team-pictures/perpetual.jpg';
+import emmanuellaPic from 'public/assets/team-pictures/emmanuella.jpg';
+import vivianPic from 'public/assets/team-pictures/vivian-agyapong.jpg';
 
-import IntroSection from "../shared/intro-section";
+import IntroSection from '../shared/intro-section';
 import {
   FlexContainerColumnSpaceBetween,
   FlexContainerRowSpaceBetween,
-  Section,
-} from "../shared/containers";
-import { ButtonPrimary } from "../shared/buttons";
-import useSmallerScreens from "../../hooks/use-smaller-screens";
-import TeamItem from "./team-item";
+  Section
+} from '../shared/containers';
+import { ButtonPrimary } from '../shared/buttons';
+import useSmallerScreens from '../../hooks/use-smaller-screens';
+import TeamItem from './team-item';
 
 export const AboutSectionContainer = styled(FlexContainerColumnSpaceBetween)`
   gap: 20px;
@@ -95,8 +95,8 @@ const WhoWeAre = () => {
       />
       <SectionContainer>
         <FlexContainerRowSpaceBetween
-          $gap={"40px"}
-          style={{ flexWrap: "wrap", justifyContent: "flex-start" }}
+          $gap={'40px'}
+          style={{ flexWrap: 'wrap', justifyContent: 'flex-start' }}
         >
           {teamInfo.map(
             ({
@@ -106,7 +106,7 @@ const WhoWeAre = () => {
               socialLinks,
               imgAlt,
               imgSrc,
-              isNotStatic,
+              isNotStatic
             }) => (
               <TeamItem
                 key={name}
@@ -122,11 +122,11 @@ const WhoWeAre = () => {
           )}
         </FlexContainerRowSpaceBetween>
       </SectionContainer>
-      <Section style={{ paddingBottom: isSmallScreen ? "5px" : "100px" }}>
+      <Section style={{ paddingBottom: isSmallScreen ? '5px' : '100px' }}>
         <JoinUsContainer>
           <FlexContainerRowSpaceBetween>
             <JoinUsWrapper>
-              <h4 style={{ color: "var(--color-primary)" }}>
+              <h4 style={{ color: 'var(--color-primary)' }}>
                 Join Our Volunteer Team
               </h4>
               <p>
@@ -135,7 +135,7 @@ const WhoWeAre = () => {
                 skills to our mission?
               </p>
             </JoinUsWrapper>
-            <ButtonPrimary onClick={() => router.push("/get-involved")}>
+            <ButtonPrimary onClick={() => router.push('/get-involved')}>
               Get involved
             </ButtonPrimary>
           </FlexContainerRowSpaceBetween>
@@ -149,241 +149,244 @@ export default WhoWeAre;
 
 export const teamInfo = [
   {
-    name: "Thelma Hilary N.A Laryea",
-    jobTitle: "Cloud Engineer(Hubtel), AWS Community Builder",
+    name: 'Thelma Hilary N.A Laryea',
+    jobTitle: 'Cloud Engineer(Hubtel), AWS Community Builder',
     bioSummary:
-      "Thelma is a cloud enthusiast who is passionate about cloud engineering and architecture. She is passionate about teaching and empowering young girls and loves reading, swimming, yoga and creative writing ",
+      'Thelma is a cloud enthusiast who is passionate about cloud engineering and architecture. She is passionate about teaching and empowering young girls and loves reading, swimming, yoga and creative writing ',
     socialLinks: [
       {
-        link: "https://fi.linkedin.com/in/gyamerajosephine ",
-        icon: faLinkedin,
+        link: 'https://fi.linkedin.com/in/gyamerajosephine ',
+        icon: faLinkedin
       },
-      { link: "https://github.com/tayelma", icon: faGithub },
+      { link: 'https://github.com/tayelma', icon: faGithub }
     ],
     imgAlt: "Hilary's profile picture",
-    imgSrc: hilaryPic,
+    imgSrc: hilaryPic
   },
   {
-    name: "JOSEPHINE GYAMERA",
+    name: 'JOSEPHINE GYAMERA',
     jobTitle:
-      "Software engineer at Unity Technologies in Helsinki & Graduate student in Software Engineering at the University of Turku.",
+      'Software engineer at Unity Technologies in Helsinki & Graduate student in Software Engineering at the University of Turku.',
     bioSummary:
-      "Josephine, an experienced software engineer specializing in full-stack development, is dedicated to empowering women in the tech industry. She shares her expertise through her tech-related blog and actively engages in initiatives that empower young females in tech. Beyond her professional life, Josephine enjoys sports, cooking, and embarking on new DIY projects.",
+      'Josephine, an experienced software engineer specializing in full-stack development, is dedicated to empowering women in the tech industry. She shares her expertise through her tech-related blog and actively engages in initiatives that empower young females in tech. Beyond her professional life, Josephine enjoys sports, cooking, and embarking on new DIY projects.',
     socialLinks: [
       {
-        link: "https://fi.linkedin.com/in/gyamerajosephine ",
-        icon: faLinkedin,
+        link: 'https://fi.linkedin.com/in/gyamerajosephine ',
+        icon: faLinkedin
       },
-      { link: "https://gyamera-josephine.vercel.app/blog", icon: faBlog },
-      { link: "https://github.com/Josephine19001", icon: faGithub },
+      { link: 'https://gyamera-josephine.vercel.app/blog', icon: faBlog },
+      { link: 'https://github.com/Josephine19001', icon: faGithub }
     ],
     imgAlt: "Josephine Gyamera's profile picture",
-    imgSrc: josephinePic,
+    imgSrc: josephinePic
   },
+
   {
-    name: "Vanessa Adjei",
-    jobTitle: "Software Architect, Technology Advantage Group",
+    name: 'Gertrude Asumpaame Alayine',
+    jobTitle: ' Postgraduate Associate, School of Medicine, Yale University',
     bioSummary:
-      "Vanessa is a highly motivated professional with expertise in web and mobile application development, data analysis, and system architecture. With a strong foundation in programming and a passion for innovation, she is dedicated to contributing to cutting-edge projects in system development.",
+      'Gertrude is a computational neuroscience researcher whose research focuses on using machine learning and other computational methods to improve upon the mental health of individuals. She is passionate about community giveback and engages in extracurricular activities that will enable her do so, including mentoring young women.',
     socialLinks: [
       {
-        link: "https://www.linkedin.com/in/vanessa-adjei-794455195/",
-        icon: faLinkedin,
-      },
-      {
-        link: "https://github.com/VanessaAdjei",
-        icon: faGithub,
-      },
-    ],
-    imgAlt: "Vanessa's profile picture",
-    imgSrc: vanessaPic,
-  },
-  {
-    name: "Gertrude Asumpaame Alayine",
-    jobTitle: " Postgraduate Associate, School of Medicine, Yale University",
-    bioSummary:
-      "Gertrude is a computational neuroscience researcher whose research focuses on using machine learning and other computational methods to improve upon the mental health of individuals. She is passionate about community giveback and engages in extracurricular activities that will enable her do so, including mentoring young women.",
-    socialLinks: [
-      {
-        link: "linkedin.com/in/gertrude-asumpaame-alayine",
-        icon: faLinkedin,
-      },
+        link: 'linkedin.com/in/gertrude-asumpaame-alayine',
+        icon: faLinkedin
+      }
     ],
     imgAlt: "Gertrude's profile picture",
-    imgSrc: gertrudePic,
+    imgSrc: gertrudePic
   },
   {
-    name: "Dominica Abena Oforiwaa Amanfo",
+    name: 'Dominica Abena Oforiwaa Amanfo',
     jobTitle:
-      "AI/ML engineer at 4th-ir, headquartered in Lucerne, Switzerland. Graduate student at the Hochschule Lucerne, studying Applied information and data science.",
+      'AI/ML engineer at 4th-ir, headquartered in Lucerne, Switzerland. Graduate student at the Hochschule Lucerne, studying Applied information and data science.',
     bioSummary:
       "She is currently an Arm Ambassador, a volunteer for Arm's (E3)NGAGE program, Embedded Learning Challenge (ELC), and is an active member of the IEEE community. She has earned a reputation as an exemplary leader who is driven by challenges, unafraid of obstacles, and dedicated to advancing standards of excellence in STEM education, especially in females. She enjoys her career, teaching, traveling, playing the piano, classical music, swimming, and reading.",
     socialLinks: [
       {
-        link: "https://www.linkedin.com/in/dominicaamanfo/",
-        icon: faLinkedin,
+        link: 'https://www.linkedin.com/in/dominicaamanfo/',
+        icon: faLinkedin
       },
-      { link: "https://github.com/dominica-ofoj", icon: faGithub },
+      { link: 'https://github.com/dominica-ofoj', icon: faGithub }
     ],
     imgAlt: "Dominica's profile picture",
-    imgSrc: oforiwaaPic,
+    imgSrc: oforiwaaPic
   },
   {
-    name: "Elizabeth Boamah",
+    name: 'Elizabeth Boamah',
     jobTitle:
-      "Materials Science & Engineering student (MPhil), University of Ghana & Energy engineer stagaire, IMT-Mines, Albi.",
+      'Materials Science & Engineering student (MPhil), University of Ghana & Energy engineer stagaire, IMT-Mines, Albi.',
     bioSummary:
-      "Elizabeth, an energy engineer with speciality in Pyrolysis conversion of plastics to fuel (Liquid, solid & gas) energy, is dedicated to teaching and empowering people, she loves what she does. Beyond her professional life, Elizabeth finds interests in reading, exploring different cuisines, traveling and spending time with the family.",
+      'Elizabeth, an energy engineer with speciality in Pyrolysis conversion of plastics to fuel (Liquid, solid & gas) energy, is dedicated to teaching and empowering people, she loves what she does. Beyond her professional life, Elizabeth finds interests in reading, exploring different cuisines, traveling and spending time with the family.',
     socialLinks: [
       {
-        link: "https://www.linkedin.com/in/elizabethboamah/",
-        icon: faLinkedin,
+        link: 'https://www.linkedin.com/in/elizabethboamah/',
+        icon: faLinkedin
       },
       {
-        link: "https://www.researchgate.net/profile/Elizabeth-Boamah-3",
-        icon: faBlog,
-      },
+        link: 'https://www.researchgate.net/profile/Elizabeth-Boamah-3',
+        icon: faBlog
+      }
     ],
     imgAlt: "Elizabeth Boamah's profile picture",
-    imgSrc: elizabethPic,
+    imgSrc: elizabethPic
   },
   {
-    name: "El-Karece Asiedu",
-    jobTitle: "Software engineer",
+    name: 'Danielle Patricia Akweley Quaye',
+    jobTitle: 'Biomedical Engineer',
     bioSummary:
-      "El-Karece is a software engineer proficient in both backend and frontend development for web-based applications. She currently serves as the co-lead of the Python Accra User Group. With a strong background in developing fintech and e-commerce applications, she possesses a computer engineering degree from the University of Ghana and strives to make a meaningful impact through technology. Her enthusiasm for volunteering in Women in STEM initiatives further underscores her dedication to fostering diversity and inclusion in the tech industry.",
+      'Danielle Patricia Akweley Quaye is a biomedical engineer, an entrepreneur and  an aspiring cocoa farmer. From 2018 to date, she has been a volunteer as a youth worker at the Youth Arise Organization (YAO) and a teacher volunteer with the Literacy Impact Project (LIP) since 2022. She has certification in IoT, Arduino and 3D modeling from the TechEra organization Ghana. She is working as a biomedical trainee at the 37 Military Hospital, Ghana with the hopes of becoming a full-time biomedical engineer. She loves to cook, listen to music and hang out with family and close friends',
     socialLinks: [
       {
-        link: "https://www.linkedin.com/in/el-karece-asiedu",
-        icon: faLinkedin,
-      },
-      {
-        link: "https://github.com/KareceA",
-        icon: faGithub,
-      },
-    ],
-    imgAlt: "El-Karece's profile picture",
-    imgSrc: karecePic,
-  },
-  {
-    name: "Abena Agyeiwaa Obom ",
-    jobTitle: "Food Process Engineer",
-    bioSummary:
-      "Agyeiwaa is a dynamic young food process engineer. Her passion lies in pioneering innovative solutions and driving continuous improvement in the food industry.",
-    socialLinks: [
-      {
-        link: "https://www.linkedin.com/in/abena-agyeiwaa-obom-638270239",
-        icon: faLinkedin,
-      },
-      { link: "https://github.com/Agyeiwaa9", icon: faGithub },
-    ],
-    imgAlt: "Abena's profile picture",
-    imgSrc: abenaPic,
-  },
-  {
-    name: "Perpetual Napoga Nin-yenle",
-    jobTitle: "Agricultural Engineer. Data Science and AI student at Tech4Dev.",
-    bioSummary:
-      "Perpetual is a dedicated agriculture enthusiast who merges her passion for technology and agriculture. She is aspiring to excel  in Data Science and AI. Perpetual is a charismatic leader and she is committed to community service and enjoys assisting others who need her help",
-    socialLinks: [
-      {
-        link: "https://www.linkedin.com/in/perpetual-napoga-nin-yenle-16530318a/",
-        icon: faLinkedin,
-      },
-    ],
-    imgAlt: "Perpetual's profile picture",
-    imgSrc: perpetualPic,
-  },
-  {
-    name: "Florentyna Anima Boakye Yiadom",
-    jobTitle:
-      "Biomedical Engineer, Content Developer- Mon and Associates Technology, Editor-Hitex Editex Company & Entrepreneur.",
-    bioSummary:
-      "Florentyna is an enthusiast in the delivery of safe and suitable healthcare using quality and affordable medical devices. She is passionate about impacting knowledge skills to the younger generation, especially encouraging young females into discovering their full potentials in various areas such as engineering,technology and entrepreneurship.",
-    socialLinks: [
-      {
-        link: "https://www.linkedin.com/in/florentyna-boakye-yiadom-",
-        icon: faLinkedin,
-      },
-    ],
-    imgAlt: "Florentyna's profile picture",
-    imgSrc: florentynaPic,
-  },
-  {
-    name: "Danielle Patricia Akweley Quaye",
-    jobTitle: "Biomedical Engineer",
-    bioSummary:
-      "Danielle Patricia Akweley Quaye is a biomedical engineer, an entrepreneur and  an aspiring cocoa farmer. From 2018 to date, she has been a volunteer as a youth worker at the Youth Arise Organization (YAO) and a teacher volunteer with the Literacy Impact Project (LIP) since 2022. She has certification in IoT, Arduino and 3D modeling from the TechEra organization Ghana. She is working as a biomedical trainee at the 37 Military Hospital, Ghana with the hopes of becoming a full-time biomedical engineer. She loves to cook, listen to music and hang out with family and close friends",
-    socialLinks: [
-      {
-        link: "https://www.linkedin.com/in/danielle-quaye-ab6253182",
-        icon: faLinkedin,
-      },
+        link: 'https://www.linkedin.com/in/danielle-quaye-ab6253182',
+        icon: faLinkedin
+      }
     ],
     imgAlt: "Danielle's profile picture",
-    imgSrc: daniellePic,
+    imgSrc: daniellePic
   },
   {
-    name: "Ursula Senam Nkonu",
-    jobTitle: "Biomedical Engineer",
+    name: 'Ursula Senam Nkonu',
+    jobTitle: 'Biomedical Engineer',
     bioSummary:
-      "Ursula is a Biomedical Engineer who is passionate about using data science, machine learning and bioinformatics to advance cancer research. She is enthusiastic about empowering girls and women to break into the fields of engineering and technology. She is also a fellow at Black Sisters in STEM, a nonprofit organization committed to digitizing and developing the world’s best talent with a focus on Black women. In her free time, she loves reading, watching animated shows, and tv series.",
+      'Ursula is a Biomedical Engineer who is passionate about using data science, machine learning and bioinformatics to advance cancer research. She is enthusiastic about empowering girls and women to break into the fields of engineering and technology. She is also a fellow at Black Sisters in STEM, a nonprofit organization committed to digitizing and developing the world’s best talent with a focus on Black women. In her free time, she loves reading, watching animated shows, and tv series.',
     socialLinks: [
       {
-        link: "www.linkedin.com/in/ursula-nkonu",
-        icon: faLinkedin,
-      },
+        link: 'www.linkedin.com/in/ursula-nkonu',
+        icon: faLinkedin
+      }
     ],
     imgAlt: "Ursula's profile picture",
-    imgSrc: ursulaPic,
+    imgSrc: ursulaPic
   },
+
   {
-    name: "Jecholiah Afua Antwiwaa Opare",
-    jobTitle:
-      "Biomedical Engineer Intern at UGMC / Front-End Developer Trainee at Azubi Africa",
-    bioSummary:
-      "Jecholiah Afua Antwiwaa Opare is a versatile professional actively pursuing a dual-track career. As  a Biomedical Engineer Intern, Jecholiah is dedicated to advancing healthcare through research and innovative medical solutions. Simultaneously, she is honing her skills as a Front-End Developer Trainee by creating user-friendly web applications, combining technology and design to deliver exceptional user experiences.",
-    socialLinks: [
-      {
-        link: "https://www.linkedin.com/in/jecholiahopare",
-        icon: faLinkedin,
-      },
-      {
-        link: "https://github.com/Jecholiah001",
-        icon: faGithub,
-      },
-    ],
-    imgAlt: "Jecholiah's profile picture",
-    imgSrc:
-      "https://res.cloudinary.com/josephine19001/image/upload/v1699133558/YCEM/imskxlqofx76m2kpsvch.jpg",
-    isNotStatic: true,
-  },
-  {
-    name: "Emmanuella Buerki Nelson",
-    jobTitle: "Sustainable Energy Systems Engineer",
-    bioSummary:
-      "Emmanuella is a  Sustainable energy systems engineer with a background in mechanical engineering(thermofluids and energy systems) and data science for energy systems.  She seeks to improve green energy access and transition to all (ie women and children) through sustainable research, development and implementation. She is motivated by her strong dedication to promoting gender diversity in STEM, reflecting her commitment to empowering women in these fields.",
-    socialLinks: [
-      {
-        link: "https://www.linkedin.com/in/emmanuella-nelson-178343297",
-        icon: faLinkedin,
-      },
-    ],
-    imgAlt: "Emmanuella's profile picture",
-    imgSrc: emmanuellaPic,
-  },
-  {
-    name: "Vivian Asamoah Agyapong",
-    jobTitle: "Electrical engineer at Sunon Asogli power plant ",
+    name: 'Vivian Asamoah Agyapong',
+    jobTitle: 'Electrical engineer at Sunon Asogli power plant ',
     bioSummary:
       "Vivian is a dedicated electrical engineer specializing in power and renewable energy. She currently works in Sunon Asogli power plant as an electrical field operator. She's passionate about empowering girls in engineering, promoting diversity in STEM, and enjoys working out and reading in her free time.",
     socialLinks: [
       {
-        link: "https://gh.linkedin.com/in/vivian-agyapong-23bb2a262",
-        icon: faLinkedin,
-      },
+        link: 'https://gh.linkedin.com/in/vivian-agyapong-23bb2a262',
+        icon: faLinkedin
+      }
     ],
     imgAlt: "Vivian's profile picture",
-    imgSrc: vivianPic,
+    imgSrc: vivianPic
   },
+  {
+    name: 'El-Karece Asiedu',
+    jobTitle: 'Software engineer',
+    bioSummary:
+      'El-Karece is a software engineer proficient in both backend and frontend development for web-based applications. She currently serves as the co-lead of the Python Accra User Group. With a strong background in developing fintech and e-commerce applications, she possesses a computer engineering degree from the University of Ghana and strives to make a meaningful impact through technology. Her enthusiasm for volunteering in Women in STEM initiatives further underscores her dedication to fostering diversity and inclusion in the tech industry.',
+    socialLinks: [
+      {
+        link: 'https://www.linkedin.com/in/el-karece-asiedu',
+        icon: faLinkedin
+      },
+      {
+        link: 'https://github.com/KareceA',
+        icon: faGithub
+      }
+    ],
+    imgAlt: "El-Karece's profile picture",
+    imgSrc: karecePic
+  },
+  {
+    name: 'Abena Agyeiwaa Obom ',
+    jobTitle: 'Food Process Engineer',
+    bioSummary:
+      'Agyeiwaa is a dynamic young food process engineer. Her passion lies in pioneering innovative solutions and driving continuous improvement in the food industry.',
+    socialLinks: [
+      {
+        link: 'https://www.linkedin.com/in/abena-agyeiwaa-obom-638270239',
+        icon: faLinkedin
+      },
+      { link: 'https://github.com/Agyeiwaa9', icon: faGithub }
+    ],
+    imgAlt: "Abena's profile picture",
+    imgSrc: abenaPic
+  },
+  {
+    name: 'Perpetual Napoga Nin-yenle',
+    jobTitle: 'Agricultural Engineer. Data Science and AI student at Tech4Dev.',
+    bioSummary:
+      'Perpetual is a dedicated agriculture enthusiast who merges her passion for technology and agriculture. She is aspiring to excel  in Data Science and AI. Perpetual is a charismatic leader and she is committed to community service and enjoys assisting others who need her help',
+    socialLinks: [
+      {
+        link: 'https://www.linkedin.com/in/perpetual-napoga-nin-yenle-16530318a/',
+        icon: faLinkedin
+      }
+    ],
+    imgAlt: "Perpetual's profile picture",
+    imgSrc: perpetualPic
+  },
+  {
+    name: 'Florentyna Anima Boakye Yiadom',
+    jobTitle:
+      'Biomedical Engineer, Content Developer- Mon and Associates Technology, Editor-Hitex Editex Company & Entrepreneur.',
+    bioSummary:
+      'Florentyna is an enthusiast in the delivery of safe and suitable healthcare using quality and affordable medical devices. She is passionate about impacting knowledge skills to the younger generation, especially encouraging young females into discovering their full potentials in various areas such as engineering,technology and entrepreneurship.',
+    socialLinks: [
+      {
+        link: 'https://www.linkedin.com/in/florentyna-boakye-yiadom-',
+        icon: faLinkedin
+      }
+    ],
+    imgAlt: "Florentyna's profile picture",
+    imgSrc: florentynaPic
+  },
+
+  {
+    name: 'Jecholiah Afua Antwiwaa Opare',
+    jobTitle:
+      'Biomedical Engineer Intern at UGMC / Front-End Developer Trainee at Azubi Africa',
+    bioSummary:
+      'Jecholiah Afua Antwiwaa Opare is a versatile professional actively pursuing a dual-track career. As  a Biomedical Engineer Intern, Jecholiah is dedicated to advancing healthcare through research and innovative medical solutions. Simultaneously, she is honing her skills as a Front-End Developer Trainee by creating user-friendly web applications, combining technology and design to deliver exceptional user experiences.',
+    socialLinks: [
+      {
+        link: 'https://www.linkedin.com/in/jecholiahopare',
+        icon: faLinkedin
+      },
+      {
+        link: 'https://github.com/Jecholiah001',
+        icon: faGithub
+      }
+    ],
+    imgAlt: "Jecholiah's profile picture",
+    imgSrc:
+      'https://res.cloudinary.com/josephine19001/image/upload/v1699133558/YCEM/imskxlqofx76m2kpsvch.jpg',
+    isNotStatic: true
+  },
+  {
+    name: 'Vanessa Adjei',
+    jobTitle: 'Software Architect, Technology Advantage Group',
+    bioSummary:
+      'Vanessa is a highly motivated professional with expertise in web and mobile application development, data analysis, and system architecture. With a strong foundation in programming and a passion for innovation, she is dedicated to contributing to cutting-edge projects in system development.',
+    socialLinks: [
+      {
+        link: 'https://www.linkedin.com/in/vanessa-adjei-794455195/',
+        icon: faLinkedin
+      },
+      {
+        link: 'https://github.com/VanessaAdjei',
+        icon: faGithub
+      }
+    ],
+    imgAlt: "Vanessa's profile picture",
+    imgSrc: vanessaPic
+  },
+  {
+    name: 'Emmanuella Buerki Nelson',
+    jobTitle: 'Sustainable Energy Systems Engineer',
+    bioSummary:
+      'Emmanuella is a  Sustainable energy systems engineer with a background in mechanical engineering(thermofluids and energy systems) and data science for energy systems.  She seeks to improve green energy access and transition to all (ie women and children) through sustainable research, development and implementation. She is motivated by her strong dedication to promoting gender diversity in STEM, reflecting her commitment to empowering women in these fields.',
+    socialLinks: [
+      {
+        link: 'https://www.linkedin.com/in/emmanuella-nelson-178343297',
+        icon: faLinkedin
+      }
+    ],
+    imgAlt: "Emmanuella's profile picture",
+    imgSrc: emmanuellaPic
+  }
 ];
