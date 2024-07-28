@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import { NextSeo } from 'next-seo';
 import Head from 'next/head';
-import EventsComponent from '../../../src/components/events/upcoming-events/cloud-computing-journey';
+import EventsComponent from '../../../src/components/events/past-events/cloud-computing-journey';
 
 const CloudComputingJourney: NextPage = () => {
   return (

@@ -6,6 +6,7 @@ import biomedicalSeriesFlyer from 'public/assets/events/biomedical.series.flyer.
 import exploringBioInformaticPic from 'public/assets/events/exploring-bioinformatic.png';
 import biomedMedicineFLyer from 'public/assets/events/biomed-medicine-flyer.png';
 import aiMedicineFLyer from 'public/assets/events/ai-in-medicine.png';
+import cloundWebinar from 'public/assets/events/cloud-webinar.png';
 
 import { Container } from '../upcoming-events/events';
 import EventItem from '../event-list-item';
@@ -36,6 +37,15 @@ const PastEvents = () => {
 export default PastEvents;
 
 export const events = [
+  {
+    eventHref: '/events/upcoming-events/cloud-computing-journey',
+    month: 'July',
+    date: '6th',
+    title: 'THE CLOUD COMPUTING JOURNEY: INSPIRING BEGINNERS TO SOAR',
+    timeDay: 'Saturday, 03:00PM GMT',
+    location: 'Online, Google Meet',
+    eventImg: cloundWebinar
+  },
   {
     eventHref: '/events/past-events/ai-in-medicine',
     month: 'May',
