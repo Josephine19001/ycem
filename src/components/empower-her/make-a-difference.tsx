@@ -82,10 +82,10 @@ const MakeADifference: React.FC = () => {
             <p>
               In many communities, especially among young girls, there is a lack
               of awareness and encouragement to pursue careers in engineering.
-              This is why we are launching our 'Inspire Future Engineers'
-              campaign, aimed at visiting schools, dispelling stereotypes,
-              promoting technology, and fostering a love for engineering in
-              young minds.
+              This is why we are launching our &apos;Inspire Future
+              Engineers&apos; campaign, aimed at visiting schools, dispelling
+              stereotypes, promoting technology, and fostering a love for
+              engineering in young minds.
             </p>
           </FlexContainerColumnGapped>
 
@@ -125,9 +125,9 @@ const MakeADifference: React.FC = () => {
           <FlexContainerColumnGapped $alignitems="flex-start">
             <Header>How to Donate</Header>
             <p>
-              To make a donation, simply click the 'Donate Now' button below,
-              fill out the donation form, and choose your preferred payment
-              method via Paystack.
+              To make a donation, simply click the &apos;Donate Now&apos; button
+              below, fill out the donation form, and choose your preferred
+              payment method via Paystack.
             </p>
             <FlexContainerRowSpaceBetween>
               {showPayment ? (

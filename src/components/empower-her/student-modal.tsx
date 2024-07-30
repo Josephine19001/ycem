@@ -84,7 +84,7 @@ const StudentModal = ({
   return (
     <ModalBackground id="modal-background">
       <ModalContent>
-        {/* <CloseButton onClick={onClose}>&times;</CloseButton> */}
+        {/* <CloseButton onClick={onClose}>&times;</CloseButton */}
         <StudentImage
           src={student.picture}
           alt={student.name}

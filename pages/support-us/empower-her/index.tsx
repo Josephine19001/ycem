@@ -9,7 +9,7 @@ const MakeaDifference: NextPage = () => {
     <>
       <Head>
         <title>
-          Make a Difference Today - Support YCEM's Engineering Outreach
+          Make a Difference Today - Support YCEM&apos;s Engineering Outreach
         </title>
       </Head>
       <NextSeo
