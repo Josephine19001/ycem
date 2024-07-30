@@ -38,7 +38,7 @@ export default PastEvents;
 
 export const events = [
   {
-    eventHref: '/events/upcoming-events/cloud-computing-journey',
+    eventHref: '/events/past-events/cloud-computing-journey',
     month: 'July',
     date: '6th',
     title: 'THE CLOUD COMPUTING JOURNEY: INSPIRING BEGINNERS TO SOAR',
