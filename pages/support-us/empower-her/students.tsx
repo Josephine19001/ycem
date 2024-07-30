@@ -2,13 +2,15 @@ import type { NextPage } from 'next';
 import { NextSeo } from 'next-seo';
 import Head from 'next/head';
 
-import DonationsComponent from '../src/components/donations';
+import StudentsComponent from '../../../src/components/empower-her/students';
 
-const Donations: NextPage = () => {
+const Students: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Help through Donations - ycem.org</title>
+        <title>
+          Make a Difference Today - Support YCEM's Engineering Outreach
+        </title>
       </Head>
       <NextSeo
         openGraph={{
@@ -18,7 +20,7 @@ const Donations: NextPage = () => {
           siteName: 'YCEM',
           title: 'Your Choice in Engineering Matters',
           description:
-            'Empowering HER Future in ENGINEERING. Explore the world of engineering with YCEM. Get involved in our events and career guidance and mentorship opportunities.',
+            'In many communities, especially among young girls, there is a lack of awareness and encouragement to pursue careers in engineering. This is why we are launching our Inspire Future Engineers campaign, aimed at visiting schools, dispelling stereotypes, promoting technology, and fostering a love for engineering in young minds.',
           images: [
             {
               url: 'https://res.cloudinary.com/josephine19001/image/upload/v1698596509/YCEM/mmtsy0x1bf5aq1jpjbwc.png',
@@ -29,9 +31,9 @@ const Donations: NextPage = () => {
           ]
         }}
       />
-      <DonationsComponent />
+      <StudentsComponent />
     </>
   );
 };
 
-export default Donations;
+export default Students;

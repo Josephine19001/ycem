@@ -69,7 +69,7 @@ const Contact = () => {
             >
               <FontAwesomeIcon icon={faHandHoldingDollar} />
               <p>
-                <strong>Support us:</strong> support@ycem.org
+                <strong>Donate now:</strong> support@ycem.org
               </p>
             </FlexContainerRowSpaceBetween>
             <FlexContainerRowSpaceBetween

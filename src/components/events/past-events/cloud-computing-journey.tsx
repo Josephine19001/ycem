@@ -15,12 +15,22 @@ const CloudIntro = () => {
           <h2>Summary</h2>
           <p>
             We had an immersive journey into the Cloud Computing journey at our
+<<<<<<< HEAD
             last event! We delve into key topics that will not only introduce
             you to the fundamentals of Cloud Computing but also showcase its
             wide-ranging applications in today&apos;s dynamic world. Whether you
             were a tech enthusiast, a budding professional, or simply curious
             about the possibilities Cloud Computing holds, the event was your
             gateway to understanding the present and shaping the future.
+=======
+            last event with Joshua Teye! We delve into key topics that will not
+            only introduce you to the fundamentals of Cloud Computing but also
+            showcase its wide-ranging applications in today&apos;s dynamic
+            world. Whether you&apos;re a tech enthusiast, a budding
+            professional, or simply curious about the possibilities Cloud
+            Computing holds, this event was your gateway to understanding the
+            present and shaping the future.
+>>>>>>> 797b6a4 (Worked on fundraising page)
           </p>
         </FlexContainerColumn>
       }
