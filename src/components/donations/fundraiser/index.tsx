@@ -33,8 +33,8 @@ const fundRaiserContent = [
     title: 'Donation & Support',
     subtitle: 'Empower Her',
     description:
-      'We are launching our "Empower Her" campaign, aimed at supporting engineering students who need financial assistance, mentorship opportunity and general support to excel.',
-    goal: 16100,
+      'We are launching our "Empower Her" campaign, aimed at supporting 5 engineering students who need financial assistance, mentorship opportunity and general support to excel.',
+    goal: 51000,
     raised: 0,
     image: studentPic,
     link: 'support-us/empower-her'

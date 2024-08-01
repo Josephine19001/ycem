@@ -169,7 +169,7 @@ const MakeADifference: React.FC = () => {
                 </tr>
                 <tr>
                   <td>Tuition</td>
-                  <td>3500</td>
+                  <td>3000</td>
                 </tr>
                 <tr>
                   <td>Residential fees</td>
@@ -180,17 +180,13 @@ const MakeADifference: React.FC = () => {
                     <strong>Total</strong>
                   </td>
                   <td>
-                    <strong>7500</strong>
+                    <strong>7000</strong>
                   </td>
                 </tr>
                 <tr>
                   <td colSpan={2}>
                     <strong>Books and Academic Supplies</strong>
                   </td>
-                </tr>
-                <tr>
-                  <td>Textbooks</td>
-                  <td>1000</td>
                 </tr>
                 <tr>
                   <td>Notebooks, Stationery</td>
@@ -205,7 +201,7 @@ const MakeADifference: React.FC = () => {
                     <strong>Total</strong>
                   </td>
                   <td>
-                    <strong>2100</strong>
+                    <strong>1100</strong>
                   </td>
                 </tr>
                 <tr>
@@ -218,33 +214,21 @@ const MakeADifference: React.FC = () => {
                   <td>3600</td>
                 </tr>
                 <tr>
-                  <td>Transportation</td>
-                  <td>900</td>
-                </tr>
-                <tr>
                   <td>Personal Care Items</td>
-                  <td>500</td>
-                </tr>
-                <tr>
-                  <td>Medical Expenses</td>
-                  <td>400</td>
+                  <td>1000</td>
                 </tr>
                 <tr>
                   <td>
                     <strong>Total</strong>
                   </td>
                   <td>
-                    <strong>5400</strong>
+                    <strong>1900</strong>
                   </td>
                 </tr>
                 <tr>
                   <td colSpan={2}>
                     <strong>Miscellaneous</strong>
                   </td>
-                </tr>
-                <tr>
-                  <td>Internet and Phone bills</td>
-                  <td>900</td>
                 </tr>
                 <tr>
                   <td>Printing and Photocopying</td>
@@ -255,7 +239,7 @@ const MakeADifference: React.FC = () => {
                     <strong>Total</strong>
                   </td>
                   <td>
-                    <strong>1100</strong>
+                    <strong>200</strong>
                   </td>
                 </tr>
                 <tr>
@@ -269,22 +253,22 @@ const MakeADifference: React.FC = () => {
                 </tr>
                 <tr>
                   <td>Books and Academic Supplies</td>
-                  <td>2100</td>
+                  <td>1100</td>
                 </tr>
                 <tr>
                   <td>Personal Items</td>
-                  <td>5400</td>
+                  <td>1900</td>
                 </tr>
                 <tr>
                   <td>Miscellaneous</td>
-                  <td>1100</td>
+                  <td>200</td>
                 </tr>
                 <tr>
                   <td>
                     <strong>Total</strong>
                   </td>
                   <td>
-                    <strong>16,100</strong>
+                    <strong>10,200</strong>
                   </td>
                 </tr>
               </tbody>
