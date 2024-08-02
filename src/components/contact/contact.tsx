@@ -15,6 +15,7 @@ import {
   FlexContainerRowSpaceBetween
 } from '../shared/containers';
 import ContactForm from '../shared/contact-form';
+import VolunteerSection from '../shared/volunteer-form';
 
 const Container = styled.div`
   display: flex;
@@ -44,13 +45,14 @@ const Contact = () => {
         title="Get in Touch"
         subTitle="Need career advice or want to join our events? Let's have a chat."
       />
+      <VolunteerSection />
       <Container>
         <LeftContainer>
           <h2>Let&apos;s Talk!</h2>
           <p>
-            You can also contribute through volunteering, donations, or
-            collaborate with us to drive meaningful change in the engineering
-            landscape, shaping the future of engineering together.
+            You can also contribute through donations, or collaborate with us to
+            drive meaningful change in the engineering landscape, shaping the
+            future of engineering together.
           </p>
 
           <FlexContainerColumnGapped $alignitems="flex-start">
