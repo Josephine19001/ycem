@@ -1,10 +1,6 @@
 import React from 'react';
 import IntroSection from '../shared/intro-section';
-import {
-  FlexContainerColumnSpaceBetween,
-  FlexContainerRowSpaceBetween,
-  Section
-} from '../shared/containers';
+import { Section } from '../shared/containers';
 import Fundraiser from './fundraiser';
 
 const index = () => {

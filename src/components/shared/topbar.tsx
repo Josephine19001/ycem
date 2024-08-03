@@ -78,7 +78,7 @@ const TopBar = () => {
 
         <Nav.ContactBtnContainer>
           <ButtonPrimary onClick={() => router.push('/support-us')}>
-            Support Us
+            Donate now
           </ButtonPrimary>
         </Nav.ContactBtnContainer>
 
@@ -98,7 +98,7 @@ const TopBar = () => {
                   closeNav();
                 }}
               >
-                Support us
+                Donate now
               </ButtonPrimary>
             </Nav.OverlayedItems>
           </Nav.Overlay>

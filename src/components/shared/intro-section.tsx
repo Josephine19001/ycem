@@ -1,11 +1,12 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 import {
   FlexContainerColumnCenter,
   FlexContainerRowCenter,
-  Input,
-} from "../shared/containers";
-import { ButtonPrimary } from "./buttons";
+  Input
+} from './containers';
+import { ButtonPrimary } from './buttons';
+import Breadcrumb from './breadcrumb';
 
 const IntroContainer = styled(FlexContainerColumnCenter)`
   display: flex;
@@ -14,7 +15,7 @@ const IntroContainer = styled(FlexContainerColumnCenter)`
   padding: 60px 0px;
   flex-direction: column;
   align-items: center;
-  gap: 80px;
+  gap: 10px;
 
   @media only screen and (max-width: 768px) {
     padding: 30px 0px;
@@ -47,6 +48,7 @@ interface IntroSectionProps {
   otherCTA?: React.ReactNode;
   handleContactModalOpen?: () => void;
   handleEmailChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  breadcrumbPaths?: { label: string; href: string }[];
 }
 
 const IntroSection = ({
@@ -56,16 +58,18 @@ const IntroSection = ({
   otherCTA,
   handleEmailChange,
   handleContactModalOpen,
+  breadcrumbPaths
 }: IntroSectionProps) => {
   return (
     <div>
       <IntroContainer>
+        {breadcrumbPaths && <Breadcrumb paths={breadcrumbPaths} />}
         <IntroContentContainer>
           <>
             <h1>{title}</h1>
-            <h4 style={{ fontWeight: "400" }}>{subTitle}</h4>
+            <h4 style={{ fontWeight: '400' }}>{subTitle}</h4>
             {shouldShowCTA ? (
-              <FlexContainerRowCenter style={{ flexWrap: "wrap" }}>
+              <FlexContainerRowCenter style={{ flexWrap: 'wrap' }}>
                 <Input
                   type="email"
                   placeholder="Your email"
