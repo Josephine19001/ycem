@@ -1,12 +1,21 @@
-import React from "react";
+import React from 'react';
 
-import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faEnvelope,
+  faHandHoldingDollar,
+  faPeopleGroup,
+  faHandshakeAngle
+} from '@fortawesome/free-solid-svg-icons';
 
-import IntroSection from "../shared/intro-section";
-import { FlexContainerRowSpaceBetween } from "../shared/containers";
-import ContactForm from "../shared/contact-form";
+import IntroSection from '../shared/intro-section';
+import {
+  FlexContainerColumnGapped,
+  FlexContainerRowSpaceBetween
+} from '../shared/containers';
+import ContactForm from '../shared/contact-form';
+import VolunteerSection from '../shared/volunteer-form';
 
 const Container = styled.div`
   display: flex;
@@ -36,21 +45,54 @@ const Contact = () => {
         title="Get in Touch"
         subTitle="Need career advice or want to join our events? Let's have a chat."
       />
+      <VolunteerSection />
       <Container>
         <LeftContainer>
           <h2>Let&apos;s Talk!</h2>
           <p>
-            You can also contribute through volunteering, donations, or
-            collaborate with us to drive meaningful change in the engineering
-            landscape, shaping the future of engineering together.
+            You can also contribute through donations, or collaborate with us to
+            drive meaningful change in the engineering landscape, shaping the
+            future of engineering together.
           </p>
-          <FlexContainerRowSpaceBetween
-            style={{ justifyContent: "flex-start" }}
-            $gap="20px"
-          >
-            <FontAwesomeIcon icon={faEnvelope} />
-            <p style={{ fontWeight: 600 }}>ycemghana233@gmail.com</p>
-          </FlexContainerRowSpaceBetween>
+
+          <FlexContainerColumnGapped $alignitems="flex-start">
+            <FlexContainerRowSpaceBetween
+              style={{ justifyContent: 'flex-start' }}
+              $gap="20px"
+            >
+              <FontAwesomeIcon icon={faEnvelope} />
+              <p>
+                <strong>General Info:</strong> info@ycem.org
+              </p>
+            </FlexContainerRowSpaceBetween>
+            <FlexContainerRowSpaceBetween
+              style={{ justifyContent: 'flex-start' }}
+              $gap="20px"
+            >
+              <FontAwesomeIcon icon={faHandHoldingDollar} />
+              <p>
+                <strong>Support us:</strong> support@ycem.org
+              </p>
+            </FlexContainerRowSpaceBetween>
+            <FlexContainerRowSpaceBetween
+              style={{ justifyContent: 'flex-start' }}
+              $gap="20px"
+            >
+              <FontAwesomeIcon icon={faPeopleGroup} />
+              <p>
+                <strong>Become a member:</strong> membership@ycem.org
+              </p>
+            </FlexContainerRowSpaceBetween>
+            <FlexContainerRowSpaceBetween
+              style={{ justifyContent: 'flex-start' }}
+              $gap="20px"
+            >
+              <FontAwesomeIcon icon={faHandshakeAngle} />
+              <p>
+                <strong>Volunteer with us:</strong> volunteer@ycem.org
+              </p>
+            </FlexContainerRowSpaceBetween>
+          </FlexContainerColumnGapped>
         </LeftContainer>
         <ContactForm />
       </Container>

@@ -1,8 +1,8 @@
-import React, { useRef, useState, useEffect } from "react";
-import emailjs from "@emailjs/browser";
-import styled from "styled-components";
-import { FlexContainerRowSpaceBetween } from "../shared/containers";
-import { ButtonPrimary } from "../shared/buttons";
+import React, { useRef, useState, useEffect } from 'react';
+import emailjs from '@emailjs/browser';
+import styled from 'styled-components';
+import { FlexContainerRowSpaceBetween } from '../shared/containers';
+import { ButtonPrimary } from '../shared/buttons';
 
 interface FormData {
   firstName: string;
@@ -10,8 +10,8 @@ interface FormData {
   email: string;
   message: string;
   phoneNumber: string;
-  companyName: string;
 }
+
 const FormContainer = styled.form`
   display: flex;
   flex-direction: column;
@@ -36,7 +36,7 @@ const FormContainer = styled.form`
 
 const ContactForm = ({
   email,
-  isUsingInModal,
+  isUsingInModal
 }: {
   email?: string;
   isUsingInModal?: boolean;
@@ -44,12 +44,11 @@ const ContactForm = ({
 }) => {
   const form = useRef(null);
   const [formData, setFormData] = useState<FormData>({
-    firstName: "",
-    lastName: "",
-    email: email || "",
-    message: "",
-    phoneNumber: "",
-    companyName: "",
+    firstName: '',
+    lastName: '',
+    email: email || '',
+    message: '',
+    phoneNumber: ''
   });
   const [emailJsStatus, setEmailJsStatus] = useState(0);
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
@@ -61,7 +60,7 @@ const ContactForm = ({
     const { name, value } = event.target;
     setFormData({
       ...formData,
-      [name]: value,
+      [name]: value
     });
   };
 
@@ -70,26 +69,25 @@ const ContactForm = ({
 
     try {
       const response = await emailjs.sendForm(
-        process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID || "",
-        process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE_ID || "",
-        form.current || "",
-        process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_ID || ""
+        process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID || '',
+        process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE_ID || '',
+        form.current || '',
+        process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_ID || ''
       );
 
       setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        message: "",
-        phoneNumber: "",
-        companyName: "",
+        firstName: '',
+        lastName: '',
+        email: '',
+        message: '',
+        phoneNumber: ''
       });
 
       setEmailJsStatus(response.status);
 
-      console.log("--response", response);
+      console.log('--response', response);
     } catch (error) {
-      console.error("Error sending email:", error);
+      console.error('Error sending email:', error);
     }
   };
 
@@ -117,7 +115,7 @@ const ContactForm = ({
 
   return (
     <FormContainer ref={form} onSubmit={sendEmail}>
-      <FlexContainerRowSpaceBetween style={{ width: "100%" }}>
+      <FlexContainerRowSpaceBetween style={{ width: '100%' }}>
         <input
           placeholder="First name"
           type="text"
@@ -161,13 +159,13 @@ const ContactForm = ({
         <ButtonPrimary type="submit">Send</ButtonPrimary>
       </div>
       {showSuccessMessage && (
-        <p style={{ color: "var(--color-success)" }}>
+        <p style={{ color: 'var(--color-success)' }}>
           Hi {formData.firstName}, your email was successfully sent! We will get
           back to you soon 😇
         </p>
       )}
       {showErrorMessage && (
-        <p style={{ color: "var(--color-error)" }}>
+        <p style={{ color: 'var(--color-error)' }}>
           Something went wrong while sending the email. Try sending it manually
           as we look into it.
         </p>

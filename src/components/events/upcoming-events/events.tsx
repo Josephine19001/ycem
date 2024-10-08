@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import { FlexContainerRowSpaceBetween } from "../../shared/containers";
-import InpageNav from "../in-page-nav";
-import EventItem from "../event-list-item";
-import biomedMedicineFLyer from "../../../../public/assets/events/biomed-medicine-flyer.png";
+import React from 'react';
+import styled from 'styled-components';
+import { FlexContainerRowSpaceBetween } from '../../shared/containers';
+import InpageNav from '../in-page-nav';
+import EventItem from '../event-list-item';
+import ycemDunk from 'public/assets/events/ycem-dunk.png';
 
 export const Container = styled(FlexContainerRowSpaceBetween)`
   justify-content: center;
@@ -31,7 +31,7 @@ const UpcomingEvents = () => {
                 date,
                 title,
                 timeDay,
-                location,
+                location
               }) => (
                 <EventItem
                   key={title}
@@ -47,7 +47,7 @@ const UpcomingEvents = () => {
             )
           ) : (
             <p>
-              {" "}
+              {' '}
               We are currently planning our next event. Be on the lookout😇
             </p>
           )}
@@ -59,25 +59,14 @@ const UpcomingEvents = () => {
 
 export default UpcomingEvents;
 
-interface IEvent {
-  eventHref: string;
-  eventImg: string;
-  month: string;
-  date: string;
-  title: string;
-  timeDay: string;
-  location: string;
-}
-
-const events: any[] = [
+export const events: any[] = [
   {
-    eventHref:
-      "/events/upcoming-events/exploring-path-biomedical-engineering-vs-medicine",
-    month: "Apr",
-    date: "27",
-    title: "Exploring paths: Medicine vs. Biomedical Engineering",
-    timeDay: "Saturday, 03:30PM GMT",
-    location: "Online, Zoom",
-    eventImg: biomedMedicineFLyer,
-  },
+    eventHref: '/events/upcoming-events/ycem-dunk',
+    month: 'August',
+    date: '21-23rd',
+    title: 'YCEM AND DUNK',
+    timeDay: 'Wednesday-Saturday',
+    location: 'In-Person, Accra',
+    eventImg: ycemDunk
+  }
 ];

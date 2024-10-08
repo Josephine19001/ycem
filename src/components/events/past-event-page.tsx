@@ -1,7 +1,7 @@
-import React from "react";
-import Image from "next/image";
-import styled from "styled-components";
-import { FlexContainerRowSpaceBetween } from "../shared/containers";
+import React from 'react';
+import Image from 'next/image';
+import styled from 'styled-components';
+import { FlexContainerRowSpaceBetween } from '../shared/containers';
 
 const PageContainer = styled.div``;
 
@@ -33,7 +33,7 @@ export const Description = styled.div`
 `;
 
 interface Props {
-  feedBackLink: string;
+  feedBackLink?: string;
   date: string;
   location: string;
   description: any;

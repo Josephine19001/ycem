@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
 import Head from "next/head";
-import EventsComponent from "../../../src/components/events/upcoming-events/exploring-path-biomed";
+import EventsComponent from "../../../src/components/events/past-events/exploring-path-biomed";
 
 const ExploringBioInformatics: NextPage = () => {
   return (

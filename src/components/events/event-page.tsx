@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import Image from "next/image";
-import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useState } from 'react';
+import Image from 'next/image';
+import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLocationDot,
   faCalendarAlt,
   faLink,
-  faCalendarDay,
-} from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { FlexContainerRowSpaceBetween } from "../shared/containers";
-import { ButtonPrimary } from "../shared/buttons";
+  faCalendarDay
+} from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { FlexContainerRowSpaceBetween } from '../shared/containers';
+import { ButtonPrimary } from '../shared/buttons';
 
 const PageContainer = styled.div``;
 
@@ -27,6 +27,7 @@ const Description = styled.div`
 
 const Details = styled(FlexContainerRowSpaceBetween)`
   margin-top: 50px;
+  align-items: flex-start;
 `;
 
 const EventContainer = styled.div`
@@ -96,6 +97,7 @@ interface Props {
   description: any;
   timeDay: string;
   eventBanner: any;
+  buttonLabel?: string;
 }
 
 const EventPage = ({
@@ -105,6 +107,7 @@ const EventPage = ({
   timeDay,
   eventBanner,
   date,
+  buttonLabel
 }: Props) => {
   const [eventLinkCopied, setEventLinkCopied] = useState(false);
 
@@ -115,7 +118,7 @@ const EventPage = ({
         setEventLinkCopied(true);
       })
       .catch((error) => {
-        console.error("Error copying event link to clipboard: ", error);
+        console.error('Error copying event link to clipboard: ', error);
       });
   };
 
@@ -131,38 +134,38 @@ const EventPage = ({
             <FontAwesomeIcon
               icon={faCalendarAlt}
               style={{
-                cursor: "pointer",
-                marginRight: "5px",
-                color: "color: var(--color-gray) !important",
+                cursor: 'pointer',
+                marginRight: '5px',
+                color: 'color: var(--color-gray) !important'
               }}
-            />{" "}
+            />{' '}
             {date}
           </p>
           <p>
             <FontAwesomeIcon
               icon={faCalendarDay}
               style={{
-                cursor: "pointer",
-                marginRight: "5px",
-                color: "color: var(--color-gray) !important",
+                cursor: 'pointer',
+                marginRight: '5px',
+                color: 'color: var(--color-gray) !important'
               }}
-            />{" "}
+            />{' '}
             {timeDay}
           </p>
           <p>
-            {" "}
+            {' '}
             <FontAwesomeIcon
               icon={faLocationDot}
               style={{
-                cursor: "pointer",
-                marginRight: "5px",
-                color: "color: var(--color-gray) !important",
+                cursor: 'pointer',
+                marginRight: '5px',
+                color: 'color: var(--color-gray) !important'
               }}
-            />{" "}
+            />{' '}
             {location}
           </p>
-          <a style={{ marginTop: "12px" }} href={eventLink} target="_blank">
-            <ButtonPrimary>Register now</ButtonPrimary>
+          <a style={{ marginTop: '12px' }} href={eventLink} target="_blank">
+            <ButtonPrimary>{buttonLabel || 'Register now'}</ButtonPrimary>
           </a>
           <h6>SHARE THIS EVENT & FOLLOW US</h6>
           <Divider />
@@ -174,20 +177,20 @@ const EventPage = ({
               <FontAwesomeIcon
                 icon={faInstagram}
                 style={{
-                  cursor: "pointer",
-                  color: "var(--color-primary)",
+                  cursor: 'pointer',
+                  color: 'var(--color-primary)'
                 }}
               />
             </ShareIcon>
             <ShareIcon
-              href="https://www.linkedin.com/in/ycem?originalSubdomain=gh"
+              href="https://www.linkedin.com/company/your-choice-in-engineering-matters-ycem/"
               target="_blank"
             >
               <FontAwesomeIcon
                 icon={faLinkedin}
                 style={{
-                  cursor: "pointer",
-                  color: "var(--color-primary)",
+                  cursor: 'pointer',
+                  color: 'var(--color-primary)'
                 }}
               />
             </ShareIcon>
@@ -195,14 +198,14 @@ const EventPage = ({
               <FontAwesomeIcon
                 icon={faLink}
                 style={{
-                  cursor: "pointer",
-                  color: "var(--color-primary)",
+                  cursor: 'pointer',
+                  color: 'var(--color-primary)'
                 }}
               />
             </ShareIcon>
           </ShareIcons>
-          <span style={{ color: "var(--color-success)" }}>
-            {eventLinkCopied ? "Event Link Copied!" : ""}
+          <span style={{ color: 'var(--color-success)' }}>
+            {eventLinkCopied ? 'Event Link Copied!' : ''}
           </span>
         </EventContainer>
       </Details>
