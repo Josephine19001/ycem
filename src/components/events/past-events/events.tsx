@@ -7,13 +7,9 @@ import exploringBioInformaticPic from 'public/assets/events/exploring-bioinforma
 import biomedMedicineFLyer from 'public/assets/events/biomed-medicine-flyer.png';
 import aiMedicineFLyer from 'public/assets/events/ai-in-medicine.png';
 import cloundWebinar from 'public/assets/events/cloud-webinar.png';
-
-
 import accraGirlsEvent from "public/assets/hilary-speaking.jpg";
 import { Container } from "../upcoming-events/events";
 import EventItem from "../event-list-item";
-import { Container } from '../upcoming-events/events';
-import EventItem from '../event-list-item';
 
 const PastEvents = () => {
   return (
@@ -60,7 +56,6 @@ export const events = [
     eventImg: aiMedicineFLyer
   },
   {
-
     eventHref:
       '/events/past-events/exploring-path-biomedical-engineering-vs-medicine',
     month: 'Apr',
@@ -80,7 +75,6 @@ export const events = [
     eventImg: exploringBioInformaticPic
   },
   {
-
     eventHref: "/events/past-events/accra-girls-event",
     month: "Mar",
     date: "25",
@@ -115,6 +109,5 @@ export const events = [
     timeDay: 'Saturday, 3:30PM - 5:00PM GMT',
     location: 'Online, Google Meet',
     eventImg: girlTodayEvent
-  }
-
+  },
 ];
