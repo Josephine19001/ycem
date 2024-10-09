@@ -107,16 +107,16 @@ const Dashboard: React.FC = () => {
       <section id="currentReach">
         <Row xs={1} sm={2} md={2} lg={4}>
           <Col>
-            <Counter counter={8} text="Hosted Events" />
+            <Counter counter={12} text="Hosted Events" />
           </Col>
           <Col>
             <Counter counter={23} text="Members & Volunteers" />
           </Col>
           <Col>
-            <Counter counter={155} text="Event Participants" />
+            <Counter counter={350} text="Event Participants" />
           </Col>
           <Col>
-            <Counter counter={492} text="Social Reach" />
+            <Counter counter={730} text="Social Reach" />
           </Col>
         </Row>
       </section>
