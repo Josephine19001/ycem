@@ -7,12 +7,8 @@ import exploringBioInformaticPic from 'public/assets/events/exploring-bioinforma
 import biomedMedicineFLyer from 'public/assets/events/biomed-medicine-flyer.png';
 import aiMedicineFLyer from 'public/assets/events/ai-in-medicine.png';
 import cloundWebinar from 'public/assets/events/cloud-webinar.png';
-
 import accraGirlsEvent from 'public/assets/events/accragirlsevent-flyer.png';
-
 import ycemDunk from 'public/assets/events/ycem-dunk.png';
-
-
 import { Container } from '../upcoming-events/events';
 import EventItem from '../event-list-item';
 
