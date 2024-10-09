@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { FlexContainerRowSpaceBetween } from '../../shared/containers';
 import InpageNav from '../in-page-nav';
 import EventItem from '../event-list-item';
-import ycemDunk from 'public/assets/events/ycem-dunk.png';
+
 
 export const Container = styled(FlexContainerRowSpaceBetween)`
   justify-content: center;
@@ -60,13 +60,13 @@ const UpcomingEvents = () => {
 export default UpcomingEvents;
 
 export const events: any[] = [
-  {
-    eventHref: '/events/upcoming-events/ycem-dunk',
-    month: 'August',
-    date: '21-23rd',
-    title: 'YCEM AND DUNK',
-    timeDay: 'Wednesday-Saturday',
-    location: 'In-Person, Accra',
-    eventImg: ycemDunk
-  }
+  // {
+  //   eventHref: '',
+  //   month: '',
+  //   date: '',
+  //   title: '',
+  //   timeDay: '',
+  //   location: '',
+  //   eventImg: 
+  // }
 ];
