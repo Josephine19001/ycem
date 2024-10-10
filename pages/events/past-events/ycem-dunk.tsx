@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import { NextSeo } from 'next-seo';
 import Head from 'next/head';
-import EventsComponent from '../../../src/components/events/upcoming-events/ycem-dunk';
+import EventsComponent from '../../../src/components/events/past-events/ycem-dunk';
 
 const YCEMDUNK: NextPage = () => {
   return (

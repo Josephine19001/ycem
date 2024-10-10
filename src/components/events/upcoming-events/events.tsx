@@ -59,14 +59,4 @@ const UpcomingEvents = () => {
 
 export default UpcomingEvents;
 
-export const events: any[] = [
-  {
-    eventHref: '/events/upcoming-events/ycem-dunk',
-    month: 'August',
-    date: '21-23rd',
-    title: 'YCEM AND DUNK',
-    timeDay: 'Wednesday-Saturday',
-    location: 'In-Person, Accra',
-    eventImg: ycemDunk
-  }
-];
+export const events: any[] = [];

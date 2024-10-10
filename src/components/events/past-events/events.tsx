@@ -7,6 +7,7 @@ import exploringBioInformaticPic from 'public/assets/events/exploring-bioinforma
 import biomedMedicineFLyer from 'public/assets/events/biomed-medicine-flyer.png';
 import aiMedicineFLyer from 'public/assets/events/ai-in-medicine.png';
 import cloundWebinar from 'public/assets/events/cloud-webinar.png';
+import ycemDunkImage from 'public/assets/events/ycem-dunk.png';
 
 import { Container } from '../upcoming-events/events';
 import EventItem from '../event-list-item';
@@ -37,6 +38,15 @@ const PastEvents = () => {
 export default PastEvents;
 
 export const events = [
+  {
+    eventHref: '/events/past-events/ycem-dunk',
+    month: 'August',
+    date: '21-23',
+    title: 'THE CLOUD COMPUTING JOURNEY: INSPIRING BEGINNERS TO SOAR',
+    timeDay: 'Multiple Days',
+    location: 'Accra, James Town',
+    eventImg: ycemDunkImage
+  },
   {
     eventHref: '/events/past-events/cloud-computing-journey',
     month: 'July',
