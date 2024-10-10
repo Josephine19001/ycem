@@ -8,7 +8,7 @@ import biomedMedicineFLyer from 'public/assets/events/biomed-medicine-flyer.png'
 import aiMedicineFLyer from 'public/assets/events/ai-in-medicine.png';
 import cloundWebinar from 'public/assets/events/cloud-webinar.png';
 import ycemDunkImage from 'public/assets/events/ycem-dunk.png';
-
+import AccraGirlsEvent from 'public/assets/events/accragirlsevent-flyer.png';
 import { Container } from '../upcoming-events/events';
 import EventItem from '../event-list-item';
 
@@ -83,6 +83,15 @@ export const events = [
     timeDay: 'Saturday, 03:30PM GMT',
     location: 'Online, Zoom',
     eventImg: exploringBioInformaticPic
+  },
+  {
+    eventHref: "/events/past-events/accra-girls-event",
+    month: "Mar",
+    date: "25",
+    title: "Accra Girls Senior High School Outreach",
+    timeDay: "Saturday, 1:00PM GMT",
+    location: "Accra Girls Senior High School",
+    eventImg: AccraGirlsEvent,
   },
   {
     eventHref: '/events/past-events/clinical-engineering-series-1',
