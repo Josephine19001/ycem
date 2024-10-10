@@ -8,7 +8,7 @@ import biomedMedicineFLyer from 'public/assets/events/biomed-medicine-flyer.png'
 import aiMedicineFLyer from 'public/assets/events/ai-in-medicine.png';
 import cloundWebinar from 'public/assets/events/cloud-webinar.png';
 import accraGirlsEvent from 'public/assets/events/accragirlsevent-flyer.png';
-import ycemDunk from 'public/assets/events/ycem-dunk.png';
+import ycemDunkImage from 'public/assets/events/ycem-dunk.png';
 import { Container } from '../upcoming-events/events';
 import EventItem from '../event-list-item';
 
@@ -39,13 +39,13 @@ export default PastEvents;
 
 export const events = [
   {
-    eventHref: '/events/upcoming-events/ycem-dunk',
+    eventHref: '/events/past-events/ycem-dunk',
     month: 'August',
-    date: '21-23rd',
-    title: 'YCEM AND DUNK',
-    timeDay: 'Wednesday-Saturday',
-    location: 'In-Person, Accra',
-    eventImg: ycemDunk
+    date: '21-23',
+    title: 'THE CLOUD COMPUTING JOURNEY: INSPIRING BEGINNERS TO SOAR',
+    timeDay: 'Multiple Days',
+    location: 'Accra, James Town',
+    eventImg: ycemDunkImage
   },
   {
     eventHref: '/events/past-events/cloud-computing-journey',

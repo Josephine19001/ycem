@@ -59,14 +59,5 @@ const UpcomingEvents = () => {
 
 export default UpcomingEvents;
 
-export const events: any[] = [
-  // {
-  //   eventHref: '',
-  //   month: '',
-  //   date: '',
-  //   title: '',
-  //   timeDay: '',
-  //   location: '',
-  //   eventImg: 
-  // }
-];
+export const events: any[] = [];
+
