@@ -17,7 +17,7 @@ import {
 import { homeServiceSectionContent } from '../shared/constants';
 import JoiningUs from '../shared/joining-us';
 import { Divider } from '../shared/footer';
-import home1 from 'public/home/home1.jpg';
+import home3 from 'public/home/home3.jpg';
 import HeroCarousel from './carouselImage';
 import Link from 'next/link';
 import PhotoCollage from './photo-collage';
@@ -150,7 +150,7 @@ const Home = () => {
                 >
                   <Image
                     className="position-absolute w-100 h-100 pt-5 pe-5"
-                    src={home1}
+                    src={home3}
                     alt=""
                     style={{ objectFit: 'cover' }}
                     priority
