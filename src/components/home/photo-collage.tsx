@@ -1,14 +1,14 @@
 import { Row, Col } from "react-bootstrap";
 import Image from "next/image";
 import img1 from "public/photo-collage/image2.jpg";
-import img2 from "public/photo-collage/image4.jpg"; //small and horizontal
-import img4 from "public/photo-collage/image5.jpg";
-import img5 from "public/photo-collage/image6.jpg";
+import img2 from "public/photo-collage/IMG_P4.jpg"; //small and horizontal
+import img4 from "public/photo-collage/IMG_PC5.jpg";
+import img5 from "public/photo-collage/IMG6.jpg";
 import img6 from "public/photo-collage/image7.jpg";
-import img7 from "public/photo-collage/IMG_PC2.jpg";
-import img8 from "public/photo-collage/IMG_PC3.jpg"; //small and horizontal
-import img9 from "public/photo-collage/image11.jpg"; //small and horizontal
-import img10 from "public/photo-collage/IMG_PC1.jpg"; //small and horizontal
+import img7 from "public/photo-collage/IMG8.jpg";
+import img8 from "public/photo-collage/IMG10.jpg"; //small and horizontal
+import img9 from "public/photo-collage/IMG_P12.jpg"; //small and horizontal
+import img10 from "public/photo-collage/IMG12.jpg"; //small and horizontal
 
 const PhotoCollage = () => {
   return (

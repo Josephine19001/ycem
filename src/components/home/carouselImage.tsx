@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Carousel } from "react-bootstrap";
 import IMG_6816 from "public/hero/IMG_6816.jpg";
 import IMG_H3 from "public/hero/IMG_H3.jpg";
-import IMG_3583 from "public/hero/IMG_3583.jpg";
+import IMG_H1 from "public/hero/IMG_H1.jpg";
 import Link from "next/link";
 
 // Styled-components
@@ -95,7 +95,7 @@ const HeroCarousel: React.FC = () => {
       </Carousel.Item>
       <Carousel.Item>
         <CarouselImage
-          src={IMG_3583}
+          src={IMG_H1}
           alt="Hero Image 3"
           caption={{
             title: "Leading Women in Engineering",
