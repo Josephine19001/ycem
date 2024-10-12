@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 import styled from "styled-components";
 import { Carousel } from "react-bootstrap";
-import accraGirlGroupPic from "public/hero/accra-girls-group.jpg";
-import hero1 from "public/hero/hero1.jpg";
-import hero2 from "public/hero/hero2.jpg";
+import IMG_6816 from "public/hero/IMG_6816.jpg";
+import IMG_H3 from "public/hero/IMG_H3.jpg";
+import IMG_3583 from "public/hero/IMG_3583.jpg";
 import Link from "next/link";
 
 // Styled-components
@@ -75,7 +75,7 @@ const HeroCarousel: React.FC = () => {
     <Carousel interval={5000} pause={false} nextLabel="" prevLabel="">
       <Carousel.Item>
         <CarouselImage
-          src={hero1}
+          src={IMG_H3}
           alt="Hero Image 1"
           caption={{
             title: "Empowering the Future of Engineers",
@@ -85,7 +85,7 @@ const HeroCarousel: React.FC = () => {
       </Carousel.Item>
       <Carousel.Item>
         <CarouselImage
-          src={accraGirlGroupPic}
+          src={IMG_6816}
           alt="Hero Image 2"
           caption={{
             title: "Transforming Lives in STEM",
@@ -95,7 +95,7 @@ const HeroCarousel: React.FC = () => {
       </Carousel.Item>
       <Carousel.Item>
         <CarouselImage
-          src={hero2}
+          src={IMG_3583}
           alt="Hero Image 3"
           caption={{
             title: "Leading Women in Engineering",
