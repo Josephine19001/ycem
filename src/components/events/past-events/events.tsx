@@ -110,7 +110,7 @@ export const events = [
     timeDay: 'Saturday, 3:30PM - 5:00PM GMT',
     location: 'Online, Google Meet',
     eventImg: girlTodayEvent
-  }
+  },
    {
     eventHref: "/events/past-events/accra-girls-event",
     month: "Mar",
