@@ -1,5 +1,6 @@
 import React from 'react';
 import InpageNav from '../in-page-nav';
+import AccraGirlsEvent from 'public/assets/events/accra-girls-event-banner.png';
 import girlTodayEvent from '/public/assets/events/girls-today-event.jpg';
 import exploringTheWorldOfAI from 'public/assets/events/exploring-the-world-of-ai-banner.png';
 import biomedicalSeriesFlyer from 'public/assets/events/biomedical.series.flyer.png';
@@ -8,7 +9,6 @@ import biomedMedicineFLyer from 'public/assets/events/biomed-medicine-flyer.png'
 import aiMedicineFLyer from 'public/assets/events/ai-in-medicine.png';
 import cloundWebinar from 'public/assets/events/cloud-webinar.png';
 import ycemDunkImage from 'public/assets/events/ycem-dunk.png';
-
 import { Container } from '../upcoming-events/events';
 import EventItem from '../event-list-item';
 
@@ -110,5 +110,14 @@ export const events = [
     timeDay: 'Saturday, 3:30PM - 5:00PM GMT',
     location: 'Online, Google Meet',
     eventImg: girlTodayEvent
+  },
+   {
+    eventHref: "/events/past-events/accra-girls-event",
+    month: "Mar",
+    date: "25",
+    title: "Accra Girls Senior High School Outreach",
+    timeDay: "Saturday, 1:00PM GMT",
+    location: "Accra Girls Senior High School",
+    eventImg: AccraGirlsEvent
   }
 ];
