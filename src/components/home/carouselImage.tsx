@@ -1,11 +1,11 @@
-import React from "react";
-import Image from "next/image";
-import styled from "styled-components";
-import { Carousel } from "react-bootstrap";
-import IMG_6816 from "public/hero/IMG_6816.jpg";
-import IMG_H3 from "public/hero/IMG_H3.jpg";
-import IMG_H1 from "public/hero/IMG_H1.jpg";
-import Link from "next/link";
+import React from 'react';
+import Image from 'next/image';
+import styled from 'styled-components';
+import { Carousel } from 'react-bootstrap';
+import IMG_6816 from 'public/hero/IMG_6816.jpg';
+import IMG_H3 from 'public/hero/IMG-H3.jpg';
+import IMG_H1 from 'public/hero/IMG_H1.jpg';
+import Link from 'next/link';
 
 // Styled-components
 const HeroImage = styled.div`
@@ -34,8 +34,8 @@ export interface CarouselImageProps {
 
 const CarouselImage: React.FC<CarouselImageProps> = ({
   src,
-  alt = "Placeholder",
-  caption,
+  alt = 'Placeholder',
+  caption
 }) => (
   <HeroImage className="d-flex align-items-center">
     <Image
@@ -43,7 +43,7 @@ const CarouselImage: React.FC<CarouselImageProps> = ({
       src={src}
       alt={alt}
       fill
-      style={{ objectFit: "cover" }}
+      style={{ objectFit: 'cover' }}
       aria-label={`${caption.title}: ${caption.text}`}
     />
     <Overlay />
@@ -78,8 +78,8 @@ const HeroCarousel: React.FC = () => {
           src={IMG_H3}
           alt="Hero Image 1"
           caption={{
-            title: "Empowering the Future of Engineers",
-            text: "YCEM ignites passion in young women for engineering. Through events, mentorship, and tech hubs, we bridge the gender gap in STEM.",
+            title: 'Empowering the Future of Engineers',
+            text: 'YCEM ignites passion in young women for engineering. Through events, mentorship, and tech hubs, we bridge the gender gap in STEM.'
           }}
         />
       </Carousel.Item>
@@ -88,8 +88,8 @@ const HeroCarousel: React.FC = () => {
           src={IMG_6816}
           alt="Hero Image 2"
           caption={{
-            title: "Transforming Lives in STEM",
-            text: "Join us on a journey of transformation! YCEM offers unwavering support to young women in science, technology, engineering, and mathematics, fostering innovation.",
+            title: 'Transforming Lives in STEM',
+            text: 'Join us on a journey of transformation! YCEM offers unwavering support to young women in science, technology, engineering, and mathematics, fostering innovation.'
           }}
         />
       </Carousel.Item>
@@ -98,8 +98,8 @@ const HeroCarousel: React.FC = () => {
           src={IMG_H1}
           alt="Hero Image 3"
           caption={{
-            title: "Leading Women in Engineering",
-            text: "YCEM empowers young women in engineering. With experience and mentorship, we lead the way to a brighter future in science and technology.",
+            title: 'Leading Women in Engineering',
+            text: 'YCEM empowers young women in engineering. With experience and mentorship, we lead the way to a brighter future in science and technology.'
           }}
         />
       </Carousel.Item>
