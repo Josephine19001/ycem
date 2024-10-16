@@ -118,6 +118,6 @@ export const events = [
     title: "Accra Girls Senior High School Outreach",
     timeDay: "Saturday, 1:00PM GMT",
     location: "Accra Girls Senior High School",
-    eventImg: AccraGirlsEvent,
+    eventImg: AccraGirlsEvent
   }
 ];
