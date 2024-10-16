@@ -1,4 +1,5 @@
 import React from 'react';
+import { useRouter } from 'next/router';
 import Image, { type StaticImageData } from 'next/image';
 import styled from 'styled-components';
 import {
@@ -107,8 +108,9 @@ interface IProp {
   goal: number;
   raised: number;
   link: string;
+  isExternal?: boolean;
+  isDollar?: boolean;
 }
-//make raised left blue and rest white
 const FundraiserItem = ({
   image,
   title,
@@ -116,13 +118,22 @@ const FundraiserItem = ({
   description,
   goal,
   raised,
-  link
+  link,
+  isExternal,
+  isDollar
 }: IProp) => {
+  const router = useRouter();
   const handleOverlayClick = () => {
-    window.open(link);
+    if (isExternal) {
+      window.open(link);
+    } else {
+      router.push(link);
+    }
   };
 
   const amountRaisedPercent = Math.floor((raised / goal) * 100);
+
+  console.log('amountRaisedPercent', amountRaisedPercent);
 
   return (
     <Container>
@@ -137,11 +148,13 @@ const FundraiserItem = ({
       <ProgressBarContainer>
         <FlexContainerRowSpaceBetween style={{ marginBottom: '24px' }}>
           <span>
-            ${raised}{' '}
+            {isDollar ? '$' : '₵'}
+            {raised}{' '}
             <span style={{ color: 'var(--color-primary-darker)' }}>Raised</span>
           </span>
           <span>
-            ${goal}{' '}
+            {isDollar ? '$' : '₵'}
+            {goal}{' '}
             <span style={{ color: 'var(--color-primary-darker)' }}>Goal</span>
           </span>
         </FlexContainerRowSpaceBetween>
